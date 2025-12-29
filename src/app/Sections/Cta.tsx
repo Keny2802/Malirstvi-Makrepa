@@ -12,7 +12,7 @@ import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 const Cta = () => {
     return (
         <Fragment>
-            <Wrapper className="relative h-full md:h-80 lg:h-105">
+            <Wrapper className="relative h-screen md:h-80 lg:h-105">
                 <Image
                 height={1000}
                 width={1000}
@@ -21,7 +21,7 @@ const Cta = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full h-1/2 md:max-h-125 object-cover"
+                className="w-full h-screen md:max-h-125 object-cover"
                 />
                 <Wrapper className="p-6 md:p-4 lg:p-5 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">

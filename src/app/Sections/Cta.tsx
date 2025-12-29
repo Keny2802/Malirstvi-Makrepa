@@ -12,7 +12,7 @@ import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 const Cta = () => {
     return (
         <Fragment>
-            <Wrapper className="relative">
+            <Wrapper className="relative h-80 md:h-105 lg:h-130">
                 <Image
                 height={800}
                 width={800}
@@ -21,7 +21,7 @@ const Cta = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full h-full lg:max-h-125 object-cover"
+                className="object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">
@@ -30,10 +30,10 @@ const Cta = () => {
                     <p className="text-base md:text-[17px] lg:text-lg text-center max-w-3xl">
                         Vymalujeme vám byt, dům či komerční prostor. Napiště nebo zavolejte nám a zjistětepřesnou cenu.
                     </p>
-                    <Wrapper className="mt-2 md:mt-3 lg:mt-4 flex justify-center items-center flex-col md:flex-row gap-2 md:gap-3 lg:gap-4 w-full">
+                    <Wrapper className="mt-2 md:mt-3 lg:mt-4 flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link
                         href="#kalkulace"
-                        className="p-4 md:p-5 lg:p-6 bg-white text-black text-center w-full md:w-75 rounded-md"
+                        className="px-4 py-3 md:px-6 md:py-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
@@ -41,7 +41,7 @@ const Cta = () => {
                         </Link>
                         <Link
                         href="#kontakt"
-                        className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] text-wite text-center w-full md:w-75 rounded-md"
+                        className="px-4 py-3 md:px-6 md:py-4 bg-[#1d4ed8] text-wite text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kontakt");
                         }}>

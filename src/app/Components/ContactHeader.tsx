@@ -3,11 +3,10 @@ import {
 } from "react";
 import {
     DevicePhoneMobileIcon,
-    EnvelopeIcon,
-    ClockIcon
+    ClockIcon,
+    EnvelopeOpenIcon
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import Image from "next/image";
 
 import Wrapper from "./Wrapper";
 
@@ -27,7 +26,7 @@ const ContactHeader = () => {
                     <Link
                         href="mailto:info@malirstvi-ostrava.cz"
                         className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]">
-                        <EnvelopeIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+                        <EnvelopeOpenIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         info@malirstvi-ostrava.cz
                     </Link>
                     <Wrapper className="flex items-center gap-2 md:gap-2.5 lg:gap-3">

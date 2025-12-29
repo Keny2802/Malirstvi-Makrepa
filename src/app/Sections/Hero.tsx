@@ -98,7 +98,7 @@ const Hero = () => {
                 }
                 <Link
                 href="tel:+420608751721"
-                className="p-2 md:p-3 lg:p-4 bg-white text-black rounded-full">
+                className="p-2 md:p-3 lg:p-4 bg-white text-black rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8] hover:text-white">
                     <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                 </Link>
             </Wrapper>

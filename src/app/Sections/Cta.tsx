@@ -23,7 +23,7 @@ const Cta = () => {
                 draggable={false}
                 className="w-full h-full md:max-h-125 object-cover"
                 />
-                <Wrapper className="p-4 md:p-5 lg:p-6 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
+                <Wrapper className="p-6 md:p-4 lg:p-5 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">
                         Potřebujete vymalovat?
                     </h2>

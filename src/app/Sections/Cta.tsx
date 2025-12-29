@@ -14,8 +14,8 @@ const Cta = () => {
         <Fragment>
             <Wrapper className="relative">
                 <Image
-                height={500}
-                width={500}
+                height={800}
+                width={800}
                 src="/Fotky/Cta/Cta.jpg"
                 alt="Potřebujete vymalovat"
                 loading="lazy"

@@ -12,7 +12,7 @@ import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 const Cta = () => {
     return (
         <Fragment>
-            <Wrapper className="p-4 md:p-5 lg:p-6 relative h-full md:h-80 lg:h-105">
+            <Wrapper className="relative h-full md:h-80 lg:h-105">
                 <Image
                 height={1000}
                 width={1000}
@@ -23,7 +23,7 @@ const Cta = () => {
                 draggable={false}
                 className="w-full h-full md:max-h-125 object-cover"
                 />
-                <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
+                <Wrapper className="p-4 md:p-5 lg:p-6 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">
                         Potřebujete vymalovat?
                     </h2>

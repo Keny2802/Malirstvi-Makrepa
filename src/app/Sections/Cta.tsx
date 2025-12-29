@@ -21,7 +21,7 @@ const Cta = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full h-full md:max-h-125 object-cover"
+                className="w-full max-h-200 md:max-h-125 object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">

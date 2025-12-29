@@ -60,10 +60,10 @@ const Hero = () => {
                     <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
                         Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.
                     </p>
-                    <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
+                    <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link
                         href="#kalkulace"
-                        className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
+                        className="px-4 py-3 md:px-6 md:py-4 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
@@ -72,7 +72,7 @@ const Hero = () => {
                         </Link>
                         <Link
                         href="#realizace"
-                        className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
+                        className="px-4 py-3 md:px-6 md:py-4 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "realizace");
                         }}>
@@ -97,7 +97,7 @@ const Hero = () => {
                     )
                 }
                 <Link
-                href="tel:+420603243852"
+                href="tel:+420608751721"
                 className="p-2 md:p-3 lg:p-4 bg-white text-black rounded-full">
                     <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                 </Link>

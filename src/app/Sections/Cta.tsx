@@ -12,16 +12,16 @@ import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 const Cta = () => {
     return (
         <Fragment>
-            <Wrapper className="relative h-80 md:h-105 lg:h-130">
+            <Wrapper className="relative h-full md:h-80 lg:h-105">
                 <Image
-                height={800}
-                width={800}
+                height={1000}
+                width={1000}
                 src="/Fotky/Cta/Cta.jpg"
                 alt="Potřebujete vymalovat"
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="object-cover"
+                className="w-full h-full md:max-h-125 object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 text-white">
                     <h2 className="text-[28px] md:text-4xl lg:text-5xl font-extrabold">

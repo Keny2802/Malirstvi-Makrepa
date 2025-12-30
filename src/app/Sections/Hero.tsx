@@ -15,6 +15,8 @@ import Link from "next/link";
 
 import Wrapper from "../Components/Wrapper";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
+import PhoneLink from "../Components/PhoneLink";
+import Icon from "../Components/Icon";
 
 const Hero = () => {
     const [isWindowScrolled, setWindowScrolled] = useState<boolean>(false);
@@ -51,10 +53,10 @@ const Hero = () => {
                 className="w-full h-screen object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-white text-center">
-                    <h1 className="text-5xl md:text-[56px] lg:text-8xl font-black md:max-w-7xl">
-                        {/* Profesionální malířské práce bez starostí */}
+                    <h1 className="text-4xl md:text-[56px] lg:text-8xl font-black md:max-w-7xl">
+                        Profesionální malířské práce bez starostí
                         {/* Čisté stěny za 2 dny */}
-                        Malíř, který po sobě uklidí
+                        {/* Malíř, který po sobě uklidí */}
                     </h1>
                     <Wrapper className="mt-2 md:mt-4 lg:mt-6">
                         <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
@@ -71,7 +73,9 @@ const Hero = () => {
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
-                            <CalculatorIcon className="w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer" />
+                            <Icon className="cursor-pointer">
+                                <CalculatorIcon />
+                            </Icon>
                             Nezávazná kalkulace
                         </Link>
                         <Link
@@ -100,11 +104,14 @@ const Hero = () => {
                         </Fragment>
                     )
                 }
-                <Link
-                href="tel:+420608751721"
-                className="p-2 md:p-3 lg:p-4 border border-gray-200 bg-white text-black rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8] hover:text-white">
-                    <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
-                </Link>
+                
+                <PhoneLink
+                className="p-2 md:p-3 lg:p-4 border border-gray-200 bg-white text-black rounded-full"
+                yes={false}>
+                    <Icon>
+                        <DevicePhoneMobileIcon />
+                    </Icon>
+                </PhoneLink>
             </Wrapper>
         </Fragment>
     );

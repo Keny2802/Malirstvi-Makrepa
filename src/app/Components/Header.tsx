@@ -17,6 +17,8 @@ import Link from "next/link";
 import Wrapper from "./Wrapper";
 import Logo from "./Logo";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
+import PhoneLink from "./PhoneLink";
+import Icon from "./Icon";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
@@ -121,30 +123,31 @@ const Header = () => {
                             ))
                         }
                     </ul>
-                    <Link
-                    href="tel:+420608751721"
-                    className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md">
-                        <DevicePhoneMobileIcon className="w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7" />
-                        +420 608 751 721
-                    </Link>
+                    <PhoneLink className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md transition-colors duration-300 ease-in-out hover:text-white">
+                        <Icon>
+                            <DevicePhoneMobileIcon />
+                        </Icon>
+                    </PhoneLink>
                     {
                         isMobileMenuClicked ? (
                             <Fragment>
-                                <MinusIcon
-                                className="lg:hidden w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer"
+                                <Icon
+                                className="lg:hidden cursor-pointer"
                                 onClick={(e) => {
                                     setMobileMenuClicked(false);
-                                }}
-                                />
+                                }}>
+                                    <MinusIcon />
+                                </Icon>
                             </Fragment>
                         ) : (
                             <Fragment>
-                                <Bars3Icon
-                                className="lg:hidden w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer"
+                                <Icon
+                                className="lg:hidden cursor-pointer"
                                 onClick={(e) => {
                                     setMobileMenuClicked(true);
-                                }}
-                                />
+                                }}>
+                                    <Bars3Icon />
+                                </Icon>
                             </Fragment>
                         )
                     }

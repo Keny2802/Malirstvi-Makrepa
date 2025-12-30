@@ -24,7 +24,7 @@ const Cta = () => {
                 className="w-full min-h-150 md:h-80 lg:h-125 object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-white">
-                    <h2 className="text-4xl md:text-[42px] lg:text-5xl font-extrabold">
+                    <h2 className="text-3xl md:text-[42px] lg:text-5xl font-extrabold">
                         Potřebujete vymalovat?
                     </h2>
                     <p className="text-base md:text-[17px] lg:text-lg text-center max-w-3xl">

@@ -7,6 +7,7 @@ import {
 
 import Wrapper from "../Components/Wrapper";
 // import PageLabel from "../components/pageLabel";
+import Icon from "../Components/Icon";
 import ContactInfo from "../Components/ContactInfo";
 
 const Contact = () => {
@@ -117,7 +118,9 @@ const Contact = () => {
                         </Wrapper>
                         <button className="mt-4 md:mt-6 lg:mt-8 p-2 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
-                            <ArrowTurnDownRightIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
+                            <Icon className="cursor-pointer">
+                                <ArrowTurnDownRightIcon />
+                            </Icon>
                         </button>
                     </form>
                     <ContactInfo />

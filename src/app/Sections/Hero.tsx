@@ -87,7 +87,7 @@ const Hero = () => {
                         <Fragment>
                             <Link
                             href="#hero"
-                            className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full"
+                            className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8]"
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "contact-header");
                             }}>

@@ -35,8 +35,8 @@ const Logo = ({ ...props }: LogoProps) => {
                 href={isHome ? "" : "/"}
                 className={clsx(`text-lg md:text-xl lg:text-2xl font-medium ${linkClassName}`)}>
                     <Image
-                    height={200}
-                    width={200}
+                    height={150}
+                    width={150}
                     src="/Fotky/Logo/Logo.png"
                     alt="Malířství Makrepa | Josef Krejčiřík Logo"
                     loading="lazy"

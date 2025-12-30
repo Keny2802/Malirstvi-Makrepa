@@ -16,27 +16,27 @@ const Contact = () => {
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section"
             id="kontakt">
                 {/* <PageLabel pageLabelText="Kontakt" /> */}
-                <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
-                    <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
+                <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3">
+                    <h2 className="text-4xl md:text-[42px] lg:text-5xl font-extrabold text-center max-w-7xl">
                         Jsme tu pro vás
                     </h2>
-                    <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
+                    <p className="text-base md:text-[17px] lg:text-lg font-medium md:max-w-3xl">
                         Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky.
                     </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-6 md:gap-8 lg:gap-10">
                     <form className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] rounded-3xl w-full md:max-w-250">
-                        <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4 text-center">
-                            <h3 className="text-xl md:text-[22px] lg:text-2xl text-white">
+                        <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-center">
+                            <h3 className="text-2xl md:text-[28px] lg:text-[32px] font-semibold text-white">
                                 Pošlete nám poptávku
                             </h3>
-                            <p className="text-[15px] md:text-base lg:text-lg text-white">
+                            <p className="text-base md:text-[17px] lg:text-lg text-white">
                                 Ozveme se co nejdříve a domluvíme další postup.
                             </p>
                         </Wrapper>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 text-black">
-                            <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4 w-full">
-                                <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4 w-full form-group">
+                            <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full">
+                                <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full form-group">
                                     <label
                                     htmlFor="full-name"
                                     className="text-white cursor-pointer">
@@ -56,7 +56,7 @@ const Contact = () => {
                                     id="full-name"
                                     />
                                 </Wrapper>
-                                <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4 w-full form-group">
+                                <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full form-group">
                                     <label
                                     htmlFor="email"
                                     className="text-white cursor-pointer">
@@ -76,7 +76,7 @@ const Contact = () => {
                                     id="email"
                                     />
                                 </Wrapper>
-                                <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4 w-full form-group">
+                                <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full form-group">
                                     <label
                                     htmlFor="tel"
                                     className="text-white cursor-pointer">
@@ -98,7 +98,7 @@ const Contact = () => {
                                     />
                                 </Wrapper>
                             </Wrapper>
-                            <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4 w-full form-group">
+                            <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full form-group">
                                 <label
                                 htmlFor="message"
                                 className="text-white cursor-pointer">
@@ -115,7 +115,7 @@ const Contact = () => {
                                 id="message"></textarea>
                             </Wrapper>
                         </Wrapper>
-                        <button className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
+                        <button className="mt-4 md:mt-6 lg:mt-8 p-2 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
                             <ArrowTurnDownRightIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                         </button>

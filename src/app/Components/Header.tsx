@@ -72,16 +72,16 @@ const Header = () => {
             <Wrapper
             className={clsx(`p-2.5 md:p-3 lg:p-3.5 ${isHeaderScrolled && "fixed top-0 left-0"} bg-white shadow-md border-b border-gray-200 w-full z-40 transition-all duration-500 ease-in-out header`)}
             id="header">
-                <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
+                <Wrapper className="flex justify-between items-center gap-3 md:gap-4 lg:gap-5">
                     <Logo />
-                    <ul className="hidden lg:flex justify-center items-center gap-2 md:gap-4 lg:gap-6 header-list">
+                    <ul className="hidden lg:flex justify-center items-center gap-4 md:gap-5 lg:gap-6 header-list">
                         <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                             <Link
                             href="#domu"
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "domu");
                             }}
-                            className="text-[#313131] text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                            className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                             >
                                 Domů
                             </Link>
@@ -113,7 +113,7 @@ const Header = () => {
                                     <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                         <Link
                                         href={headerItem.href}
-                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]">
+                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]">
                                             {headerItem.link}
                                         </Link>
                                     </li>
@@ -123,15 +123,15 @@ const Header = () => {
                     </ul>
                     <Link
                     href="tel:+420608751721"
-                    className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1d4ed8] text-white font-semibold rounded-md">
-                        <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+                    className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md">
+                        <DevicePhoneMobileIcon className="w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7" />
                         +420 608 751 721
                     </Link>
                     {
                         isMobileMenuClicked ? (
                             <Fragment>
                                 <MinusIcon
-                                className="lg:hidden w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer"
+                                className="lg:hidden w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer"
                                 onClick={(e) => {
                                     setMobileMenuClicked(false);
                                 }}
@@ -140,7 +140,7 @@ const Header = () => {
                         ) : (
                             <Fragment>
                                 <Bars3Icon
-                                className="lg:hidden w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer"
+                                className="lg:hidden w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer"
                                 onClick={(e) => {
                                     setMobileMenuClicked(true);
                                 }}

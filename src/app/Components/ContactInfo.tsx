@@ -15,7 +15,7 @@ const ContactInfo = () => {
         <Fragment>
             <Wrapper>
                 <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4">
-                    <h3 className="text-xl md:text-[22px] lg:text-2xl font-semibold">
+                    <h3 className="text-2xl md:text-[28px] lg:text-[32px] font-semibold">
                         Kontaktujte nás
                     </h3>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium">

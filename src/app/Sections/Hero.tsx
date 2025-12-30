@@ -51,28 +51,32 @@ const Hero = () => {
                 className="w-full h-screen object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-white text-center">
-                    <h1 className="text-[32px] md:text-6xl lg:text-8xl font-extrabold md:max-w-7xl">
-                        Profesionální malířské práce bez starostí
+                    <h1 className="text-5xl md:text-[56px] lg:text-8xl font-black md:max-w-7xl">
+                        {/* Profesionální malířské práce bez starostí */}
+                        {/* Čisté stěny za 2 dny */}
+                        Malíř, který po sobě uklidí
                     </h1>
-                    <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
-                        Pečlivé malování bytů, domů i komerčních prostor s důrazem na čistotu, kvalitu a dlouhou životnost nátěrů.
-                    </p>
-                    <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
-                        Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.
-                    </p>
+                    <Wrapper className="mt-2 md:mt-4 lg:mt-6">
+                        <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
+                            Pečlivé malování bytů, domů i komerčních prostor s důrazem na čistotu, kvalitu a dlouhou životnost nátěrů.
+                        </p>
+                        <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
+                            Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.
+                        </p>
+                    </Wrapper>
                     <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link
                         href="#kalkulace"
-                        className="px-4 py-3 md:px-6 md:py-4 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
+                        className="p-2 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
-                            <CalculatorIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
+                            <CalculatorIcon className="w-6 h-6 md:w-6.5 md:h-6.5 lg:w-7 lg:h-7 cursor-pointer" />
                             Nezávazná kalkulace
                         </Link>
                         <Link
                         href="#realizace"
-                        className="px-4 py-3 md:px-6 md:py-4 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
+                        className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "realizace");
                         }}>
@@ -98,7 +102,7 @@ const Hero = () => {
                 }
                 <Link
                 href="tel:+420608751721"
-                className="p-2 md:p-3 lg:p-4 bg-white text-black rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8] hover:text-white">
+                className="p-2 md:p-3 lg:p-4 border border-gray-200 bg-white text-black rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8] hover:text-white">
                     <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                 </Link>
             </Wrapper>

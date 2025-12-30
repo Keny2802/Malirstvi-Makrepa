@@ -32,7 +32,7 @@ const Footer = () => {
                                     onClick={(e) => {
                                         setLinkWithoutHash(e, "domu");
                                     }}
-                                    className="text-[#313131] text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                                    className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                                     >
                                         Domů
                                     </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
                                             <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                                 <Link
                                                 href={headerItem.href}
-                                                className="text-[#313131] text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]">
+                                                className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]">
                                                     {headerItem.link}
                                                 </Link>
                                             </li>

@@ -1,0 +1,69 @@
+import {
+    Fragment
+} from "react";
+import {
+    DevicePhoneMobileIcon
+} from "@heroicons/react/24/solid";
+import Image from "next/image";
+
+import Wrapper from "../Components/Wrapper";
+import PhoneLink from "../Components/PhoneLink";
+import Icon from "../Components/Icon";
+
+const About = () => {
+    return (
+        <Fragment>
+            <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
+                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5">
+                    <h2 className="text-3xl md:text-[42px] lg:text-5xl text-center font-extrabold">
+                        Přečtě si a dozvíte se o nás mnohem více
+                    </h2>
+                    <p className="text-base md:text-[17px] lg:text-lg text-center max-w-3xl">
+                        Vědet více informací o malíři pokojů se vždy vyplatí.
+                    </p>
+                </Wrapper>
+                <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex justify-center flex-col md:flex-row gap-4 md:gap-5 lg:gap-6">
+                    <Wrapper className="flex flex-col gap-2 md:gap-4 lg:gap-6">
+                        {
+                            [
+                                "Už řadu let poskytujeme svým zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
+                                "Naší předností je dostatek zkušeností a praxe, proto na veškeré práce poskytujeme prodlouženou záruku 3 roky. Svou práci bereme zodpovědně a řídíme se tím, že nejdůležitější v naší práci jste Vy - spokojení zákazníci.",
+                                "Při práci používáme moderní kvalitní barvy a materiály a využíváme nové technologie."
+                            ].map((textBlock, textBlockIndex) => {
+                                return (
+                                    <Fragment key={textBlockIndex}>
+                                        <p className="text-base md:text-[17px] lg:text-lg max-w-3xl">
+                                            {textBlock}
+                                        </p>
+                                    </Fragment>
+                                );
+                            })
+                        }
+                        <PhoneLink
+                        className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full rounded-md "
+                        yes={false}>
+                            <Icon>
+                                <DevicePhoneMobileIcon />
+                            </Icon>
+                            Nezávazná konzultace
+                        </PhoneLink>
+                    </Wrapper>
+                        <Wrapper>
+                            <Image
+                            width={800}
+                            height={800}
+                            src="/Fotky/About/Fotka-1.jpg"
+                            alt="Přečtě si a dozvíte se o nás mnohem více"
+                            loading="lazy"
+                            decoding="async"
+                            draggable={false}
+                            className="rounded-2xl"
+                            />
+                        </Wrapper>
+                </Wrapper>
+            </Wrapper>
+        </Fragment>
+    );
+};
+
+export default About;

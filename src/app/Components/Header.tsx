@@ -91,16 +91,24 @@ const Header = () => {
                         {
                             [
                                 {
+                                    link: "O nás",
+                                    href: "/o-nas"
+                                },
+                                {
                                     link: "Služby",
                                     href: "/sluzby"
+                                },
+                                {
+                                    link: "Galerie",
+                                    href: "/galerie"
                                 },
                                 {
                                     link: "Realizace",
                                     href: "/realizace"
                                 },
                                 {
-                                    link: "Recenze",
-                                    href: "/recenze"
+                                    link: "Reference",
+                                    href: "/reference"
                                 },
                                 {
                                     link: "Ceník",
@@ -123,7 +131,7 @@ const Header = () => {
                             ))
                         }
                     </ul>
-                    <PhoneLink className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md transition-colors duration-300 ease-in-out hover:text-white">
+                    <PhoneLink className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md">
                         <Icon>
                             <DevicePhoneMobileIcon />
                         </Icon>

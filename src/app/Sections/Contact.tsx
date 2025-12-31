@@ -14,7 +14,7 @@ const Contact = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-200 bg-white shadow-md section"
             id="kontakt">
                 {/* <PageLabel pageLabelText="Kontakt" /> */}
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3">
@@ -116,7 +116,7 @@ const Contact = () => {
                                 id="message"></textarea>
                             </Wrapper>
                         </Wrapper>
-                        <button className="mt-4 md:mt-6 lg:mt-8 p-2 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
+                        <button className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
                             <Icon className="cursor-pointer">
                                 <ArrowTurnDownRightIcon />

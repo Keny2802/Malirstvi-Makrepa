@@ -94,16 +94,24 @@ const MobileMenu = ({ ...props }: componentProps) => {
                         {
                             [
                                 {
+                                    link: "O nás",
+                                    href: "/o-nas"
+                                },
+                                {
                                     link: "Služby",
                                     href: "/sluzby"
+                                },
+                                {
+                                    link: "Galerie",
+                                    href: "/galerie"
                                 },
                                 {
                                     link: "Realizace",
                                     href: "/realizace"
                                 },
                                 {
-                                    link: "Recenze",
-                                    href: "/recenze"
+                                    link: "Reference",
+                                    href: "/reference"
                                 },
                                 {
                                     link: "Ceník",

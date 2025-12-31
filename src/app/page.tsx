@@ -5,7 +5,10 @@ import {
 import ContactHeader from "./Components/ContactHeader";
 import Header from "./Components/Header";
 import Hero from "./Sections/Hero";
+import About from "./Sections/About";
+import Services from "./Sections/Services";
 import Cta from "./Sections/Cta";
+import Gallery from "./Sections/Gallery";
 import Contact from "./Sections/Contact";
 import Footer from "./Sections/Footer";
 
@@ -15,7 +18,10 @@ const Home = () => {
       <ContactHeader />
       <Header />
       <Hero />
+      <About />
+      <Services />
       <Cta />
+      <Gallery />
       <Contact />
       <Footer />
     </Fragment>

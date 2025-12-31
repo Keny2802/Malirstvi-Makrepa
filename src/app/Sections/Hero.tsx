@@ -69,7 +69,7 @@ const Hero = () => {
                     <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link
                         href="#kalkulace"
-                        className="p-2 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
+                        className="p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
@@ -80,7 +80,7 @@ const Hero = () => {
                         </Link>
                         <Link
                         href="#realizace"
-                        className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
+                        className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "realizace");
                         }}>
@@ -95,7 +95,7 @@ const Hero = () => {
                         <Fragment>
                             <Link
                             href="#hero"
-                            className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full transition-colors ease-in-out duration-300 hover:bg-[#1d4ed8]"
+                            className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white rounded-full transition-colors ease-in-out duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-200"
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "contact-header");
                             }}>
@@ -106,7 +106,7 @@ const Hero = () => {
                 }
                 
                 <PhoneLink
-                className="p-2 md:p-3 lg:p-4 border border-gray-200 bg-white text-black rounded-full"
+                className="p-2 md:p-3 lg:p-4 border border-gray-200 bg-white text-black rounded-full transition-colors duration-300 ease-in-out hover:bg-[#1d4ed8] hover:text-white"
                 yes={false}>
                     <Icon>
                         <DevicePhoneMobileIcon />

@@ -14,49 +14,135 @@ const galleryItems = [
         heading: "Vymalovaná zeď restaurace na hnědo",
         desc: "Podívejte se na vymalovanou zeď restaurace na hnědo.",
         type: "Restaurace",
-        image: "/Fotky/Gallery/Fotka-1.jpg"
+        image: "/Fotky/Gallery/Fotka-1.webp"
     },
     {
         heading: "Vymalovaná zeď bytu",
         desc: "Podívejte se na vymalovanou zeď na žluto, jednoho malebného bytu.",
         type: "Byt",
-        image: "/Fotky/Gallery/Fotka-2.jpg"
+        image: "/Fotky/Gallery/Fotka-2.webp"
     },
     {
         heading: "Vymalovaný obývací pokoj",
         desc: "Podívejte se na krásně vymalovaný obývací pokoj.",
         type: "Dům",
-        image: "/Fotky/Gallery/Fotka-3.jpg"
+        image: "/Fotky/Gallery/Fotka-3.webp"
     },
     {
         heading: "Vymalováno na bílo",
         desc: "Podívejte se na vymalovaný prostor na bílo.",
         type: "Prostor",
-        image: "/Fotky/Gallery/Fotka-4.jpg"
+        image: "/Fotky/Gallery/Fotka-4.webp"
     },
     {
         heading: "Vymalováný obývací pokoj na žluto",
         desc: "Podívejte se na vymalovaná obývací pokoj, vymalovaný na žluto.",
         type: "Byt",
-        image: "/Fotky/Gallery/Fotka-5.jpg"
+        image: "/Fotky/Gallery/Fotka-5.webp"
     },
     {
         heading: "Vymalované zdi u výtahu",
         desc: "Podívejte se na vymalované zdi chodby u výtahu.",
         type: "Prostor",
-        image: "/Fotky/Gallery/Fotka-6.jpg"
+        image: "/Fotky/Gallery/Fotka-6.webp"
     },
     {
         heading: "Vymalovaná kuchyně",
         desc: "Podívejte se na vymalovanou kuchyňskou zeď na zeleno.",
         type: "Kuchyně",
-        image: "/Fotky/Gallery/Fotka-7.jpg"
+        image: "/Fotky/Gallery/Fotka-7.webp"
     },
     {
         heading: "Vymalovaná jídelní místnost",
         desc: "Podívejte se na vymalovanou jídelní místnost.",
         type: "Jídelna",
-        image: "/Fotky/Gallery/Fotka-8.jpg"
+        image: "/Fotky/Gallery/Fotka-8.webp"
+    },
+    {
+        heading: "Vymalovaný dětský pokojíčky",
+        desc: "Podívejte se na set vymalovaných dětských pokojů.",
+        type: "Pokoj",
+        image: "/Fotky/Gallery/Fotka-9.webp"
+    },
+    {
+        heading: "Vymalovaná jídelna v prostorném domě.",
+        desc: "Podívejte se na vymalovanou jídelnu v prostorném domě.",
+        type: "Jídelna",
+        image: "/Fotky/Gallery/Fotka-10.webp"
+    },
+    {
+        heading: "Vymalovaná zeď obrázkem žirafy.",
+        desc: "Podívejte se na vymalovanou zeď na žluto s obrázkem žirafy.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-11.webp"
+    },
+    {
+        heading: "Školní učebna",
+        desc: "Podívejte se na vymalovanou školní učebnu na oranžovo.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-12.webp"
+    },
+    {
+        heading: "Vymalovaná malebná místnost",
+        desc: "Podívejte se na vymalovanou malebnou místnost.",
+        type: "Dům",
+        image: "/Fotky/Gallery/Fotka-13.webp"
+    },
+    {
+        heading: "Vymalovaná fasáda domu",
+        desc: "Podívejte se na vymalovanou fasádu domu tyrkysovou barvou.",
+        type: "Dům",
+        image: "/Fotky/Gallery/Fotka-14.webp"
+    },
+    {
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-15.webp"
+    },
+    {
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-16.webp"
+    },
+    {
+        heading: "Vymalovaný prostor",
+        desc: "Podívejte se na vymalovaný prostor žlutou barvou.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-17.webp"
+    },
+    {
+        heading: "Vymalovaný prostor",
+        desc: "Podívejte se na vymalovaný prostor žlutou barvou.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-18.webp"
+    },
+    {
+        heading: "Vymalovaná fasáda domu",
+        desc: "Podívejte se na vymalovanou fasádu domu žlutou barvou.",
+        type: "Dům",
+        image: "/Fotky/Gallery/Fotka-19.webp"
+    },
+    {
+        heading: "Vymalovaná zubní ordinace",
+        desc: "Podívejte se na vymalovanou zubní ordinaci tmavší modrou barvou.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-20.webp"
+    },
+    {
+        heading: "Vymalovaná lékarna",
+        desc: "Podívejte se vymalovanou lékarnu.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-21.webp"
+    },
+    {
+        heading: "Pokoj vymalovaný na hnědo",
+        desc: "Podívejte se vymalovaný pokoj hnědou barvou.",
+        type: "Pokoj",
+        image: "/Fotky/Gallery/Fotka-22.webp"
+    },
+    {
+        heading: "Vymalovaný pokoj na fialovo",
+        desc: "Podívejte se na vymalovaný pokoj fialovou barvou.",
+        type: "Pokoj",
+        image: "/Fotky/Gallery/Fotka-23.webp"
     }
 ];
 
@@ -67,7 +153,8 @@ const galleryTypes = [
     "Dům",
     "Prostor",
     "Kuchyně",
-    "Jídelna"
+    "Jídelna",
+    "Pokoj"
 ] as const;
 
 type galleryType = typeof galleryTypes[number];

@@ -52,7 +52,7 @@ const About = () => {
                             <Image
                             width={800}
                             height={800}
-                            src="/Fotky/About/Fotka-1.jpg"
+                            src="/Fotky/About/Fotka-1.webp"
                             alt="Přečtě si a dozvíte se o nás mnohem více"
                             loading="lazy"
                             decoding="async"

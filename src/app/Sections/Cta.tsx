@@ -16,7 +16,7 @@ const Cta = () => {
                 <Image
                 height={500}
                 width={500}
-                src="/Fotky/Cta/Cta.jpg"
+                src="/Fotky/Cta/Cta.webp"
                 alt="Potřebujete vymalovat"
                 loading="lazy"
                 decoding="async"

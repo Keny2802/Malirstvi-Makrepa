@@ -25,25 +25,25 @@ const Services = () => {
                     {
                         [
                             {
-                                image: "/Fotky/Services/Fotka-1.jpg",
+                                image: "/Fotky/Services/Fotka-1.webp",
                                 heading: "Malířské práce",
                                 desc: "Poskytujeme malířské práce.",
                                 href: "/sluzby/malirske-prace"
                             },
                             {
-                                image: "/Fotky/Services/Fotka-2.jpg",
+                                image: "/Fotky/Services/Fotka-2.webp",
                                 heading: "Nástřiky umakartů a stěn",
                                 desc: "Poskytujeme nástřiky umakartů a stěn.",
                                 href: "/sluzby/nastriky-umakartu-a-sten"
                             },
                             {
-                                image: "/Fotky/Services/Fotka-3.jpg",
+                                image: "/Fotky/Services/Fotka-3.webp",
                                 heading: "Natěry dveří, zárubní topení",
                                 desc: "Poskytujeme natěry dveří a dalších podobných služeb.",
                                 href: "/sluzby/natery-dveri-zarubni-topeni"
                             },
                             {
-                                image: "/Fotky/Hero/Hero.jpg",
+                                image: "/Fotky/Hero/Hero.webp",
                                 heading: "Malování na klíč",
                                 desc: "Poskytujeme malování na klíč, vymalování jakéhokoliv prostoru do detailu, podle Vašeho přání.",
                                 href: "/sluzby/malovani-na-klic"

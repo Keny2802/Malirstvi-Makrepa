@@ -45,7 +45,7 @@ const Hero = () => {
                 <Image
                 width={1000}
                 height={1000}
-                src="/Fotky/Hero/Hero.jpg"
+                src="/Fotky/Hero/Hero.webp"
                 alt="Profesionální malířské práce bez starostí"
                 loading="eager"
                 decoding="async"

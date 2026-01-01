@@ -106,10 +106,6 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                     href: "/galerie"
                                 },
                                 {
-                                    link: "Realizace",
-                                    href: "/realizace"
-                                },
-                                {
                                     link: "Reference",
                                     href: "/reference"
                                 },

@@ -9,6 +9,8 @@ import About from "./Sections/About";
 import Services from "./Sections/Services";
 import Cta from "./Sections/Cta";
 import Gallery from "./Sections/Gallery";
+import References from "./Sections/References";
+import Pricing from "./Sections/Pricing";
 import Contact from "./Sections/Contact";
 import Footer from "./Sections/Footer";
 
@@ -22,6 +24,8 @@ const Home = () => {
       <Services />
       <Cta />
       <Gallery />
+      <References />
+      <Pricing />
       <Contact />
       <Footer />
     </Fragment>

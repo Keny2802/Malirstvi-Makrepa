@@ -79,10 +79,10 @@ const Hero = () => {
                             Nezávazná kalkulace
                         </Link>
                         <Link
-                        href="#realizace"
+                        href="#reference"
                         className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
-                            setLinkWithoutHash(e, "realizace");
+                            setLinkWithoutHash(e, "reference");
                         }}>
                             Prohlédnout realizace
                         </Link>

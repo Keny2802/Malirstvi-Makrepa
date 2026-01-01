@@ -103,10 +103,6 @@ const Header = () => {
                                     href: "/galerie"
                                 },
                                 {
-                                    link: "Realizace",
-                                    href: "/realizace"
-                                },
-                                {
                                     link: "Reference",
                                     href: "/reference"
                                 },

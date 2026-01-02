@@ -7,6 +7,8 @@ import {
 
 import Wrapper from "../Components/Wrapper";
 // import PageLabel from "../components/pageLabel";
+import Heading from "../Components/Heading";
+import SubHeading from "../Components/Subheading";
 import Icon from "../Components/Icon";
 import ContactInfo from "../Components/ContactInfo";
 
@@ -14,16 +16,16 @@ const Contact = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-200 bg-white shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section"
             id="kontakt">
                 {/* <PageLabel pageLabelText="Kontakt" /> */}
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3">
-                    <h2 className="text-4xl md:text-[42px] lg:text-5xl font-extrabold text-center max-w-7xl">
+                    <Heading>
                         Jsme tu pro vás
-                    </h2>
-                    <p className="text-base md:text-[17px] lg:text-lg font-medium md:max-w-3xl">
+                    </Heading>
+                    <SubHeading>
                         Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky.
-                    </p>
+                    </SubHeading>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-6 md:gap-8 lg:gap-10">
                     <form className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] rounded-3xl w-full md:max-w-250">

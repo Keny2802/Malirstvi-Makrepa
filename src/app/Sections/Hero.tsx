@@ -14,6 +14,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Wrapper from "../Components/Wrapper";
+import HeroHeading from "../Components/HeroHeading";
+import SubHeading from "../Components/Subheading";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import PhoneLink from "../Components/PhoneLink";
 import Icon from "../Components/Icon";
@@ -53,18 +55,18 @@ const Hero = () => {
                 className="w-full h-screen object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-white text-center">
-                    <h1 className="text-4xl md:text-[56px] lg:text-8xl font-black md:max-w-7xl">
+                    <HeroHeading>
                         Profesionální malířské práce bez starostí
                         {/* Čisté stěny za 2 dny */}
                         {/* Malíř, který po sobě uklidí */}
-                    </h1>
+                    </HeroHeading>
                     <Wrapper className="mt-2 md:mt-4 lg:mt-6">
-                        <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
+                        <SubHeading>
                             Pečlivé malování bytů, domů i komerčních prostor s důrazem na čistotu, kvalitu a dlouhou životnost nátěrů.
-                        </p>
-                        <p className="text-base md:text-[17px] lg:text-lg md:max-w-4xl">
+                        </SubHeading>
+                        <SubHeading>
                             Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.
-                        </p>
+                        </SubHeading>
                     </Wrapper>
                     <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link

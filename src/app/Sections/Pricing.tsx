@@ -7,17 +7,23 @@ import {
 import Image from "next/image";
 
 import Wrapper from "../Components/Wrapper";
+import PageLabel from "../Components/PageLabel";
+import FlexCol from "../Components/FlexCol";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexRow from "../Components/FlexRow";
 import PhoneLink from "../Components/PhoneLink";
 import Icon from "../Components/Icon";
+import FixedCta from "../Components/FixedCta";
 
 const Pricing = () => {
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
-                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5">
+                <PageLabel>
+                    Ceník
+                </PageLabel>
+                <FlexCol className="justify-center items-center text-center">
                     <Heading>
                         Férové ceny za ještě férovější malířské služby
                     </Heading>
@@ -26,7 +32,7 @@ const Pricing = () => {
                         {/* Naše ceny jsou férové a výhodné. */}
                         Prohlédněte si náš ceník.
                     </SubHeading>
-                </Wrapper>
+                </FlexCol>
                 <FlexRow>
                     <Wrapper>
                         <Image
@@ -50,7 +56,7 @@ const Pricing = () => {
                     </Wrapper>
                     <Wrapper className="p-4 md:p-5 lg:p-6 rounded-xl bg-white shadow-lg w-full md:max-w-150">
                         <Wrapper className="flex justify-between items-center gap-2 md:gap-2 5 lg:gap-3 w-full md:max-w-150">
-                            <Wrapper className="flex flex-col gap-2 md:gap-2 5 lg:gap-3">
+                        <FlexCol>
                             {
                                 [
                                     "Bílá barva",
@@ -75,8 +81,8 @@ const Pricing = () => {
                                     );
                                 })
                             }
-                        </Wrapper>
-                        <Wrapper className="flex flex-col gap-2 md:gap-2 5 lg:gap-3">
+                        </FlexCol>
+                        <FlexCol>
                             {
                                 [
                                     "od 27 Kč / m²",
@@ -100,7 +106,7 @@ const Pricing = () => {
                                     );
                                 })
                             }
-                        </Wrapper>
+                        </FlexCol>
                         </Wrapper>
                         <p className="mt-2 md:mt-3 lg:mt-4 text-sm md:text-[14.5px] lg:text-[15px] text-start md:text-center w-full md:max-w-75">
                             Ceník je pouze orientační, po podrobnější konzultaci sdělíme konkrétní ceny.
@@ -108,6 +114,7 @@ const Pricing = () => {
                     </Wrapper>
                 </FlexRow>
             </Wrapper>
+            <FixedCta />
         </Fragment>
     );
 };

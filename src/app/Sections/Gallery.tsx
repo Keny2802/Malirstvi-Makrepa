@@ -8,9 +8,12 @@ import Image from "next/image";
 import clsx from "clsx";
 
 import Wrapper from "../Components/Wrapper";
+import PageLabel from "../Components/PageLabel";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
+import FixedCta from "../Components/FixedCta";
 
 const galleryItems = [
     {
@@ -173,16 +176,19 @@ const Gallery = () => {
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
-                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5 text-center">
+                <PageLabel>
+                    Galerie
+                </PageLabel>
+                <FlexCol className="justify-center items-center text-center">
                     <Heading>
                         Naše práce mluví naprosto za vše
                     </Heading>
                     <SubHeading>
                         Podívejte se na galerii naší dosavadní práce.
                     </SubHeading>
-                </Wrapper>
+                </FlexCol>
                 {/* md:flex-row flex-wrap */}
-                <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex justify-center items-center flex-col gap-4 md:gap-5 lg:gap-6">
+                <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
                     <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
                         {
                             galleryTypes.map((galleryType, galleryTypeIndex) => {
@@ -200,7 +206,7 @@ const Gallery = () => {
                             })
                         }
                     </Wrapper>
-                    <FlexRow>
+                    <FlexRow className="flex-wrap">
                         {
                             filteredGallery.map((cardItem, cardItemIndex) => {
                                 return (
@@ -216,22 +222,23 @@ const Gallery = () => {
                                             draggable={false}
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
-                                            <Wrapper className="opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
+                                            <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
                                                 <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
                                                     {cardItem.heading}
                                                 </h3>
                                                 <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
                                                     {cardItem.desc}
                                                 </p>
-                                            </Wrapper>
+                                            </FlexCol>
                                         </Wrapper>
                                     </Fragment>
                                 );
                             })
                         }
                     </FlexRow>
-                </Wrapper>
+                </FlexCol>
             </Wrapper>
+            <FixedCta />
         </Fragment>
     );
 };

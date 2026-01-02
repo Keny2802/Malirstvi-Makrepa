@@ -4,9 +4,12 @@ import {
 import Image from "next/image";
 
 import Wrapper from "../Components/Wrapper";
+import PageLabel from "../Components/PageLabel";
+import FlexCol from "../Components/FlexCol";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexRow from "../Components/FlexRow";
+import FixedCta from "../Components/FixedCta";
 
 const References = () => {
     return (
@@ -14,15 +17,18 @@ const References = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section"
             id="reference">
-                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5 text-center">
+                <PageLabel>
+                    Reference
+                </PageLabel>
+                <FlexCol className="justify-center items-center text-center">
                     <Heading>
                         Reference našich klientů mluví za nás
                     </Heading>
                     <SubHeading>
                         Přečtěte si co nás říkají naši klienti.
                     </SubHeading>
-                </Wrapper>
-                <FlexRow>
+                </FlexCol>
+                <FlexRow className="flex-wrap">
                     {
                         [
                             {
@@ -79,14 +85,14 @@ const References = () => {
                                         draggable={false}
                                         className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                         />
-                                        <Wrapper className="opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-2.5 md:gap-3 lg:gap-4 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
+                                        <FlexCol className="opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 justify-center items-center bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
                                             <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
                                                 {cardItem.heading}
                                             </h3>
                                             <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
                                                 {cardItem.desc}
                                             </p>
-                                        </Wrapper>
+                                        </FlexCol>
                                     </Wrapper>
                                 </Fragment>
                             );
@@ -94,6 +100,7 @@ const References = () => {
                     }
                 </FlexRow>
             </Wrapper>
+            <FixedCta />
         </Fragment>
     );
 };

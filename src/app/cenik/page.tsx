@@ -27,7 +27,6 @@ const Page = () => {
             rootLink="Domov"
             siteHref={pathName}
             siteLink="Ceník"
-            className="p-3 md:p-3.5 lg:p-4 mb-2 md:mb-2.5 lg:mb-3"
             />
             <Pricing />
             <Cta />

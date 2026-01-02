@@ -7,26 +7,32 @@ import {
 import Image from "next/image";
 
 import Wrapper from "../Components/Wrapper";
+import PageLabel from "../Components/PageLabel";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
 import PhoneLink from "../Components/PhoneLink";
 import Icon from "../Components/Icon";
+import FixedCta from "../Components/FixedCta";
 
 const About = () => {
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
-                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5">
-                    <Heading>
+                <PageLabel>
+                    O nás
+                </PageLabel>
+                <FlexCol>
+                     <Heading>
                         Přečtěte si a dozvíte se o nás mnohem více
                     </Heading>
                     <SubHeading>
                         Vědet více informací o malíři pokojů se vždy vyplatí.
                     </SubHeading>
-                </Wrapper>
+                </FlexCol>
                 <FlexRow>
-                    <Wrapper className="flex flex-col gap-2 md:gap-4 lg:gap-6">
+                    <FlexCol>
                         {
                             [
                                 "Už řadu let poskytujeme svým zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
@@ -50,7 +56,7 @@ const About = () => {
                             </Icon>
                             Nezávazná konzultace
                         </PhoneLink>
-                    </Wrapper>
+                    </FlexCol>
                     <Wrapper>
                         <Image
                         width={800}
@@ -65,6 +71,7 @@ const About = () => {
                     </Wrapper>
                 </FlexRow>
             </Wrapper>
+            <FixedCta />
         </Fragment>
     );
 };

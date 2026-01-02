@@ -7,23 +7,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Wrapper from "../Components/Wrapper";
+import PageLabel from "../Components/PageLabel";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
+import FixedCta from "../Components/FixedCta";
 
 const Services = () => {
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
-                <Wrapper className="flex justify-center items-center flex-col gap-1.5 md:gap-2 lg:gap-2.5 text-center">
+                <PageLabel>
+                    Služby
+                </PageLabel>
+                <FlexCol className="justify-center items-center text-center">
                     <Heading>
                         Služby, které poskytujeme našim klientům
                     </Heading>
                     <SubHeading>
                         Podívejte se na všechny naše malířské služby, které poskytujeme
                     </SubHeading>
-                </Wrapper>
+                </FlexCol>
                 <FlexRow>
                     {
                         [
@@ -65,7 +71,7 @@ const Services = () => {
                                         draggable={false}
                                         className="w-full max-h-75 md:w-100 md:h-75 rounded-2xl object-cover"
                                         />
-                                        <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center md:justify-evenly items-center flex-col gap-2 md:gap-4 lg:gap-6 text-center text-white">
+                                        <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>
                                                 <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-bold">
                                                     {cardItem.heading}
@@ -79,7 +85,7 @@ const Services = () => {
                                             className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-75 md:w-40 rounded-md">
                                                 Detail služby
                                             </Link>
-                                        </Wrapper>
+                                        </FlexCol>
                                     </Wrapper>
                                 </Fragment>
                             );
@@ -102,6 +108,7 @@ const Services = () => {
                     </Link>
                 </FlexRow>
             </Wrapper>
+            <FixedCta />
         </Fragment>
     );
 };

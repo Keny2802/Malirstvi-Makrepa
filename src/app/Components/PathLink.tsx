@@ -27,7 +27,7 @@ const PathLink = ({ ...props }: pathLinkType) => {
 
     return (
         <Fragment>
-            <ul className={clsx(`${className} flex items-center gap-2 md:gap-2.5 lg:gap-3 path-links-list`)}>
+            <ul className={clsx(`${className} p-2.5 md:p-3 lg:p-4 mt-3 md:mt-3.5 lg:mt-4 flex items-center gap-2 md:gap-2.5 lg:gap-3 path-links-list`)}>
                 <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] path-item">
                     <Link
                     href={rootHref}

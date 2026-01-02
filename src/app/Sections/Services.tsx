@@ -9,6 +9,7 @@ import Link from "next/link";
 import Wrapper from "../Components/Wrapper";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 
 const Services = () => {
@@ -23,7 +24,7 @@ const Services = () => {
                         Podívejte se na všechny naše malířské služby, které poskytujeme
                     </SubHeading>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-5 lg:gap-6">
+                <FlexRow>
                     {
                         [
                             {
@@ -84,8 +85,8 @@ const Services = () => {
                             );
                         })
                     }
-                </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row gap-3">
+                </FlexRow>
+                <FlexRow>
                     <Link
                     href="/sluzby"
                     className="p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 border border-gray-200 bg-white text-black text-center w-full md:w-75 rounded-md">
@@ -99,7 +100,7 @@ const Services = () => {
                     }}>
                         Kontaktujte nás
                     </Link>
-                </Wrapper>
+                </FlexRow>
             </Wrapper>
         </Fragment>
     );

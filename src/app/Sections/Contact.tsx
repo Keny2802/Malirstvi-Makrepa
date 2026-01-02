@@ -9,6 +9,7 @@ import Wrapper from "../Components/Wrapper";
 // import PageLabel from "../components/pageLabel";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 import Icon from "../Components/Icon";
 import ContactInfo from "../Components/ContactInfo";
 
@@ -27,7 +28,7 @@ const Contact = () => {
                         Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky.
                     </SubHeading>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-6 md:gap-8 lg:gap-10">
+                <FlexRow>
                     <form className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] rounded-3xl w-full md:max-w-250">
                         <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-2.5 lg:gap-3 text-center">
                             <h3 className="text-2xl md:text-[28px] lg:text-[32px] font-semibold text-white">
@@ -37,7 +38,7 @@ const Contact = () => {
                                 Ozveme se co nejdříve a domluvíme další postup.
                             </p>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 text-black">
+                        <FlexRow>
                             <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full">
                                 <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3 w-full form-group">
                                     <label
@@ -117,7 +118,7 @@ const Contact = () => {
                                 className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full max-w-120 min-h-50 h-full"
                                 id="message"></textarea>
                             </Wrapper>
-                        </Wrapper>
+                        </FlexRow>
                         <button className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
                             <Icon className="cursor-pointer">
@@ -126,7 +127,7 @@ const Contact = () => {
                         </button>
                     </form>
                     <ContactInfo />
-                </Wrapper>
+                </FlexRow>
             </Wrapper>
         </Fragment>
     );

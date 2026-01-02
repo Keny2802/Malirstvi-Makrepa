@@ -16,6 +16,7 @@ import Link from "next/link";
 import Wrapper from "../Components/Wrapper";
 import HeroHeading from "../Components/HeroHeading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import PhoneLink from "../Components/PhoneLink";
 import Icon from "../Components/Icon";
@@ -68,7 +69,7 @@ const Hero = () => {
                             Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.
                         </SubHeading>
                     </Wrapper>
-                    <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
+                    <FlexRow>
                         <Link
                         href="#kalkulace"
                         className="p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
@@ -88,7 +89,7 @@ const Hero = () => {
                         }}>
                             Prohlédnout realizace
                         </Link>
-                    </Wrapper>
+                    </FlexRow>
                 </Wrapper>
             </Wrapper>
             <Wrapper className="z-100 fixed right-5 bottom-6 flex items-center flex-col gap-2 md:gap-3 lg:gap-4">

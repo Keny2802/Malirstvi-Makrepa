@@ -6,6 +6,7 @@ import Image from "next/image";
 import Wrapper from "../Components/Wrapper";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 
 const References = () => {
     return (
@@ -21,7 +22,7 @@ const References = () => {
                         Přečtěte si co nás říkají naši klienti.
                     </SubHeading>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex justify-center items-center flex-wrap flex-col md:flex-row gap-4 md:gap-5 lg:gap-6">
+                <FlexRow>
                     {
                         [
                             {
@@ -91,7 +92,7 @@ const References = () => {
                             );
                         })
                     }
-                </Wrapper>
+                </FlexRow>
             </Wrapper>
         </Fragment>
     );

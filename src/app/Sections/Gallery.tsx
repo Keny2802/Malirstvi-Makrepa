@@ -10,6 +10,7 @@ import clsx from "clsx";
 import Wrapper from "../Components/Wrapper";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 
 const galleryItems = [
     {
@@ -199,7 +200,7 @@ const Gallery = () => {
                             })
                         }
                     </Wrapper>
-                    <Wrapper className="flex justify-center items-center flex-wrap flex-col md:flex-row gap-4 md:gap-5 lg:gap-6">
+                    <FlexRow>
                         {
                             filteredGallery.map((cardItem, cardItemIndex) => {
                                 return (
@@ -228,7 +229,7 @@ const Gallery = () => {
                                 );
                             })
                         }
-                    </Wrapper>
+                    </FlexRow>
                 </Wrapper>
             </Wrapper>
         </Fragment>

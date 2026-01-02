@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import Wrapper from "../Components/Wrapper";
 import Logo from "../Components/Logo";
+import FlexRow from "../Components/FlexRow";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import ContactInfo from "../Components/ContactInfo";
 
@@ -20,7 +21,7 @@ const Footer = () => {
             id="footer">
                 <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
                     <Logo />
-                    <Wrapper className="flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
+                    <FlexRow className="justify-evenly">
                         <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4">
                             <h3 className="text-xl md:text-[22px] lg:text-2xl font-semibold">
                                 Nabídka
@@ -74,7 +75,7 @@ const Footer = () => {
                             </ul>
                         </Wrapper>
                         <ContactInfo />
-                    </Wrapper>
+                    </FlexRow>
                 </Wrapper>
                 <Wrapper className="p-4 md:p-6 lg:p-8 mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2 text-center font-medium">
                     <p className="text-[15px] md:text-base lg:text-lg">

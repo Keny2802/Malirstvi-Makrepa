@@ -9,6 +9,7 @@ import Image from "next/image";
 import Wrapper from "../Components/Wrapper";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
+import FlexRow from "../Components/FlexRow";
 import PhoneLink from "../Components/PhoneLink";
 import Icon from "../Components/Icon";
 
@@ -24,7 +25,7 @@ const About = () => {
                         Vědet více informací o malíři pokojů se vždy vyplatí.
                     </SubHeading>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex justify-center flex-col md:flex-row gap-4 md:gap-5 lg:gap-6">
+                <FlexRow>
                     <Wrapper className="flex flex-col gap-2 md:gap-4 lg:gap-6">
                         {
                             [
@@ -50,19 +51,19 @@ const About = () => {
                             Nezávazná konzultace
                         </PhoneLink>
                     </Wrapper>
-                        <Wrapper>
-                            <Image
-                            width={800}
-                            height={800}
-                            src="/Fotky/About/Fotka-1.webp"
-                            alt="Přečtě si a dozvíte se o nás mnohem více"
-                            loading="lazy"
-                            decoding="async"
-                            draggable={false}
-                            className="rounded-2xl"
-                            />
-                        </Wrapper>
-                </Wrapper>
+                    <Wrapper>
+                        <Image
+                        width={800}
+                        height={800}
+                        src="/Fotky/About/Fotka-1.webp"
+                        alt="Přečtě si a dozvíte se o nás mnohem více"
+                        loading="lazy"
+                        decoding="async"
+                        draggable={false}
+                        className="rounded-2xl"
+                        />
+                    </Wrapper>
+                </FlexRow>
             </Wrapper>
         </Fragment>
     );

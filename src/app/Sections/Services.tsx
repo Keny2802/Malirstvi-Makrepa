@@ -87,7 +87,7 @@ const Services = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="w-full h-full rounded-2xl object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                        className="rounded-2xl object-cover cursor-pointer"
                                         />
                                         <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>

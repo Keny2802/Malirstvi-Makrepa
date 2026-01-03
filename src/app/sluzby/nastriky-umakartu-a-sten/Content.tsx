@@ -106,15 +106,15 @@ const Content = () => {
             folderHref="/sluzby"
             folderLink="Služby"
             siteHref={pathName}
-            siteLink="Nástřiky umakartů a stěn"
+            siteLink="Nástřiky umakartu a stěn"
             />
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md">
                 <PageLabel>
-                    Nástřiky umakartů a stěn
+                    Nástřiky umakartu a stěn
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Nástřiky umakartů a stěn podle Vašich představ
+                        Nástřiky umakartu a stěn podle Vašich představ
                     </Heading>
                     <Subheading>
                         Představte si kdyby malíř pokojů dělal práci jakou si Vy představujete.

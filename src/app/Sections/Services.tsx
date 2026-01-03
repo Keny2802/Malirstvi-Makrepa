@@ -41,8 +41,8 @@ const Services = () => {
                             },
                             {
                                 image: "/Fotky/Services/Fotka-2.webp",
-                                heading: "Nástřiky umakartů a stěn",
-                                desc: "Poskytujeme nástřiky umakartů a stěn.",
+                                heading: "Nástřiky umakartu a stěn",
+                                desc: "Poskytujeme nástřiky umakartu a stěn.",
                                 href: "/sluzby/nastriky-umakartu-a-sten"
                             },
                             {
@@ -87,7 +87,7 @@ const Services = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-2xl object-cover cursor-pointer"
+                                        className="w-full max-h-75 md:w-100 md:h-75 rounded-2xl object-cover cursor-pointer"
                                         />
                                         <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>

@@ -23,12 +23,12 @@ const About = () => {
                 <PageLabel>
                     O nás
                 </PageLabel>
-                <FlexCol>
+                <FlexCol className="justify-center items-center text-center">
                      <Heading>
                         Přečtěte si a dozvíte se o nás mnohem více
                     </Heading>
                     <SubHeading>
-                        Vědet více informací o malíři pokojů se vždy vyplatí.
+                        Vědět více informací o malíři pokojů se vždy vyplatí.
                     </SubHeading>
                 </FlexCol>
                 <FlexRow>

@@ -7,6 +7,9 @@ import {
     Activity
 } from "react";
 import {
+    usePathname
+} from "next/navigation";
+import {
     DevicePhoneMobileIcon
 } from "@heroicons/react/24/solid";
 import clsx from "clsx";
@@ -25,6 +28,7 @@ interface componentProps {
 const MobileMenu = ({ ...props }: componentProps) => {
     const [isActiveLink, setActiveLink] = useState<string>("");
     const dynamicYear = new Date().getFullYear();
+    const pathName = usePathname();
     
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
@@ -81,15 +85,30 @@ const MobileMenu = ({ ...props }: componentProps) => {
                     </Wrapper>
                     <ul className="flex flex-col gap-3 text-[#313131] mobile-header-list">
                         <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
-                            <Link
-                            href="#domu"
-                            onClick={(e) => {
-                                setLinkWithoutHash(e, "domu");
-                            }}
-                            className={clsx(`${isActiveLink === "domu" && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0.5_1] text-[#1d4ed8]"} text-[#1d4ed8] text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]`)}
-                            >
-                                Domů
-                            </Link>
+                            {
+                                pathName === "/" ? (
+                                    <Fragment>
+                                        <Link
+                                        href="#domu"
+                                        onClick={(e) => {
+                                            setLinkWithoutHash(e, "domu");
+                                        }}
+                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                                        >
+                                            Domů
+                                        </Link>
+                                    </Fragment>
+                                ) : (
+                                    <Fragment>
+                                        <Link
+                                        href="/#domu"
+                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                                        >
+                                            Domů
+                                        </Link>
+                                    </Fragment>
+                                )
+                            }
                         </li>
                         {
                             [

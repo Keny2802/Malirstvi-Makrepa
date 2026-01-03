@@ -20,7 +20,7 @@ const PageLabel = ({ ...props }: pageLabelProps) => {
     return (
         <Fragment>
             <Wrapper>
-                <p className={clsx(`${className || ""} text-[#313131] text-base md:text-lg lg:text-xl uppercase font-bold page-label-text`)}>
+                <p className={clsx(`${className || ""} mb-2 md:mb-2.5 lg:mb-3 text-[#313131] text-base md:text-lg lg:text-xl uppercase font-bold page-label-text`)}>
                     {children}
                 </p>
             </Wrapper>

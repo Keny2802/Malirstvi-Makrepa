@@ -7,6 +7,9 @@ import {
     Fragment
 } from "react";
 import {
+    usePathname
+} from "next/navigation";
+import {
     DevicePhoneMobileIcon,
     Bars3Icon,
     MinusIcon
@@ -25,6 +28,7 @@ const Header = () => {
     const [isHeaderScrolled, setHeaderScrolled] = useState<boolean>(false);
     const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
     const [isActiveLink, setActiveLink] = useState<string>("");
+    const pathName = usePathname();
 
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
@@ -78,15 +82,30 @@ const Header = () => {
                     <Logo />
                     <ul className="hidden lg:flex justify-center items-center gap-4 md:gap-5 lg:gap-6 header-list">
                         <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
-                            <Link
-                            href="#domu"
-                            onClick={(e) => {
-                                setLinkWithoutHash(e, "domu");
-                            }}
-                            className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
-                            >
-                                Domů
-                            </Link>
+                            {
+                                pathName === "/" ? (
+                                    <Fragment>
+                                        <Link
+                                        href="#domu"
+                                        onClick={(e) => {
+                                            setLinkWithoutHash(e, "domu");
+                                        }}
+                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                                        >
+                                            Domů
+                                        </Link>
+                                    </Fragment>
+                                ) : (
+                                    <Fragment>
+                                        <Link
+                                        href="/#domu"
+                                        className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
+                                        >
+                                            Domů
+                                        </Link>
+                                    </Fragment>
+                                )
+                            }
                         </li>
                         {
                             [

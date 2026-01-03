@@ -30,7 +30,7 @@ const Services = () => {
                         Podívejte se na všechny naše malířské služby, které poskytujeme
                     </SubHeading>
                 </FlexCol>
-                <FlexRow>
+                <FlexRow className="flex-wrap">
                     {
                         [
                             {
@@ -44,6 +44,24 @@ const Services = () => {
                                 heading: "Nástřiky umakartů a stěn",
                                 desc: "Poskytujeme nástřiky umakartů a stěn.",
                                 href: "/sluzby/nastriky-umakartu-a-sten"
+                            },
+                            {
+                                image: "/Fotky/Services/Fotka-2.webp",
+                                heading: "Dekorativní malby",
+                                desc: "Poskytujeme dekorativní malby.",
+                                href: "/sluzby/dekorativni-malby"
+                            },
+                            {
+                                image: "/Fotky/Services/Fotka-15.webp",
+                                heading: "Španělská technologie Gotele",
+                                desc: "Poskytujeme Španělskou technologii gotele.",
+                                href: "/sluzby/spanelska-technologie-gotele"
+                            },
+                            {
+                                image: "/Fotky/Services/Fotka-2.webp",
+                                heading: "Hladké nástřiky",
+                                desc: "Poskytujeme hladké nástřiky.",
+                                href: "/sluzby/hladke-nastriky"
                             },
                             {
                                 image: "/Fotky/Services/Fotka-3.webp",

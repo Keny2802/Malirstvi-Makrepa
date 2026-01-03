@@ -216,7 +216,7 @@ const Gallery = () => {
                                             width={250}
                                             height={250}
                                             src={cardItem.image}
-                                            alt={`Fotka - ${cardItem.heading}`}
+                                            alt={`${cardItem.heading}`}
                                             loading="lazy"
                                             decoding="async"
                                             draggable={false}

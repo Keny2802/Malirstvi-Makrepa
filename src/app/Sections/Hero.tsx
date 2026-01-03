@@ -70,7 +70,7 @@ const Hero = () => {
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "reference");
                             }}>
-                                Prohlédnout realizace
+                                Prohlédnout reference
                             </Link>
                         </FlexRow>
                     </FlexCol>

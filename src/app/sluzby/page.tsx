@@ -1,37 +1,21 @@
-"use client";
-
 import {
     Fragment
 } from "react";
 import {
-    usePathname
-} from "next/navigation";
+    Metadata
+} from "next";
 
-import ContactHeader from "../Components/ContactHeader";
-import Header from "../Components/Header";
-import PathLink from "../Components/PathLink";
-import Services from "../Sections/Services";
-import Cta from "../Sections/Cta";
-import Contact from "../Sections/Contact";
-import Footer from "../Sections/Footer";
+import Content from "./Content";
+
+export const metadata: Metadata = {
+    title: "",
+    description: ""
+};
 
 const Page = () => {
-    const pathName = usePathname();
-
     return (
         <Fragment>
-            <ContactHeader />
-            <Header />
-            <PathLink
-            rootHref="/"
-            rootLink="Domov"
-            siteHref={pathName}
-            siteLink="Služby"
-            />
-            <Services />
-            <Cta />
-            <Contact />
-            <Footer />
+            <Content />
         </Fragment>
     );
 };

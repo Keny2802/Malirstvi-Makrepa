@@ -50,16 +50,17 @@ const FixedCta = ({ ...props }: FixedCtaType) => {
                 {
                     isWindowScrolled && (
                         <Fragment>
-                            <Link
-                            href="#contact-header"
-                            className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white rounded-full transition-colors ease-in-out duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-200"
+                            <button
+                            className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white rounded-full cursor-pointer focus:outline-none transition-colors ease-in-out duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-200"
                             onClick={(e) => {
-                                setLinkWithoutHash(e, "contact-header");
+                                document.getElementById("domu")?.scrollIntoView({
+                                    behavior: "smooth"
+                                });
                             }}>
                                 <Icon>
                                     <ChevronDoubleUpIcon />
                                 </Icon>
-                            </Link>
+                            </button>
                         </Fragment>
                     )
                 }

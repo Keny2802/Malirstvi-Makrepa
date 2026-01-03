@@ -28,7 +28,7 @@ const Footer = () => {
                                 Nabídka
                             </h3>
                             <FlexCol>
-                                <ul className="eader-list">
+                                <ul className="header-list">
                                     <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                         <Link
                                         href="#domu"

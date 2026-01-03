@@ -35,7 +35,7 @@ const About = () => {
                     <FlexCol>
                         {
                             [
-                                "Už řadu let poskytujeme svým zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
+                                "Už téměř 19 let poskytujeme svým zodpovědným přístupem zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
                                 "Naší předností je dostatek zkušeností a praxe, proto na veškeré práce poskytujeme prodlouženou záruku 3 roky. Svou práci bereme zodpovědně a řídíme se tím, že nejdůležitější v naší práci jste Vy - spokojení zákazníci.",
                                 "Při práci používáme moderní kvalitní barvy a materiály a využíváme nové technologie."
                             ].map((textBlock, textBlockIndex) => {

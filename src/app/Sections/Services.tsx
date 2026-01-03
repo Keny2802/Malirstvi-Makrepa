@@ -78,7 +78,7 @@ const Services = () => {
                         ].map((cardItem, cardItemIndex) => {
                             return (
                                 <Fragment key={cardItemIndex}>
-                                    <Wrapper className="relative w-full max-h-75 md:w-100 md:h-75">
+                                    <Wrapper className="group relative w-full max-h-75 md:w-100 md:h-75">
                                         <Image
                                         width={350}
                                         height={350}
@@ -87,7 +87,7 @@ const Services = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="w-full max-h-75 md:w-100 md:h-75 rounded-2xl object-cover"
+                                        className="w-full h-full rounded-2xl object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
                                         />
                                         <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>

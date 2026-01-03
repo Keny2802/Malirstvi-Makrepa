@@ -13,6 +13,7 @@ import SubHeading from "../Components/Subheading";
 import FlexRow from "../Components/FlexRow";
 import Icon from "../Components/Icon";
 import ContactInfo from "../Components/ContactInfo";
+import MainFixedBanner from "../Components/MainFixedBanner";
 import FixedCta from "../Components/FixedCta";
 
 const Contact = () => {
@@ -134,7 +135,10 @@ const Contact = () => {
                     <ContactInfo />
                 </FlexRow>
             </Wrapper>
-            <FixedCta />
+            <FlexRow className="justify-between">
+                <MainFixedBanner />
+                <FixedCta />
+            </FlexRow>
         </Fragment>
     );
 };

@@ -7,7 +7,6 @@ import {
 import {
     usePathname
 } from "next/navigation";
-import Image from "next/image";
 import clsx from "clsx";
 
 import ContactHeader from "@/app/Components/ContactHeader";
@@ -17,6 +16,7 @@ import Wrapper from "@/app/Components/Wrapper";
 import PageLabel from "@/app/Components/PageLabel";
 import FlexCol from "@/app/Components/FlexCol";
 import FlexRow from "@/app/Components/FlexRow";
+import Img from "@/app/Components/Img";
 import Heading from "@/app/Components/Heading";
 import Subheading from "@/app/Components/Subheading";
 import Cta from "@/app/Sections/Cta";
@@ -144,14 +144,12 @@ const Page = () => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
-                                            <Image
+                                            <Img
                                             width={250}
                                             height={250}
                                             src={cardItem.image}
                                             alt={cardItem.heading}
-                                            loading="lazy"
-                                            decoding="async"
-                                            draggable={false}
+                                            effect={true}
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">

@@ -25,19 +25,25 @@ const About = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Přečtěte si a dozvíte se o nás mnohem více
+                        {/* Přečtěte si a dozvíte se o nás mnohem více */}
+                        Kdo jsme a proč nám zákazníci důvěřují
                     </Heading>
                     <SubHeading>
-                        Vědět více informací o malíři pokojů se vždy vyplatí.
+                        {/* Vědět více informací o malíři pokojů se vždy vyplatí. */}
+                        Už téměř 19 let přinášíme kvalitní malířské práce, na které se můžete spolehnout.
                     </SubHeading>
                 </FlexCol>
                 <FlexRow>
                     <FlexCol>
                         {
                             [
-                                "Už téměř 19 let poskytujeme svým zodpovědným přístupem zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
-                                "Naší předností je dostatek zkušeností a praxe, proto na veškeré práce poskytujeme prodlouženou záruku 3 roky. Svou práci bereme zodpovědně a řídíme se tím, že nejdůležitější v naší práci jste Vy - spokojení zákazníci.",
-                                "Při práci používáme moderní kvalitní barvy a materiály a využíváme nové technologie."
+                                // "Už téměř 19 let poskytujeme svým zodpovědným přístupem zákazníkům spolehlivou práci v oboru malování pokojů, interiérů, nátěrů, dekorativních, plastických nástřiků, v moderní renovaci povrchů bytových, umakartových jader bez bourání.",
+                                // "Naší předností je dostatek zkušeností a praxe, proto na veškeré práce poskytujeme prodlouženou záruku 3 roky. Svou práci bereme zodpovědně a řídíme se tím, že nejdůležitější v naší práci jste Vy - spokojení zákazníci.",
+                                // "Při práci používáme moderní kvalitní barvy a materiály a využíváme nové technologie."
+
+                                "Už téměř 19 let poskytujeme zákazníkům kvalitní a spolehlivé malířské práce s důrazem na preciznost, čistotu a zodpovědný přístup. Specializujeme se na malování pokojů a interiérů, nátěry, dekorativní a plastické nástřiky i moderní renovace povrchů bytových a umakartových jader bez nutnosti bourání.",
+                                "Naší největší předností jsou bohaté zkušenosti a dlouholetá praxe, díky kterým si můžeme dovolit poskytovat na veškeré práce prodlouženou záruku 3 roky. Ke každé zakázce přistupujeme individuálně a s maximální pečlivostí, protože věříme, že spokojený zákazník je základem dobře odvedené práce.",
+                                "Při realizaci zakázek používáme moderní technologie, kvalitní barvy a ověřené materiály, které zajišťují dlouhou životnost, perfektní vzhled a vysokou odolnost výsledného povrchu."
                             ].map((textBlock, textBlockIndex) => {
                                 return (
                                     <Fragment key={textBlockIndex}>

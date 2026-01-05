@@ -25,52 +25,62 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Koupelna se zdí s červeným umakartovým nástřikem",
+        heading: "Umakartová koupelna v červeném odstínu",
+        desc: "Výrazný červený nástřik umakartu dodává koupelně moderní a svěží vzhled.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-1.webp"
     },
     {
-        heading: "Koupelna s umakartovými dlaždičkami",
+        heading: "Koupelna s umakartovými obklady",
+        desc: "Obnovené umakartové dlaždičky pomocí nástřiku pro čistý a jednotný vzhled.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-2.webp"
     },
     {
-        heading: "Chodba s umakartovou zdí",
+        heading: "Chodba s umakartovou stěnou",
+        desc: "Praktická a odolná úprava umakartové stěny v chodbě bytového domu.",
         type: "Chodba",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-3.webp"
     },
     {
-        heading: "Obývací pokoj s elegantním umakartovým nástřikem",
+        heading: "Obývací pokoj s umakartovým nástřikem",
+        desc: "Elegantní povrchová úprava stěn pro moderní a čistý interiér.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-4.webp"
     },
     {
-        heading: "Stěna se Španělskou technologií Gotele",
+        heading: "Stěna se španělskou technologií Gotele",
+        desc: "Dekorativní struktura Gotele vytváří zajímavý a odolný povrch stěny.",
         type: "Stěna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-5.webp"
     },
     {
         heading: "Koupelna se žlutým umakartovým nástřikem",
+        desc: "Světlý žlutý odstín oživuje koupelnu a dodává jí příjemnou atmosféru.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-6.webp"
     },
     {
-        heading: "Stěna s umakartovým nástřikem",
+        heading: "Umakartová stěna v koupelně",
+        desc: "Hladký nástřik umakartu pro snadnou údržbu a moderní vzhled.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-7.webp"
     },
     {
-        heading: "Červená stěna s umakartovým nástřikem se Špenělskou technologií Gotele",
+        heading: "Červený umakart se strukturou Gotele",
+        desc: "Kombinace výrazné barvy a španělské technologie Gotele pro originální vzhled.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-8.webp"
     },
     {
         heading: "Toaleta s umakartovým nástřikem",
+        desc: "Rychlá a čistá obnova toalety bez nutnosti náročné rekonstrukce.",
         type: "Toaleta",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-9.webp"
     },
     {
-        heading: "Stěna s poličkou pro šampóny s červeným nástřikem a se Španělskou technologií Gotele",
+        heading: "Umakartová stěna s poličkou a Gotele",
+        desc: "Praktické řešení stěny s poličkou na šampony a dekorativní strukturou.",
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-10.webp"
     },
@@ -114,10 +124,12 @@ const Content = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Nástřiky umakartu a stěn podle Vašich představ
+                        {/* Nástřiky umakartu a stěn podle Vašich představ */}
+                        Nástřiky umakartů a stěn bez bourání
                     </Heading>
                     <Subheading>
-                        Představte si kdyby malíř pokojů dělal práci jakou si Vy představujete.
+                        {/* Představte si kdyby malíř pokojů dělal práci jakou si Vy představujete. */}
+                        Rychlá a čistá obnova umakartových jader a stěn pomocí profesionálního nástřiku. Moderní vzhled, dlouhá životnost a minimum nepořádku.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
@@ -153,9 +165,12 @@ const Content = () => {
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
+                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                    {cardItem.desc}
+                                                </p>
                                             </FlexCol>
                                         </Wrapper>
                                     </Fragment>

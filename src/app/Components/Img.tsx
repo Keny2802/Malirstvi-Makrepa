@@ -13,6 +13,7 @@ interface ImgType {
     src: string;
     alt: string;
     effect: boolean;
+    onClick?: (e: React.MouseEvent<HTMLImageElement>) => void;
 };
 
 const Img = ({ ...props }: ImgType) => {
@@ -22,7 +23,8 @@ const Img = ({ ...props }: ImgType) => {
         height,
         src,
         alt,
-        effect
+        effect,
+        onClick
     } = props;
 
     return (
@@ -39,6 +41,7 @@ const Img = ({ ...props }: ImgType) => {
                 className={clsx(
                 effect ? "w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-110" : null,
                 className)}
+                onClick={onClick}
                 />
             </Wrapper>
         </Fragment>

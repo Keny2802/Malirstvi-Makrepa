@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <Fragment>
             <Wrapper
-            className="border-t border-gray-200 bg-white shadow-m"
+            className="border-t border-gray-200 bg-white shadow-md section"
             id="footer">
                 <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
                     <Logo />

@@ -11,6 +11,7 @@ import FlexCol from "../Components/FlexCol";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexRow from "../Components/FlexRow";
+import Flex from "../Components/Flex";
 import Icon from "../Components/Icon";
 import ContactInfo from "../Components/ContactInfo";
 import MainFixedBanner from "../Components/MainFixedBanner";
@@ -28,10 +29,12 @@ const Contact = () => {
                 {/* <PageLabel pageLabelText="Kontakt" /> */}
                 <FlexCol className="justify-center items-center text-center">
                     <Heading>
-                        Jsme tu pro vás
+                        {/* Jsme tu pro vás */}
+                        Máte otázky? Napište nám!
                     </Heading>
                     <SubHeading>
-                        Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky.
+                        {/* Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky. */}
+                        Rychlá a spolehlivá komunikace pro vaše malířské projekty.
                     </SubHeading>
                 </FlexCol>
                 <FlexRow className="items-center">
@@ -125,20 +128,20 @@ const Contact = () => {
                                 </FlexCol>
                             </FlexCol>
                         </FlexRow>
-                        <button className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
-                            Zaslat zprávu
-                            <Icon className="cursor-pointer">
-                                <ArrowTurnDownRightIcon />
-                            </Icon>
+                        <button className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
+                            <Flex className="justify-center gap-2 md:gap-2.5 lg:gap-3">
+                                Zaslat zprávu
+                                <Icon className="cursor-pointer">
+                                    <ArrowTurnDownRightIcon />
+                                </Icon>
+                            </Flex>
                         </button>
                     </form>
                     <ContactInfo />
                 </FlexRow>
             </Wrapper>
-            <FlexRow className="justify-between">
-                <MainFixedBanner />
-                <FixedCta />
-            </FlexRow>
+            <MainFixedBanner />
+            <FixedCta />
         </Fragment>
     );
 };

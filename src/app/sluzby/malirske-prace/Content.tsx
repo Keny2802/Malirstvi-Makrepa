@@ -25,55 +25,65 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Vymalovaný pokoj v teplé tmavě modré barvě.",
+        heading: "Pokoj v tmavě modrých tónech",
+        desc: "Elegantní malba v teplé tmavě modré barvě, která dodává místnosti klid a moderní vzhled.",
         type: "Pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
     },
     {
-        heading: "Vymalovaný pokoj v elegantní zelené barvě.",
+        heading: "Pokoj v přírodní zelené barvě",
+        desc: "Jemná zelená malba vytváří harmonické a uklidňující prostředí pro každodenní bydlení.",
         type: "Pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
     },
     {
-        heading: "Vymalovaný útulný obývací pokoj.",
+        heading: "Útulný obývací pokoj po malování",
+        desc: "Precizně vymalovaný obývací pokoj s důrazem na čisté linie a rovnoměrné krytí.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
     },
     {
-        heading: "Čistě a poctvivě vymalovaná chodba v bytovém domě.",
+        heading: "Chodba v bytovém domě",
+        desc: "Čisté a poctivě provedené malířské práce v chodbě bytového domu bez zbytečného nepořádku.",
         type: "Chodba",
         image: "/Fotky/Services/malirske-prace/Fotka-4.webp"
     },
     {
-        heading: "Moderně vymalovaný obývací pokoj červeně natřenou barvou.",
+        heading: "Moderní obývací pokoj v červené barvě",
+        desc: "Výrazná červená malba dodává prostoru energii a moderní charakter.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-5.webp"
     },
     {
-        heading: "Vymalovaná Mateřská školka",
+        heading: "Mateřská škola po kompletním vymalování",
+        desc: "Bezpečné a svěží barvy vhodné pro dětské prostory s důrazem na kvalitu a hygienu.",
         type: "Prostor",
         image: "/Fotky/Services/malirske-prace/Fotka-6.webp"
     },
     {
-        heading: "Obyvací pokoj natřeno červenou barvou.",
+        heading: "Obývací pokoj v červených tónech",
+        desc: "Precizní malířské práce s rovnoměrným nátěrem a sytým odstínem barvy.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-7.webp"
     },
     {
-        heading: "Útulný obývací pokoj vymalovaný růžovou barvou.",
+        heading: "Obývací pokoj v jemné růžové barvě",
+        desc: "Útulné a světlé řešení obývacího pokoje s jemným barevným laděním.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-8.webp"
     },
     {
-        heading: "Chodba vymalovaná s malířskou poctivostí.",
+        heading: "Chodba po profesionálním vymalování",
+        desc: "Důkladně připravené stěny a kvalitní malba s dlouhou životností.",
         type: "Chodba",
         image: "/Fotky/Services/malirske-prace/Fotka-9.webp"
     },
     {
-        heading: "Vymalovaný obývací pokoj uprostřed toho hezký krb.",
+        heading: "Obývací pokoj s krbem",
+        desc: "Vymalovaný obývací pokoj s dominantním krbem a čistým, elegantním provedením.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-10.webp"
-    },
+    }
 ];
 
 const galleryTypes = [
@@ -113,10 +123,12 @@ const Content = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Kvalitní malířské práce
+                        {/* Kvalitní malířské práce */}
+                        Malířské práce na klíč
                     </Heading>
                     <Subheading>
-                        Podívejte se na naše již realizované kvalitní a zodpovědné malířské práce.
+                        {/* Podívejte se na naše již realizované kvalitní a zodpovědné malířské práce. */}
+                        Kvalitní malování bytů, domů i komerčních prostor s důrazem na čistotu, detail a dlouhou životnost.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
@@ -152,9 +164,12 @@ const Content = () => {
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
+                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                    {cardItem.desc}
+                                                </p>
                                             </FlexCol>
                                         </Wrapper>
                                     </Fragment>

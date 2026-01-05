@@ -24,10 +24,10 @@ const Services = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                     <Heading>
-                        Služby, které poskytujeme našim klientům
+                        Naše služby
                     </Heading>
                     <SubHeading>
-                        Podívejte se na všechny naše malířské služby, které poskytujeme
+                        Kompletní malířské a natěračské práce pro byty, domy i komerční prostory.
                     </SubHeading>
                 </FlexCol>
                 <FlexRow className="flex-wrap">
@@ -36,43 +36,43 @@ const Services = () => {
                             {
                                 image: "/Fotky/Services/Fotka-1.webp",
                                 heading: "Malířské práce",
-                                desc: "Poskytujeme malířské práce.",
+                                desc: "Pečlivé malování interiérů s důrazem na kvalitu, čistotu a dlouhou životnost.",
                                 href: "/sluzby/malirske-prace"
                             },
                             {
-                                image: "/Fotky/Services/Fotka-2.webp",
+                                image: "/Fotky/Services/nastriky-umakartu/Fotka-1.webp",
                                 heading: "Nástřiky umakartu a stěn",
-                                desc: "Poskytujeme nástřiky umakartu a stěn.",
+                                desc: "Renovace umakartových jader bez bourání - rychle, čistě a precizně.",
                                 href: "/sluzby/nastriky-umakartu-a-sten"
                             },
                             {
-                                image: "/Fotky/Services/Fotka-2.webp",
+                                image: "/Fotky/Services/dekorativni-malby/Fotka (7).webp",
                                 heading: "Dekorativní malby",
-                                desc: "Poskytujeme dekorativní malby.",
+                                desc: "Originální a stylové malby, které dodají vašim stěnám osobitý vzhled.",
                                 href: "/sluzby/dekorativni-malby"
                             },
                             {
                                 image: "/Fotky/Services/Fotka-15.webp",
                                 heading: "Španělská technologie Gotele",
-                                desc: "Poskytujeme Španělskou technologii gotele.",
+                                desc: "Moderní stěny s elegantní strukturou bez nerovností a prasklin.",
                                 href: "/sluzby/spanelska-technologie-gotele"
                             },
                             {
-                                image: "/Fotky/Services/Fotka-2.webp",
+                                image: "/Fotky/Services/hladke-nastriky/Fotka-4.webp",
                                 heading: "Hladké nástřiky",
-                                desc: "Poskytujeme hladké nástřiky.",
+                                desc: "Precizní hladké nástřiky pro rovnoměrné a elegantní stěny.",
                                 href: "/sluzby/hladke-nastriky"
                             },
                             {
                                 image: "/Fotky/Services/Fotka-3.webp",
                                 heading: "Natěry dveří, zárubní topení",
-                                desc: "Poskytujeme natěry dveří a dalších podobných služeb.",
+                                desc: "Precizní nátěry pro krásný vzhled a dlouhou životnost dveří, zárubní i topení.",
                                 href: "/sluzby/natery-dveri-zarubni-topeni"
                             },
                             {
                                 image: "/Fotky/Hero/Hero.webp",
                                 heading: "Malování na klíč",
-                                desc: "Poskytujeme malování na klíč, vymalování jakéhokoliv prostoru do detailu, podle Vašeho přání.",
+                                desc: "Kompletní malířské práce od přípravy až po finální úklid - bez starostí..",
                                 href: "/sluzby/malovani-na-klic"
                             },
                         ].map((cardItem, cardItemIndex) => {
@@ -91,7 +91,7 @@ const Services = () => {
                                         />
                                         <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>
-                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
                                                 <p className="text-base md:text-[17px] lg:text-lg text-center max-w-3xl">
@@ -113,7 +113,7 @@ const Services = () => {
                 <FlexRow>
                     <Link
                     href="/sluzby"
-                    className="p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 border border-gray-200 bg-white text-black text-center w-full md:w-75 rounded-md">
+                    className="p-3 md:p-4 lg:p-4.5 border border-gray-200 bg-white text-black text-center w-full md:w-75 rounded-md">
                         Všechny služby
                     </Link>
                     <Link

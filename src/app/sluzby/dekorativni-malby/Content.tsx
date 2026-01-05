@@ -113,10 +113,12 @@ const Content = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Dekorativní malby
+                        {/* Dekorativní malby */}
+                        Dekorativní malby s osobitým stylem
                     </Heading>
                     <Subheading>
-                        Zde se podívejte realizované práce dekorativních maleb.
+                        {/* Zde se podívejte realizované práce dekorativních maleb. */}
+                        Originální povrchové úpravy stěn, které dodají vašemu interiéru jedinečný vzhled a atmosféru.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
@@ -152,7 +154,7 @@ const Content = () => {
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
                                             </FlexCol>

@@ -25,52 +25,62 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Bíle natřené topení",
+        heading: "Elegantně natřené bílé topení",
+        desc: "Hladký a odolný nátěr topení, který dodá interiéru čistý a upravený vzhled.",
         type: "Topení",
         image: "/Fotky/Hero/Hero.webp"
     },
     {
         heading: "Žlutě natřené dveře v mateřské školce",
+        desc: "Odolný nátěr dveří v jasné žluté barvě pro hravé a bezpečné prostředí dětí.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-2.webp"
     },
     {
-        heading: "Žlutě natřené dveře v mateřské školce",
+        heading: "Dveře s živou žlutou barvou",
+        desc: "Precizní nátěr dveří dodává prostoru svěží a čistý vzhled.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-3.webp"
     },
     {
         heading: "Dveře natřené žlutým nástřikem",
+        desc: "Odolný a rovnoměrný nátěr dveří pro dlouhotrvající efekt a krásný vzhled.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
     },
     {
         heading: "Natřené zábradlí v bytovém domě",
+        desc: "Kvalitní nátěr zábradlí, který chrání kov a dodává interiéru moderní vzhled.",
         type: "Zábradlí",
         image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
     },
     {
-        heading: "Žlutě natřené dveře v místnosti vymalované růžovou barvou",
+        heading: "Žlutě natřené dveře v místnosti s růžovými stěnami",
+        desc: "Kombinace barev pro harmonický a stylový interiér s odolným nátěrem dveří.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-6.webp"
     },
     {
         heading: "Domeček s hezkou žlutou fasádou",
+        desc: "Precizní nátěr fasády, který zajišťuje odolnost vůči počasí a atraktivní vzhled.",
         type: "Fasáda",
         image: "/Fotky/Services/natery-dveri/Fotka-7.webp"
     },
     {
         heading: "Čerstvě natřené zábradlí v bytovém domě",
+        desc: "Kvalitní nátěr zábradlí s dlouhou životností a moderním vzhledem.",
         type: "Zábradlí",
         image: "/Fotky/Services/natery-dveri/Fotka-8.webp"
     },
     {
-        heading: "Bílo hladký nástřik ústředního topení",
+        heading: "Bílo hladký nátěr ústředního topení",
+        desc: "Rovnoměrný a odolný nátěr topení pro elegantní a čistý vzhled interiéru.",
         type: "Topení",
         image: "/Fotky/Services/natery-dveri/Fotka-9.webp"
     },
     {
-        heading: "Čerstvě bílo hladký nástřik ústředního topení",
+        heading: "Čerstvě natřené bílé topení",
+        desc: "Hladký nátěr topení, který dodává prostoru upravený a moderní vzhled.",
         type: "Topení",
         image: "/Fotky/Services/natery-dveri/Fotka-10.webp"
     },
@@ -113,10 +123,12 @@ const Content = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Nátěry dveří, zárubní topení
+                        {/* Nátěry dveří, zárubní topení */}
+                        Profesionální nátěry dveří, zárubní a topení
                     </Heading>
                     <Subheading>
-                        Zde se podívejte realizované práce nátěrů dveří a zárubního topení.
+                        {/* Zde se podívejte realizované práce nátěrů dveří a zárubního topení. */}
+                        Obnovte vzhled svého interiéru s hladkými a odolnými nátěry, které vydrží a dodají prostoru elegantní vzhled.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
@@ -152,9 +164,12 @@ const Content = () => {
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
+                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                    {cardItem.desc}
+                                                </p>
                                             </FlexCol>
                                         </Wrapper>
                                     </Fragment>

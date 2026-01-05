@@ -25,52 +25,62 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Zelená barva Španělské technologie Gotele",
+        heading: "Zelený odstín Gotele",
+        desc: "Svěží zelený tón španělské technologie Gotele, který dodá prostoru klid a přírodní charakter.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-1.webp"
     },
     {
-        heading: "Oranžová barva Španělské technologie Gotele",
+        heading: "Oranžový odstín Gotele",
+        desc: "Výrazná oranžová varianta Gotele pro moderní a energický interiér.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-2.webp"
     },
     {
-        heading: "Světle modro bílá barva Španělské technologie Gotele",
+        heading: "Světle modro-bílý odstín Gotele",
+        desc: "Jemná kombinace modré a bílé vytváří čistý a vzdušný vzhled stěn.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-3.webp"
     },
     {
-        heading: "Žluto bílá barva Španělské technologie Gotele",
+        heading: "Žluto-bílý odstín Gotele",
+        desc: "Teplé tóny žluté v kombinaci s bílou rozjasní každý interiér.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-4.webp"
     },
     {
-        heading: "Šedo bílá barva Španělské technologie Gotele",
+        heading: "Šedo-bílý odstín Gotele",
+        desc: "Elegantní a nadčasová kombinace vhodná do moderních prostor.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-5.webp"
     },
     {
-        heading: "Žluto bílá barva Španělské technologie Gotele",
+        heading: "Světlý žluto-bílý odstín Gotele",
+        desc: "Jemnější varianta žluto-bílé struktury pro decentní vzhled stěn.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-6.webp"
     },
     {
-        heading: "Fialovo bílá barva Španělské technologie Gotele",
+        heading: "Fialovo-bílý odstín Gotele",
+        desc: "Stylová kombinace barev pro originální a osobitý interiér.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-7.webp"
     },
     {
-        heading: "Světle bílá barva Španělské technologie Gotele",
+        heading: "Světlý bílý odstín Gotele",
+        desc: "Minimalistické a čisté řešení s jemnou strukturou Gotele.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-8.webp"
     },
     {
-        heading: "Hnědo bílá barva Španělské technologie Gotele",
+        heading: "Hnědo-bílý odstín Gotele",
+        desc: "Přírodní hnědé tóny v kombinaci s bílou pro útulný vzhled interiéru.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-9.webp"
     },
     {
-        heading: "Tmavě hnědo bílá barva Španělské technologie Gotele",
+        heading: "Tmavě hnědo-bílý odstín Gotele",
+        desc: "Výraznější struktura a barva pro luxusní a reprezentativní prostory.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-10.webp"
     },
@@ -110,10 +120,12 @@ const Content = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
-                        Vzorník Gotele
+                        {/* Vzorník Gotele */}
+                        Španělská technologie Gotele
                     </Heading>
                     <Subheading>
-                        Zde se podívejte na vzorník Španělské technologie Gotele.
+                        {/* Zde se podívejte na vzorník Španělské technologie Gotele. */}
+                        Moderní strukturované stěny s dlouhou životností, vysokou odolností a elegantním vzhledem pro každý interiér.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
@@ -149,9 +161,12 @@ const Content = () => {
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
+                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                    {cardItem.desc}
+                                                </p>
                                             </FlexCol>
                                         </Wrapper>
                                     </Fragment>

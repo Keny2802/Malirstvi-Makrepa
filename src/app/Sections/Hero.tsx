@@ -17,6 +17,7 @@ import SubHeading from "../Components/Subheading";
 import OverlayWrapper from "../Components/OverlayWrapper";
 import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
+import Flex from "../Components/Flex";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import FixedCta from "../Components/FixedCta";
 import Icon from "../Components/Icon";
@@ -53,16 +54,19 @@ const Hero = () => {
                             </SubHeading>
                         </Wrapper>
                         <FlexRow>
+                            {/* p-3 md:p-4 lg:p-4.5 */}
                             <Link
                             href="#kalkulace"
-                            className="p-3 md:p-4 lg:p-4.5 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
+                            className="bg-white text-black text-center w-full md:w-75 rounded-md"
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "kalkulace");
                             }}>
-                                <Icon className="cursor-pointer">
-                                    <CalculatorIcon />
-                                </Icon>
-                                Nezávazná kalkulace
+                                <Flex className="p-3 md:p-4 lg:p-4.5 justify-center">
+                                    <Icon className="cursor-pointer">
+                                        <CalculatorIcon />
+                                    </Icon>
+                                    Nezávazná kalkulace
+                                </Flex>
                             </Link>
                             <Link
                             href="#reference"

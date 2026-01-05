@@ -5,6 +5,9 @@ import {
     Fragment
 } from "react";
 import clsx from "clsx";
+import Image from "next/image";
+
+import "yet-another-react-lightbox/styles.css";
 
 import Wrapper from "../Components/Wrapper";
 import PageLabel from "../Components/PageLabel";
@@ -12,142 +15,144 @@ import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
-import Img from "../Components/Img";
+import Flex from "../Components/Flex";
 
 const galleryItems = [
     {
         heading: "Vymalovaná restaurace",
-        // desc: "Podívejte se na vymalovanou zeď restaurace na hnědo.",
+        desc: "Elegantní a čisté malby restaurace pro příjemnou atmosféru.",
         type: "Restaurace",
         image: "/Fotky/Gallery/Fotka-1.webp"
     },
     {
         heading: "Vymalovaný obývací pokoj",
-        // desc: "Podívejte se na vymalovanou zeď na žluto, jednoho malebného bytu.",
+        desc: "Pohodlný a svěží interiér díky preciznímu malování.",
         type: "Byt",
         image: "/Fotky/Gallery/Fotka-2.webp"
     },
     {
-        heading: "Vymalovaný obývací pokoj pro domácí mazlíčky",
-        // desc: "Podívejte se na krásně vymalovaný obývací pokoj.",
+        heading: "Obývací pokoj pro domácí mazlíčky",
+        desc: "Praktické a krásné malby, které vydrží i při domácích mazlíčcích.",
         type: "Dům",
         image: "/Fotky/Gallery/Fotka-3.webp"
     },
     {
-        heading: "Vymalováné jídelní studio",
-        // desc: "Podívejte se na vymalovaný prostor na bílo.",
+        heading: "Vymalované jídelní studio",
+        desc: "Jídelní prostor s čistými stěnami a moderním designem.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-4.webp"
     },
     {
-        heading: "Vymalováný útulný obývací pokoj",
-        // desc: "Podívejte se na vymalovaná obývací pokoj, vymalovaný na žluto.",
+        heading: "Útulný obývací pokoj",
+        desc: "Teplé a příjemné tóny pro dokonalou atmosféru domova.",
         type: "Byt",
         image: "/Fotky/Gallery/Fotka-5.webp"
     },
     {
-        heading: "Vymalované prostory plastické chirurgie",
-        // desc: "Podívejte se na vymalované zdi chodby u výtahu.",
+        heading: "Prostory plastické chirurgie",
+        desc: "Moderní a sterilní vzhled s hladkými nástřiky stěn.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-6.webp"
     },
     {
         heading: "Vymalovaná kuchyně",
-        // desc: "Podívejte se na vymalovanou kuchyňskou zeď na zeleno.",
+        desc: "Barevné a praktické řešení stěn v kuchyni.",
         type: "Kuchyně",
         image: "/Fotky/Gallery/Fotka-7.webp"
     },
     {
-        heading: "Vymalovaná jídelní místnost",
-        // desc: "Podívejte se na vymalovanou jídelní místnost.",
+        heading: "Vymalovaná jídelna",
+        desc: "Příjemné tóny pro pohodové stolování a rodinnou pohodu.",
         type: "Jídelna",
         image: "/Fotky/Gallery/Fotka-8.webp"
     },
     {
-        heading: "Vymalovaný dětský pokojíčky",
-        desc: "Podívejte se na set vymalovaných dětských pokojů.",
+        heading: "Dětský pokoj",
+        desc: "Veselé barvy a bezpečné malby pro děti.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-9.webp"
     },
     {
-        heading: "Vymalovaná jídelna v prostorném domě.",
-        desc: "Podívejte se na vymalovanou jídelnu v prostorném domě.",
+        heading: "Jídelna v prostorném domě",
+        desc: "Elegantní malby pro moderní jídelní prostor.",
         type: "Jídelna",
         image: "/Fotky/Gallery/Fotka-10.webp"
     },
-    // {
-    //     heading: "Vymalovaná zeď obrázkem žirafy.",
-    //     desc: "Podívejte se na vymalovanou zeď na žluto s obrázkem žirafy.",
-    //     type: "Prostor",
-    //     image: "/Fotky/Gallery/Fotka-11.webp"
-    // },
+    {
+        heading: "Vymalovaná zeď s obrázkem žirafy",
+        desc: "Kreativní malba na zeď, která zaujme děti i dospělé.",
+        type: "Prostor",
+        image: "/Fotky/Gallery/Fotka-11.webp"
+    },
     {
         heading: "Školní učebna",
-        desc: "Podívejte se na vymalovanou školní učebnu na oranžovo.",
+        desc: "Funkční a inspirativní prostředí pro školáky.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-12.webp"
     },
     {
-        heading: "Vymalovaná malebná místnost",
-        desc: "Podívejte se na vymalovanou malebnou místnost.",
+        heading: "Malebná místnost",
+        desc: "Příjemné barvy pro útulný a harmonický interiér.",
         type: "Dům",
         image: "/Fotky/Gallery/Fotka-13.webp"
     },
     {
-        heading: "Vymalovaná fasáda domu",
-        desc: "Podívejte se na vymalovanou fasádu domu tyrkysovou barvou.",
+        heading: "Fasáda domu",
+        desc: "Krásná a odolná fasáda domu v moderních tónech.",
         type: "Dům",
         image: "/Fotky/Gallery/Fotka-14.webp"
     },
     {
         heading: "Španělská technologie Gotele",
+        desc: "Hladké a elegantní stěny s moderní španělskou technologií.",
         type: "Technologie Gotele",
         image: "/Fotky/Gallery/Fotka-15.webp"
     },
     {
         heading: "Španělská technologie Gotele",
+        desc: "Dokonalá struktura stěn pro dlouhotrvající vzhled.",
         type: "Technologie Gotele",
         image: "/Fotky/Gallery/Fotka-16.webp"
     },
     {
-        heading: "Vymalovaný prostor mateřské školky",
-        desc: "Podívejte se na vymalovaný prostor žlutou barvou.",
+        heading: "Prostor mateřské školky",
+        desc: "Veselé a bezpečné malby pro děti v školce.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-17.webp"
     },
     {
-        heading: "Vymalovaný prostor mateřské školky",
-        desc: "Podívejte se na vymalovaný prostor žlutou barvou.",
+        heading: "Prostor mateřské školky",
+        desc: "Živé barvy pro hravé a inspirativní prostředí.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-18.webp"
     },
     {
-        heading: "Vymalovaná fasáda domu",
-        desc: "Podívejte se na vymalovanou fasádu domu žlutou barvou.",
+        heading: "Fasáda domu",
+        desc: "Odolná a krásná fasáda v živých barvách.",
         type: "Dům",
         image: "/Fotky/Gallery/Fotka-19.webp"
     },
     {
-        heading: "Vymalovaná zubní ordinace",
-        desc: "Podívejte se na vymalovanou zubní ordinaci tmavší modrou barvou.",
+        heading: "Zubní ordinace",
+        desc: "Moderní a čistý vzhled stěn pro profesionální prostředí.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-20.webp"
     },
     {
-        heading: "Vymalovaná lékarna",
-        desc: "Podívejte se vymalovanou lékarnu.",
+        heading: "Lékárna",
+        desc: "Hygienické a světlé malby vhodné pro veřejné prostory.",
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-21.webp"
     },
     {
-        heading: "Pokoj vymalovaný",
-        desc: "Podívejte se vymalovaný pokoj hnědou barvou.",
+        heading: "Pokoj vymalovaný hnědou",
+        desc: "Teplé a uklidňující tóny pro pohodlný interiér.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-22.webp"
     },
     {
-        heading: "Vymalovaný pokoj",
-        desc: "Podívejte se na vymalovaný pokoj fialovou barvou.",
+        heading: "Pokoj vymalovaný fialovou",
+        desc: "Elegantní a stylové barevné řešení pro pokoj.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-23.webp"
     }
@@ -169,6 +174,7 @@ type galleryType = typeof galleryTypes[number];
 
 const Gallery = () => {
     const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
+
     const filteredGallery = activeGalleryTab === "Vše"
     ? galleryItems
     : galleryItems.filter(
@@ -183,15 +189,15 @@ const Gallery = () => {
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                     <Heading>
-                        Naše práce mluví naprosto za vše
+                        Inspirace pro vaše stěny
                     </Heading>
                     <SubHeading>
-                        Podívejte se na galerii naší dosavadní práce.
+                        Inspirujte se našimi realizacemi a objevte možnosti, jak oživit svůj domov.
                     </SubHeading>
                 </FlexCol>
                 {/* md:flex-row flex-wrap */}
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
+                    <Flex className="justify-center flex-wrap gap-4 md:gap-5 lg:gap-6">
                         {
                             galleryTypes.map((galleryType, galleryTypeIndex) => {
                                 return (
@@ -207,20 +213,19 @@ const Gallery = () => {
                                 );
                             })
                         }
-                    </Wrapper>
+                    </Flex>
                     <FlexRow className="flex-wrap">
                         {
                             filteredGallery.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
-                                            <Img
+                                            <Image
                                             width={250}
                                             height={250}
                                             src={cardItem.image}
                                             alt={`${cardItem.heading}`}
-                                            effect={true}
-                                            className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75"
+                                            className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
                                                 <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">

@@ -55,7 +55,7 @@ const Hero = () => {
                         </Wrapper>
                         <FlexRow>
                             {/* p-3 md:p-4 lg:p-4.5 */}
-                            <Link
+                            {/* <Link
                             href="#kalkulace"
                             className="bg-white text-black text-center w-full md:w-75 rounded-md"
                             onClick={(e) => {
@@ -67,7 +67,7 @@ const Hero = () => {
                                     </Icon>
                                     Nezávazná kalkulace
                                 </Flex>
-                            </Link>
+                            </Link> */}
                             <Link
                             href="#reference"
                             className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"

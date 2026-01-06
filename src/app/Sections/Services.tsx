@@ -53,19 +53,21 @@ const Services = () => {
                             },
                             {
                                 image: "/Fotky/Services/Fotka-15.webp",
-                                heading: "Španělská technologie Gotele",
-                                desc: "Moderní stěny s elegantní strukturou bez nerovností a prasklin.",
+                                heading: "Hrubozrné technologie Gotele",
+                                desc: "Moderní technika s elegantní strukturou.",
                                 href: "/sluzby/spanelska-technologie-gotele"
                             },
+                            // {
+                            //     image: "/Fotky/Services/hladke-nastriky/Fotka-4.webp",
+                            //     // heading: "Hladké nástřiky",
+                            //     heading: "Moderní nástřiky",
+                            //     desc: "Precizní hladké nástřiky pro rovnoměrné a elegantní stěny.",
+                            //     href: "/sluzby/hladke-nastriky"
+                            // },
                             {
-                                image: "/Fotky/Services/hladke-nastriky/Fotka-4.webp",
-                                heading: "Hladké nástřiky",
-                                desc: "Precizní hladké nástřiky pro rovnoměrné a elegantní stěny.",
-                                href: "/sluzby/hladke-nastriky"
-                            },
-                            {
-                                image: "/Fotky/Services/Fotka-3.webp",
-                                heading: "Natěry dveří, zárubní topení",
+                                // image: "/Fotky/Services/Fotka-3.webp",
+                                image: "/Fotky/Services/dekorativni-malby/Fotka (16).webp",
+                                heading: "Natěry dveří, zárubní, topení",
                                 desc: "Precizní nátěry pro krásný vzhled a dlouhou životnost dveří, zárubní i topení.",
                                 href: "/sluzby/natery-dveri-zarubni-topeni"
                             },

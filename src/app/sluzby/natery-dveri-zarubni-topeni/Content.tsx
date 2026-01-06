@@ -25,20 +25,14 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Elegantně natřené bílé topení",
-        desc: "Hladký a odolný nátěr topení, který dodá interiéru čistý a upravený vzhled.",
-        type: "Topení",
-        image: "/Fotky/Hero/Hero.webp"
-    },
-    {
-        heading: "Žlutě natřené dveře v mateřské školce",
-        desc: "Odolný nátěr dveří v jasné žluté barvě pro hravé a bezpečné prostředí dětí.",
+        heading: "Nátěr zárubní v mateřské školce",
+        desc: "Odolný nátěr zárubní.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-2.webp"
     },
     {
-        heading: "Dveře s živou žlutou barvou",
-        desc: "Precizní nátěr dveří dodává prostoru svěží a čistý vzhled.",
+        heading: "Nátěr zárubní",
+        // desc: "Precizní nátěr dveří dodává prostoru svěží a čistý vzhled.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-3.webp"
     },
@@ -49,61 +43,66 @@ const galleryItems = [
         image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
     },
     {
-        heading: "Natřené zábradlí v bytovém domě",
+        heading: "Příprava zábradlí před nátěrem",
         desc: "Kvalitní nátěr zábradlí, který chrání kov a dodává interiéru moderní vzhled.",
         type: "Zábradlí",
         image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
     },
     {
-        heading: "Žlutě natřené dveře v místnosti s růžovými stěnami",
+        heading: "Nátěr zárubní",
         desc: "Kombinace barev pro harmonický a stylový interiér s odolným nátěrem dveří.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-6.webp"
     },
     {
         heading: "Domeček s hezkou žlutou fasádou",
-        desc: "Precizní nátěr fasády, který zajišťuje odolnost vůči počasí a atraktivní vzhled.",
+        // desc: "Precizní nátěr fasády, který zajišťuje odolnost vůči počasí a atraktivní vzhled.",
         type: "Fasáda",
         image: "/Fotky/Services/natery-dveri/Fotka-7.webp"
     },
     {
-        heading: "Čerstvě natřené zábradlí v bytovém domě",
-        desc: "Kvalitní nátěr zábradlí s dlouhou životností a moderním vzhledem.",
+        heading: "Příprava dřevěných madel před lakováním",
+        // desc: "Kvalitní nátěr zábradlí s dlouhou životností a moderním vzhledem.",
         type: "Zábradlí",
         image: "/Fotky/Services/natery-dveri/Fotka-8.webp"
     },
     {
-        heading: "Bílo hladký nátěr ústředního topení",
-        desc: "Rovnoměrný a odolný nátěr topení pro elegantní a čistý vzhled interiéru.",
+        heading: "Nátěr ústředního topení",
+        // desc: "Rovnoměrný a odolný nátěr topení pro elegantní a čistý vzhled interiéru.",
         type: "Topení",
         image: "/Fotky/Services/natery-dveri/Fotka-9.webp"
     },
     {
-        heading: "Čerstvě natřené bílé topení",
-        desc: "Hladký nátěr topení, který dodává prostoru upravený a moderní vzhled.",
+        heading: "Renovace radiátoru bílým odstínem",
+        // desc: "Hladký nátěr topení, který dodává prostoru upravený a moderní vzhled.",
         type: "Topení",
         image: "/Fotky/Services/natery-dveri/Fotka-10.webp"
     },
+    {
+        heading: "Precizní nátěr interiérových dveří",
+        desc: "Hladký a rovnoměrný nátěr dveří s důrazem na detail, dlouhou životnost a perfektní vzhled.",
+        image: "/Fotky/Services/natery-dveri/Fotka-13.webp"
+    },
+    {
+        heading: "Nátěr dveří a barevného soklu",
+        desc: "Kompletní nátěr dveří včetně soklu pro sjednocený a čistý vzhled interiéru.",
+        image: "/Fotky/Services/natery-dveri/Fotka-14.webp"
+    },
+    {
+        heading: "Obnovovací nátěr zábradlí",
+        // desc: "Kvalitní nátěr zábradlí zvyšující odolnost povrchu a celkový estetický dojem.",
+        desc: "Renovace zábradlí s novým nátěrem a obnova dřevěného zábradlí.",
+        image: "/Fotky/Services/natery-dveri/Fotka-11.webp"
+    },
+    {
+        heading: "Detailní nátěr zábradlí",
+        desc: "Precizní nátěr zábradlí s důrazem na rovnoměrné krytí a dlouhodobou ochranu materiálu.",
+        image: "/Fotky/Services/natery-dveri/Fotka-12.webp"
+    }
 ];
-
-const galleryTypes = [
-    "Vše",
-    "Topení",
-    "Dveře",
-    "Zábradlí",
-    "Fasáda",
-] as const;
-
-type galleryType = typeof galleryTypes[number];
 
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
 
     return (
         <Fragment>
@@ -124,7 +123,8 @@ const Content = () => {
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
                         {/* Nátěry dveří, zárubní topení */}
-                        Profesionální nátěry dveří, zárubní a topení
+                        {/* Profesionální nátěry dveří, zárubní a topení */}
+                        Nové obnovené nátěry
                     </Heading>
                     <Subheading>
                         {/* Zde se podívejte realizované práce nátěrů dveří a zárubního topení. */}
@@ -132,26 +132,9 @@ const Content = () => {
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">

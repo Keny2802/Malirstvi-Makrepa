@@ -27,7 +27,7 @@ const Hero = () => {
         <Fragment>
             <Wrapper
             className="relative section"
-            id="domu">
+            id="uvod">
                 <Image
                 width={1000}
                 height={1000}

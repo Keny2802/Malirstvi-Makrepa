@@ -80,28 +80,28 @@ const Header = () => {
             id="header">
                 <Wrapper className="flex justify-between items-center gap-3 md:gap-4 lg:gap-5">
                     <Logo />
-                    <ul className="hidden lg:flex justify-center items-center gap-4 md:gap-5 lg:gap-6 header-list">
+                    <ul className="hidden xl:flex justify-center items-center gap-4 md:gap-5 lg:gap-6 header-list">
                         <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                             {
                                 pathName === "/" ? (
                                     <Fragment>
                                         <Link
-                                        href="#domu"
+                                        href="#uvod"
                                         onClick={(e) => {
-                                            setLinkWithoutHash(e, "domu");
+                                            setLinkWithoutHash(e, "uvod");
                                         }}
                                         className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                                         >
-                                            Domů
+                                            Úvod
                                         </Link>
                                     </Fragment>
                                 ) : (
                                     <Fragment>
                                         <Link
-                                        href="/#domu"
+                                        href="/#uvod"
                                         className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                                         >
-                                            Domů
+                                            Úvod
                                         </Link>
                                     </Fragment>
                                 )
@@ -146,7 +146,7 @@ const Header = () => {
                             ))
                         }
                     </ul>
-                    <PhoneLink className="p-1.5 md:p-2.5 lg:p-3 hidden lg:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md">
+                    <PhoneLink className="p-1.5 md:p-2.5 lg:p-3 hidden xl:flex justify-between items-center gap-1.5 md:gap-2 lg:gap-2.5 bg-[#1d4ed8] text-white text-base md:text-[17px] lg:text-lg font-medium rounded-md">
                         <Icon>
                             <DevicePhoneMobileIcon />
                         </Icon>

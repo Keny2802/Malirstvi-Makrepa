@@ -1,13 +1,11 @@
 "use client";
 
 import {
-    useState,
     Fragment
 } from "react";
 import {
     usePathname
 } from "next/navigation";
-import clsx from "clsx";
 
 import ContactHeader from "@/app/Components/ContactHeader";
 import Header from "@/app/Components/Header";
@@ -25,13 +23,13 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Pokoj v tmavě modrých tónech",
+        // heading: "Pokoj v tmavě modrých tónech",
         desc: "Elegantní malba v teplé tmavě modré barvě, která dodává místnosti klid a moderní vzhled.",
         type: "Pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
     },
     {
-        heading: "Pokoj v přírodní zelené barvě",
+        // heading: "Pokoj v přírodní zelené barvě",
         desc: "Jemná zelená malba vytváří harmonické a uklidňující prostředí pro každodenní bydlení.",
         type: "Pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
@@ -49,7 +47,7 @@ const galleryItems = [
         image: "/Fotky/Services/malirske-prace/Fotka-4.webp"
     },
     {
-        heading: "Moderní obývací pokoj v červené barvě",
+        // heading: "Moderní obývací pokoj v červené barvě",
         desc: "Výrazná červená malba dodává prostoru energii a moderní charakter.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-5.webp"
@@ -62,49 +60,32 @@ const galleryItems = [
     },
     {
         heading: "Obývací pokoj v červených tónech",
-        desc: "Precizní malířské práce s rovnoměrným nátěrem a sytým odstínem barvy.",
+        // desc: "Precizní malířské práce s rovnoměrným nátěrem a sytým odstínem barvy.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-7.webp"
     },
     {
-        heading: "Obývací pokoj v jemné růžové barvě",
+        // heading: "Obývací pokoj v jemné růžové barvě",
         desc: "Útulné a světlé řešení obývacího pokoje s jemným barevným laděním.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-8.webp"
     },
     {
-        heading: "Chodba po profesionálním vymalování",
+        heading: "Chodba po vymalování",
         desc: "Důkladně připravené stěny a kvalitní malba s dlouhou životností.",
         type: "Chodba",
         image: "/Fotky/Services/malirske-prace/Fotka-9.webp"
     },
     {
-        heading: "Obývací pokoj s krbem",
+        // heading: "Obývací pokoj s krbem",
         desc: "Vymalovaný obývací pokoj s dominantním krbem a čistým, elegantním provedením.",
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-10.webp"
     }
 ];
 
-const galleryTypes = [
-    "Vše",
-    "Pokoj",
-    "Obývací pokoj",
-    "Chodba",
-    "Prostor"
-] as const;
-
-type galleryType = typeof galleryTypes[number];
-
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
-
     return (
         <Fragment>
             <ContactHeader />
@@ -132,26 +113,9 @@ const Content = () => {
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
@@ -159,7 +123,7 @@ const Content = () => {
                                             width={250}
                                             height={250}
                                             src={cardItem.image}
-                                            alt={cardItem.heading}
+                                            alt={cardItem.heading || "Ukázka realizace malířský prací Malířství Makrepa Josef Krejčiřík"}
                                             effect={true}
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />

@@ -89,22 +89,22 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                 pathName === "/" ? (
                                     <Fragment>
                                         <Link
-                                        href="#domu"
+                                        href="#uvod"
                                         onClick={(e) => {
-                                            setLinkWithoutHash(e, "domu");
+                                            setLinkWithoutHash(e, "uvod");
                                         }}
                                         className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                                         >
-                                            Domů
+                                            Úvod
                                         </Link>
                                     </Fragment>
                                 ) : (
                                     <Fragment>
                                         <Link
-                                        href="/#domu"
+                                        href="/#uvod"
                                         className="text-[#313131] text-base md:text-[17px] lg:text-lg font-medium transition-colors duration-300 ease-in-out hover:text-[#1d4ed8]"
                                         >
-                                            Domů
+                                            Úvod
                                         </Link>
                                     </Fragment>
                                 )

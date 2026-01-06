@@ -1,13 +1,12 @@
 "use client";
 
 import {
-    useState,
     Fragment
 } from "react";
 import {
     usePathname
 } from "next/navigation";
-import clsx from "clsx";
+import Image from "next/image";
 
 import ContactHeader from "@/app/Components/ContactHeader";
 import Header from "@/app/Components/Header";
@@ -16,85 +15,14 @@ import Wrapper from "@/app/Components/Wrapper";
 import PageLabel from "@/app/Components/PageLabel";
 import FlexCol from "@/app/Components/FlexCol";
 import FlexRow from "@/app/Components/FlexRow";
-import Img from "@/app/Components/Img";
 import Heading from "@/app/Components/Heading";
 import Subheading from "@/app/Components/Subheading";
 import Cta from "@/app/Sections/Cta";
 import Contact from "@/app/Sections/Contact";
 import Footer from "@/app/Sections/Footer";
 
-const galleryItems = [
-    {
-        heading: "Malování na klíč domu",
-        type: "Dům",
-        image: "/Fotky/Hero/Hero.webp"
-    },
-    // {
-    //     heading: "Žlutě natřené dveře v mateřské školce",
-    //     type: "Dveře",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-2.webp"
-    // },
-    // {
-    //     heading: "Žlutě natřené dveře v mateřské školce",
-    //     type: "Dveře",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-3.webp"
-    // },
-    // {
-    //     heading: "Dveře natřené žlutým nástřikem",
-    //     type: "Dveře",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
-    // },
-    // {
-    //     heading: "Natřené zábradlí v bytovém domě",
-    //     type: "Zábradlí",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
-    // },
-    // {
-    //     heading: "Žlutě natřené dveře v místnosti vymalované růžovou barvou",
-    //     type: "Dveře",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-6.webp"
-    // },
-    // {
-    //     heading: "Domeček s hezkou žlutou fasádou",
-    //     type: "Fasáda",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-7.webp"
-    // },
-    // {
-    //     heading: "Čerstvě natřené zábradlí v bytovém domě",
-    //     type: "Zábradlí",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-8.webp"
-    // },
-    // {
-    //     heading: "Bílo hladký nástřik ústředního topení",
-    //     type: "Topení",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-9.webp"
-    // },
-    // {
-    //     heading: "Čerstvě bílo hladký nástřik ústředního topení",
-    //     type: "Topení",
-    //     image: "/Fotky/Services/natery-dveri/Fotka-10.webp"
-    // },
-];
-
-const galleryTypes = [
-    "Vše",
-    "Dům",
-    "Byty",
-    "Instituce",
-    "Komerční prostory",
-    "Nebytové prostory",
-] as const;
-
-type galleryType = typeof galleryTypes[number];
-
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
 
     return (
         <Fragment>
@@ -117,49 +45,68 @@ const Content = () => {
                         Malování na klíč
                     </Heading>
                     <Subheading>
-                        Klient nám odevzdá klíče a o nic se už nemusí starat, jen už stačí přijít a nechat se překvapit.
+                        Klient nám předá klíče a o nic se už nemusí starat, jen už stačí přijít a nechat se překvapit.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
+                    <Image
+                    width={1000}
+                    height={1000}
+                    src="/Fotky/Hero/Hero.webp"
+                    alt="Klient nám předá klíče a o nic se už nemusí starat, jen už stačí přijít a nechat se překvapit."
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                    className="rounded-2xl"
+                    />
+                </FlexCol>
+                <FlexCol className="mt-4 md:mt-6 lg:mt-8">
+                    <Heading>
+                        Jak to probíhá?
+                    </Heading>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            [
+                                {
+                                    heading: "Klient nám předá klíče",
+                                    subheading: "Klient pokud potřebuje, může odejít a o nic se nemusí starat."
+                                },
+                                {
+                                    heading: "Malíří se připraví na domluvené malování",
+                                    subheading: "Malíři přikryjí nábytek a vše, co by se mohlo malováním ušpinit."
+                                },
+                                {
+                                    heading: "Malíři se pouštějí do práce",
+                                    subheading: "Nejdříve se opraví a zarovnají stěny, pro možnost začátku realizace malování."
+                                },
+                                {
+                                    heading: "Malíři jdou vymalovat",
+                                    subheading: "Po opravě stěn se může vymalování prostoru provést."
+                                },
+                                {
+                                    heading: "Hotovo, klient přijde",
+                                    subheading: "Až klient přijde, je hotovo a může se jen kochat krásou výsledku."
+                                }
+                            ].map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
-                                        <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
-                                            <Img
-                                            width={250}
-                                            height={250}
-                                            src={cardItem.image}
-                                            alt={cardItem.heading}
-                                            effect={true}
-                                            className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
-                                            />
-                                            <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
-                                                    {cardItem.heading}
-                                                </h3>
-                                            </FlexCol>
-                                        </Wrapper>
+                                        <FlexCol className="justify-center items-center">
+                                            <Wrapper className="p-3 md:p-4 lg:p-4.5 bg-white shadow-md rounded-3xl w-full">
+                                                <FlexRow>
+                                                    <span className="inline-flex justify-center items-center text-lg md:text-xl lg:text-2xl font-black bg-[#1d4ed8] text-white w-10 h-10 rounded-full">
+                                                        {cardItemIndex + 1}
+                                                    </span>
+                                                    <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-bold">
+                                                        {cardItem.heading}
+                                                    </h3>
+                                                </FlexRow>
+                                            <p className="text-[15px] md:text-base text-center max-w-150">
+                                                {cardItem.subheading}
+                                            </p>
+                                            </Wrapper>
+                                        </FlexCol>
                                     </Fragment>
-                                );
+                                )
                             })
                         }
                     </FlexRow>

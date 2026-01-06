@@ -1,13 +1,11 @@
 "use client";
 
 import {
-    useState,
     Fragment
 } from "react";
 import {
     usePathname
 } from "next/navigation";
-import clsx from "clsx";
 
 import ContactHeader from "@/app/Components/ContactHeader";
 import Header from "@/app/Components/Header";
@@ -25,75 +23,64 @@ import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
     {
-        heading: "Bíle natřené topení",
-        type: "Topení",
-        image: "/Fotky/Hero/Hero.webp"
+        heading: "Dekorativní malba obývacího pokoje",
+        desc: "Stylová dekorativní malba, která dodala obývacímu pokoji jedinečný charakter a moderní vzhled.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-1.webp"
     },
     {
-        heading: "Žlutě natřené dveře v mateřské školce",
-        type: "Dveře",
-        image: "/Fotky/Services/natery-dveri/Fotka-2.webp"
+        heading: "Dekorativní stěrka interiéru",
+        desc: "Elegantní dekorativní úprava stěn s jemnou strukturou pro nadčasový interiér.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-2.webp"
     },
     {
-        heading: "Žlutě natřené dveře v mateřské školce",
-        type: "Dveře",
-        image: "/Fotky/Services/natery-dveri/Fotka-3.webp"
+        heading: "Dekorativní malba s metalickým efektem",
+        desc: "Luxusní dekorativní malba s metalickým efektem, která vytváří zajímavou hru světla a stínu.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-3.webp"
     },
     {
-        heading: "Dveře natřené žlutým nástřikem",
-        type: "Dveře",
-        image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
+        heading: "Moderní dekorativní malba",
+        desc: "Moderní dekorativní technika vhodná do současných interiérů s důrazem na detail.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-4.webp"
     },
     {
-        heading: "Natřené zábradlí v bytovém domě",
-        type: "Zábradlí",
-        image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
+        heading: "Dekorativní malba stěn",
+        desc: "Vkusná dekorativní malba stěn, která oživí prostor a dodá mu osobitý styl.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-6.webp"
     },
     {
-        heading: "Žlutě natřené dveře v místnosti vymalované růžovou barvou",
-        type: "Dveře",
-        image: "/Fotky/Services/natery-dveri/Fotka-6.webp"
+        heading: "Dekorativní úprava interiéru",
+        desc: "Precizní dekorativní úprava stěn s dlouhou životností a snadnou údržbou.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-7.webp"
     },
     {
-        heading: "Domeček s hezkou žlutou fasádou",
-        type: "Fasáda",
-        image: "/Fotky/Services/natery-dveri/Fotka-7.webp"
+        heading: "Designová dekorativní malba",
+        desc: "Designová dekorativní malba přizpůsobená požadavkům interiéru i vkusu klienta.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-8.webp"
     },
     {
-        heading: "Čerstvě natřené zábradlí v bytovém domě",
-        type: "Zábradlí",
-        image: "/Fotky/Services/natery-dveri/Fotka-8.webp"
+        heading: "Dekorativní malba interiéru",
+        desc: "Dekorativní malba interiéru, která dodává prostoru hloubku a originální vzhled.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-9.webp"
     },
     {
-        heading: "Bílo hladký nástřik ústředního topení",
-        type: "Topení",
-        image: "/Fotky/Services/natery-dveri/Fotka-9.webp"
+        heading: "Elegantní dekorativní malba",
+        desc: "Elegantní dekorativní řešení vhodné do bytů, domů i komerčních prostor.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-10.webp"
     },
     {
-        heading: "Čerstvě bílo hladký nástřik ústředního topení",
-        type: "Topení",
-        image: "/Fotky/Services/natery-dveri/Fotka-10.webp"
+        heading: "Dekorativní technika stěn",
+        desc: "Dekorativní technika aplikovaná s důrazem na kvalitu, detail a dlouhou životnost.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-11.webp"
     },
+    {
+        heading: "Luxusní dekorativní malba",
+        desc: "Luxusní dekorativní malba pro náročné klienty, kteří hledají originální řešení.",
+        image: "/Fotky/Services/dekorativni-malby/Fotka-12.webp"
+    }
 ];
-
-const galleryTypes = [
-    "Vše",
-    "",
-    "",
-    "",
-    "",
-] as const;
-
-type galleryType = typeof galleryTypes[number];
 
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
 
     return (
         <Fragment>
@@ -122,26 +109,9 @@ const Content = () => {
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
@@ -157,6 +127,9 @@ const Content = () => {
                                                 <h3 className="text-2xl md:text-[26px] lg:text-[28px] font-semibold">
                                                     {cardItem.heading}
                                                 </h3>
+                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                    {cardItem.desc}
+                                                </p>
                                             </FlexCol>
                                         </Wrapper>
                                     </Fragment>

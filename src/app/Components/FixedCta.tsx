@@ -53,7 +53,7 @@ const FixedCta = ({ ...props }: FixedCtaType) => {
                             <button
                             className="p-2 md:p-3 lg:p-4 bg-[#1d4ed8] text-white rounded-full cursor-pointer focus:outline-none transition-colors ease-in-out duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-200"
                             onClick={(e) => {
-                                document.getElementById("domu")?.scrollIntoView({
+                                document.getElementById("uvod")?.scrollIntoView({
                                     behavior: "smooth"
                                 });
                             }}>

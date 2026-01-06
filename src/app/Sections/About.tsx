@@ -28,10 +28,9 @@ const About = () => {
                         {/* Přečtěte si a dozvíte se o nás mnohem více */}
                         Kdo jsme a proč nám zákazníci důvěřují
                     </Heading>
-                    <SubHeading>
-                        {/* Vědět více informací o malíři pokojů se vždy vyplatí. */}
+                    {/* <SubHeading>
                         Už téměř 19 let přinášíme kvalitní malířské práce, na které se můžete spolehnout.
-                    </SubHeading>
+                    </SubHeading> */}
                 </FlexCol>
                 <FlexRow>
                     <FlexCol>

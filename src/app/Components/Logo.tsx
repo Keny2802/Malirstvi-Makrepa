@@ -30,7 +30,7 @@ const Logo = ({ ...props }: LogoProps) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(`${className} logo-wrapper`)}>
+            <Wrapper className={clsx(`${className} ml-6 md:ml-8 lg:ml-10 logo-wrapper`)}>
                 <Link
                 href={isHome ? "" : "/"}
                 className={clsx(`text-lg md:text-xl lg:text-2xl font-medium ${linkClassName}`)}>

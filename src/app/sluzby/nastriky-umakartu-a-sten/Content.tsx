@@ -1,13 +1,11 @@
 "use client";
 
 import {
-    useState,
     Fragment
 } from "react";
 import {
     usePathname
 } from "next/navigation";
-import clsx from "clsx";
 
 import ContactHeader from "@/app/Components/ContactHeader";
 import Header from "@/app/Components/Header";
@@ -42,18 +40,18 @@ const galleryItems = [
         type: "Chodba",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-3.webp"
     },
-    {
-        heading: "Obývací pokoj s umakartovým nástřikem",
-        desc: "Elegantní povrchová úprava stěn pro moderní a čistý interiér.",
-        type: "Obývací pokoj",
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-4.webp"
-    },
-    {
-        heading: "Stěna se španělskou technologií Gotele",
-        desc: "Dekorativní struktura Gotele vytváří zajímavý a odolný povrch stěny.",
-        type: "Stěna",
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-5.webp"
-    },
+    // {
+    //     heading: "Obývací pokoj s umakartovým nástřikem",
+    //     desc: "Elegantní povrchová úprava stěn pro moderní a čistý interiér.",
+    //     type: "Obývací pokoj",
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-4.webp"
+    // },
+    // {
+    //     heading: "Stěna se španělskou technologií Gotele",
+    //     desc: "Dekorativní struktura Gotele vytváří zajímavý a odolný povrch stěny.",
+    //     type: "Stěna",
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-5.webp"
+    // },
     {
         heading: "Koupelna se žlutým umakartovým nástřikem",
         desc: "Světlý žlutý odstín oživuje koupelnu a dodává jí příjemnou atmosféru.",
@@ -84,27 +82,22 @@ const galleryItems = [
         type: "Koupelna",
         image: "/Fotky/Services/nastriky-umakartu/Fotka-10.webp"
     },
+    {
+        heading: "Oranžový nástřik umakartového jádra",
+        desc: "Moderní nástřik umakartového jádra v oranžovém odstínu pro svěží a čistý vzhled koupelny.",
+        type: "Koupelna",
+        image: "/Fotky/Services/nastriky-umakartu/Fotka-11.webp"
+    },
+    {
+        heading: "Fialový nástřik umakartového jádra",
+        desc: "Elegantní nástřik umakartového jádra ve fialové barvě, který dodá koupelně osobitý styl.",
+        type: "Koupelna",
+        image: "/Fotky/Services/nastriky-umakartu/Fotka-12.webp"
+    }
 ];
-
-const galleryTypes = [
-    "Vše",
-    "Koupelna",
-    "Chodba",
-    "Obývací pokoj",
-    "Stěna",
-    "Toaleta",
-] as const;
-
-type galleryType = typeof galleryTypes[number];
 
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
 
     return (
         <Fragment>
@@ -133,26 +126,9 @@ const Content = () => {
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">

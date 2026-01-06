@@ -1,13 +1,11 @@
 "use client";
 
 import {
-    useState,
     Fragment
 } from "react";
 import {
     usePathname
 } from "next/navigation";
-import clsx from "clsx";
 
 import ContactHeader from "@/app/Components/ContactHeader";
 import Header from "@/app/Components/Header";
@@ -24,6 +22,12 @@ import Contact from "@/app/Sections/Contact";
 import Footer from "@/app/Sections/Footer";
 
 const galleryItems = [
+    {
+        heading: "Stěna se španělskou technologií Gotele",
+        desc: "Dekorativní struktura Gotele vytváří zajímavý a odolný povrch stěny.",
+        type: "Stěna",
+        image: "/Fotky/Services/nastriky-umakartu/Fotka-5.webp"
+    },
     {
         heading: "Zelený odstín Gotele",
         desc: "Svěží zelený tón španělské technologie Gotele, který dodá prostoru klid a přírodní charakter.",
@@ -43,7 +47,7 @@ const galleryItems = [
         image: "/Fotky/Services/vzornik-gotele/Fotka-3.webp"
     },
     {
-        heading: "Žluto-bílý odstín Gotele",
+        // heading: "Žluto-bílý odstín Gotele",
         desc: "Teplé tóny žluté v kombinaci s bílou rozjasní každý interiér.",
         type: "Gotele",
         image: "/Fotky/Services/vzornik-gotele/Fotka-4.webp"
@@ -86,21 +90,8 @@ const galleryItems = [
     },
 ];
 
-const galleryTypes = [
-    "Vše",
-    "Gotele"
-] as const;
-
-type galleryType = typeof galleryTypes[number];
-
 const Content = () => {
     const pathName = usePathname();
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
 
     return (
         <Fragment>
@@ -112,43 +103,26 @@ const Content = () => {
             folderHref="/sluzby"
             folderLink="Služby"
             siteHref={pathName}
-            siteLink="Španělská technologie Gotele"
+            siteLink="Hrubozrné technologie Gotele"
             />
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md">
                 <PageLabel>
-                    Španělská technologie Gotele
+                    Hrubozrné technologie Gotele
                 </PageLabel>
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
                         {/* Vzorník Gotele */}
-                        Španělská technologie Gotele
+                        Hrubozrné technologie Gotele
                     </Heading>
                     <Subheading>
                         {/* Zde se podívejte na vzorník Španělské technologie Gotele. */}
-                        Moderní strukturované stěny s dlouhou životností, vysokou odolností a elegantním vzhledem pro každý interiér.
+                        Moderní strukturovaná technika s dlouhou životností, vysokou odolností a elegantním vzhledem pro každý interiér.
                     </Subheading>
                 </FlexCol>
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Wrapper className="flex justify-center items-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Wrapper>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
@@ -156,7 +130,7 @@ const Content = () => {
                                             width={250}
                                             height={250}
                                             src={cardItem.image}
-                                            alt={cardItem.heading}
+                                            alt={cardItem.heading || "Ukázka vzorníku hrubozrné technologie Malířství Makrepa Josef Krejčiřík"}
                                             effect={true}
                                             className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 rounded-2xl object-cover"
                                             />

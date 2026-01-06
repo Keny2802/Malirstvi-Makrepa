@@ -1,10 +1,6 @@
-"use client";
-
 import {
-    useState,
     Fragment
 } from "react";
-import clsx from "clsx";
 import Image from "next/image";
 
 import "yet-another-react-lightbox/styles.css";
@@ -145,42 +141,20 @@ const galleryItems = [
         image: "/Fotky/Gallery/Fotka-21.webp"
     },
     {
-        heading: "Pokoj vymalovaný hnědou",
+        // heading: "Pokoj vymalovaný hnědou",
         desc: "Teplé a uklidňující tóny pro pohodlný interiér.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-22.webp"
     },
     {
-        heading: "Pokoj vymalovaný fialovou",
+        // heading: "Pokoj vymalovaný fialovou",
         desc: "Elegantní a stylové barevné řešení pro pokoj.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-23.webp"
     }
 ];
 
-const galleryTypes = [
-    "Vše",
-    "Restaurace",
-    "Byt",
-    "Dům",
-    "Prostor",
-    "Kuchyně",
-    "Jídelna",
-    "Pokoj",
-    "Technologie Gotele"
-] as const;
-
-type galleryType = typeof galleryTypes[number];
-
 const Gallery = () => {
-    const [activeGalleryTab, setActiveGalleryTab] = useState<galleryType>(galleryTypes[0]);
-
-    const filteredGallery = activeGalleryTab === "Vše"
-    ? galleryItems
-    : galleryItems.filter(
-        (galleryItem) => galleryItem.type === activeGalleryTab
-    );
-
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
@@ -197,26 +171,9 @@ const Gallery = () => {
                 </FlexCol>
                 {/* md:flex-row flex-wrap */}
                 <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <Flex className="justify-center flex-wrap gap-4 md:gap-5 lg:gap-6">
-                        {
-                            galleryTypes.map((galleryType, galleryTypeIndex) => {
-                                return (
-                                    <Fragment key={galleryTypeIndex}>
-                                        <button
-                                        className={clsx(`${activeGalleryTab === galleryType ? "border border-[#1d4ed8] bg-[#1d4ed8] text-white" : "border border-gray-200 bg-white text-black hover:bg-[#1d4ed8] hover:text-white"} p-2 md:p-2.5 lg:p-3 rounded-md cursor-pointer transition-colors duration-300 ease-in-out`)}
-                                        onClick={(e) => {
-                                            setActiveGalleryTab(galleryType);
-                                        }}>
-                                            {galleryType}
-                                        </button>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Flex>
                     <FlexRow className="flex-wrap">
                         {
-                            filteredGallery.map((cardItem, cardItemIndex) => {
+                            galleryItems.map((cardItem, cardItemIndex) => {
                                 return (
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">

@@ -89,7 +89,7 @@ const Services = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="w-full max-h-75 md:w-100 md:h-75 rounded-2xl object-cover cursor-pointer"
+                                        className="w-full max-h-75 md:w-100 md:h-75 rounded-2xl object-cover bg-black/40 cursor-pointer"
                                         />
                                         <FlexCol className="p-2 md:p-3 lg:p-4 absolute inset-0 justify-center md:justify-evenly items-center text-center text-white">
                                             <Wrapper>

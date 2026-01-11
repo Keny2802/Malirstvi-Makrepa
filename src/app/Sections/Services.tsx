@@ -46,7 +46,7 @@ const Services = () => {
                                 href: "/sluzby/nastriky-umakartu-a-sten"
                             },
                             {
-                                image: "/Fotky/Services/dekorativni-malby/Fotka (7).webp",
+                                image: "/Fotky/Services/dekorativni-malby/Fotka-9.webp",
                                 heading: "Dekorativní malby",
                                 desc: "Originální a stylové malby, které dodají vašim stěnám osobitý vzhled.",
                                 href: "/sluzby/dekorativni-malby"
@@ -66,7 +66,7 @@ const Services = () => {
                             // },
                             {
                                 // image: "/Fotky/Services/Fotka-3.webp",
-                                image: "/Fotky/Services/dekorativni-malby/Fotka (16).webp",
+                                image: "/Fotky/Services/natery-dveri/Fotka-11.webp",
                                 heading: "Natěry dveří, zárubní, topení",
                                 desc: "Precizní nátěry pro krásný vzhled a dlouhou životnost dveří, zárubní i topení.",
                                 href: "/sluzby/natery-dveri-zarubni-topeni"

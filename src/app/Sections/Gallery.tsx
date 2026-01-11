@@ -178,11 +178,11 @@ const Gallery = () => {
                                     <Fragment key={cardItemIndex}>
                                         <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
                                             <Image
-                                            width={250}
-                                            height={250}
-                                            src={cardItem.image}
-                                            alt={`${cardItem.heading}`}
-                                            className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 object-cover"
+                                                width={250}
+                                                height={250}
+                                                src={cardItem.image}
+                                                alt={`${cardItem.heading}`}
+                                                className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 object-cover"
                                             />
                                             <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
                                                 <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">

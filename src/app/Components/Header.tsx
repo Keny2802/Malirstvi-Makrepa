@@ -79,7 +79,7 @@ const Header = () => {
             className={clsx(`p-2.5 md:p-3 lg:p-3.5 ${isHeaderScrolled && "fixed top-0 left-0"} bg-white shadow-md border-b border-gray-200 w-full z-40 transition-all duration-500 ease-in-out header`)}
             id="header">
                 <Wrapper className="flex justify-between items-center gap-3 md:gap-4 lg:gap-5">
-                    <Logo />
+                    <Logo className="ml-6 md:ml-8 lg:ml-10" />
                     <ul className="hidden xl:flex justify-center items-center gap-4 md:gap-5 lg:gap-6 header-list">
                         <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#1d4ed8] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                             {

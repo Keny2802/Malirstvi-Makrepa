@@ -3,6 +3,9 @@
 import {
     Fragment
 } from "react";
+import {
+    usePathname
+} from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,6 +19,8 @@ import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import FixedCta from "../Components/FixedCta";
 
 const Services = () => {
+    const pathName = usePathname();
+
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
@@ -57,13 +62,6 @@ const Services = () => {
                                 desc: "Moderní technika s elegantní strukturou.",
                                 href: "/sluzby/spanelska-technologie-gotele"
                             },
-                            // {
-                            //     image: "/Fotky/Services/hladke-nastriky/Fotka-4.webp",
-                            //     // heading: "Hladké nástřiky",
-                            //     heading: "Moderní nástřiky",
-                            //     desc: "Precizní hladké nástřiky pro rovnoměrné a elegantní stěny.",
-                            //     href: "/sluzby/hladke-nastriky"
-                            // },
                             {
                                 // image: "/Fotky/Services/Fotka-3.webp",
                                 image: "/Fotky/Services/natery-dveri/Fotka-11.webp",
@@ -113,11 +111,15 @@ const Services = () => {
                     }
                 </FlexRow>
                 <FlexRow>
-                    <Link
-                    href="/sluzby"
-                    className="p-3 md:p-4 lg:p-4.5 border border-gray-200 bg-white text-black text-center w-full md:w-75 rounded-md">
-                        Všechny služby
-                    </Link>
+                    {
+                        pathName === "/" && (
+                            <Link
+                            href="/sluzby"
+                            className="p-3 md:p-4 lg:p-4.5 border border-gray-200 bg-white text-black text-center w-full md:w-75 rounded-md">
+                                Všechny služby
+                            </Link>
+                        )
+                    }
                     <Link
                     href="#kontakt"
                     className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"

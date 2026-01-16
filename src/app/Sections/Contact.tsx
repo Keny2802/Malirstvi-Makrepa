@@ -1,9 +1,21 @@
+"use client";
+
 import {
     Fragment
 } from "react";
 import {
     ArrowTurnDownRightIcon
 } from "@heroicons/react/24/solid";
+import {
+    useForm
+} from "react-hook-form";
+import {
+    zodResolver
+} from "@hookform/resolvers/zod";
+import {
+    ContactFormSchema,
+    contactFormProps
+} from "../lib/validation";
 
 import Wrapper from "../Components/Wrapper";
 import PageLabel from "../Components/PageLabel";
@@ -18,6 +30,47 @@ import MainFixedBanner from "../Components/MainFixedBanner";
 import FixedCta from "../Components/FixedCta";
 
 const Contact = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: {
+            errors,
+            isSubmitting
+        },
+        reset
+    } = useForm<contactFormProps>({
+        resolver: zodResolver(ContactFormSchema),
+        defaultValues: {
+            name: "",
+            email: "",
+            phone: "",
+            emailSubject: "",
+            emailMessage: ""
+        }
+    });
+
+    const handleContactForm = async (contactFormData: contactFormProps) => {
+        console.log(contactFormData);
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(contactFormData)
+            });
+
+            if (!res.ok) {
+                const errorData = await res.json();
+                console.error("Chyba při odesílání formuláře:", errorData);
+                return;
+            }
+
+            console.log("Formulář odeslán!");
+            reset();
+        } catch (error) {
+            console.error("Chyba při odesílání:", error);
+        }
+    };
+
     return (
         <Fragment>
             <Wrapper
@@ -38,7 +91,9 @@ const Contact = () => {
                     </SubHeading>
                 </FlexCol>
                 <FlexRow className="items-center">
-                    <form className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] rounded-3xl w-full md:max-w-250">
+                    <form
+                    onSubmit={handleSubmit(handleContactForm)}
+                    className="p-4 md:p-5 lg:p-6 bg-[#1d4ed8] rounded-3xl w-full md:max-w-250">
                         <FlexCol className="justify-center items-center text-center">
                             <h3 className="text-2xl md:text-[28px] lg:text-[32px] font-semibold text-white">
                                 Pošlete nám poptávku
@@ -51,23 +106,32 @@ const Contact = () => {
                             <FlexCol className="w-full">
                                 <FlexCol className="w-full form-group">
                                     <label
-                                    htmlFor="full-name"
+                                    htmlFor="name"
                                     className="text-white cursor-pointer">
                                         Vaše jméno
                                     </label>
                                     <input
-                                    required
+                                    {...register("name")}
                                     type="text"
-                                    name="full-name"
+                                    name="name"
                                     placeholder="Josef Novák"
                                     spellCheck={false}
                                     autoComplete="full-name"
                                     aria-label="Jméno"
                                     aria-required={true}
-                                    aria-invalid={true}
+                                    aria-invalid={errors.name ? true : false}
                                     className="p-4 md:p-5 lg:p-6 bg-white text-black w-full rounded-md focus:outline-none"
-                                    id="full-name"
+                                    id="name"
                                     />
+                                    {
+                                        errors.name && (
+                                            <Fragment>
+                                                <p className="text-sm text-red-400">
+                                                    {errors.name.message}
+                                                </p>
+                                            </Fragment>
+                                        )
+                                    }
                                 </FlexCol>
                                 <FlexCol className="w-full form-group">
                                     <label
@@ -76,7 +140,7 @@ const Contact = () => {
                                         Váš email
                                     </label>
                                     <input
-                                    required
+                                    {...register("email")}
                                     type="email"
                                     name="email"
                                     placeholder="josef@novak.cz"
@@ -84,10 +148,19 @@ const Contact = () => {
                                     autoComplete="email"
                                     aria-label="Email"
                                     aria-required={true}
-                                    aria-invalid={true}
+                                    aria-invalid={errors.email ? true : false}
                                     className="p-4 md:p-5 lg:p-6 bg-white text-black w-full rounded-md focus:outline-none"
                                     id="email"
                                     />
+                                    {/* {
+                                        errors.email && (
+                                            <Fragment>
+                                                <p className="text-sm text-red-400">
+                                                    {errors.email.message}
+                                                </p>
+                                            </Fragment>
+                                        )
+                                    } */}
                                 </FlexCol>
                                 <FlexCol className="w-full form-group">
                                     <label
@@ -96,39 +169,79 @@ const Contact = () => {
                                         Vaše telefonní číslo
                                     </label>
                                     <input
-                                    required
+                                    {...register("phone")}
                                     type="tel"
-                                    name="tel"
+                                    name="phone"
                                     // XXX XXX XXX
                                     placeholder="+420 601 123 456"
                                     spellCheck={false}
-                                    autoComplete="tel"
+                                    autoComplete="phone"
                                     aria-label="Telefonní číslo"
                                     aria-required={true}
-                                    aria-invalid={true}
+                                    aria-invalid={errors.phone ? true : false}
                                     className="p-4 md:p-5 lg:p-6 bg-white text-black w-full rounded-md focus:outline-none"
-                                    id="tel"
+                                    id="phone"
                                     />
                                 </FlexCol>
                                 <FlexCol className="w-full form-group">
                                     <label
-                                    htmlFor="message"
+                                    htmlFor="subject"
+                                    className="text-white cursor-pointer">
+                                        Předmět Vaší zprávy
+                                    </label>
+                                    <input
+                                    {...register("emailSubject")}
+                                    type="text"
+                                    autoComplete="off"
+                                    spellCheck={false}
+                                    aria-required={true}
+                                    aria-invalid={errors.emailSubject ? true : false}
+                                    placeholder="Předmět Vaší zprávy"
+                                    className="p-4 md:p-5 lg:p-6 bg-white text-black w-full rounded-md focus:outline-none"
+                                    id="subject"
+                                    />
+                                    {/* {
+                                        errors.emailSubject && (
+                                            <Fragment>
+                                                <p className="text-sm text-red-400">
+                                                    {errors.emailSubject.message}
+                                                </p>
+                                            </Fragment>
+                                        )
+                                    } */}
+                                </FlexCol>
+                                <FlexCol className="w-full form-group">
+                                    <label
+                                    htmlFor="emailMessage"
                                     className="text-white cursor-pointer">
                                         Vaše zpráva
                                     </label>
                                     <textarea
-                                    name="message"
+                                    {...register("emailMessage")}
+                                    name="emailMessage"
                                     spellCheck={false}
                                     placeholder="Zpráva co mi chcete sdělit."
                                     aria-label="Zpráva"
                                     aria-required={true}
-                                    aria-invalid={true}
+                                    aria-invalid={errors.emailMessage ? true : false}
                                     className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full min-h-50 h-full"
-                                    id="message"></textarea>
+                                    id="emailMessage"></textarea>
+                                    {
+                                        errors.emailMessage && (
+                                            <Fragment>
+                                                <p className="text-sm text-red-400">
+                                                    {errors.emailMessage.message}
+                                                </p>
+                                            </Fragment>
+                                        )
+                                    }
                                 </FlexCol>
                             </FlexCol>
                         </FlexRow>
-                        <button className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
+                        <button 
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="mt-4 md:mt-6 lg:mt-8 p-3 md:p-4 lg:p-4.5 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             <Flex className="justify-center gap-2 md:gap-2.5 lg:gap-3">
                                 Zaslat zprávu
                                 <Icon className="cursor-pointer">

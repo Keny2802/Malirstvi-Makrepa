@@ -1,9 +1,15 @@
+"use client";
+
 import {
+    useState,
+    useEffect,
     Fragment
 } from "react";
+import {
+    ChevronLeftIcon,
+    ChevronRightIcon
+} from "@heroicons/react/24/solid";
 import Image from "next/image";
-
-import "yet-another-react-lightbox/styles.css";
 
 import Wrapper from "../Components/Wrapper";
 import PageLabel from "../Components/PageLabel";
@@ -11,7 +17,8 @@ import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
-import Flex from "../Components/Flex";
+import Icon from "../Components/Icon";
+import Carousel from "../Components/Carousel";
 
 const galleryItems = [
     {
@@ -155,6 +162,8 @@ const galleryItems = [
 ];
 
 const Gallery = () => {
+    const [currentPhoto, setCurrentPhoto] = useState<number>(0);
+
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">
@@ -169,36 +178,9 @@ const Gallery = () => {
                         Inspirujte se našimi realizacemi a objevte možnosti, jak oživit svůj domov.
                     </SubHeading>
                 </FlexCol>
-                {/* md:flex-row flex-wrap */}
-                <FlexCol className="mt-4 md:mt-5 lg:mt-6 justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                    <FlexRow className="flex-wrap">
-                        {
-                            galleryItems.map((cardItem, cardItemIndex) => {
-                                return (
-                                    <Fragment key={cardItemIndex}>
-                                        <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75">
-                                            <Image
-                                                width={250}
-                                                height={250}
-                                                src={cardItem.image}
-                                                alt={`${cardItem.heading}`}
-                                                className="min-w-80 min-h-80 max-w-100 max-h-100 md:w-62.5 md:max-w-75 md:h-62.5 md:max-h-75 object-cover"
-                                            />
-                                            <FlexCol className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
-                                                    {cardItem.heading}
-                                                </h3>
-                                                <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
-                                                    {cardItem.desc}
-                                                </p>
-                                            </FlexCol>
-                                        </Wrapper>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </FlexRow>
-                </FlexCol>
+                <Carousel
+                carouselSet={galleryItems}
+                />
             </Wrapper>
         </Fragment>
     );

@@ -67,7 +67,7 @@ const Services = () => {
                             {
                                 // image: "/Fotky/Services/Fotka-3.webp",
                                 image: "/Fotky/Services/natery-dveri/Fotka-11.webp",
-                                heading: "Natěry dveří, zárubní, topení",
+                                heading: "Natěry dveří, zárubní, topení, fasád",
                                 desc: "Precizní nátěry pro krásný vzhled a dlouhou životnost dveří, zárubní i topení.",
                                 href: "/sluzby/natery-dveri-zarubni-topeni"
                             },

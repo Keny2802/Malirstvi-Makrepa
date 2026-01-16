@@ -37,7 +37,7 @@ const galleryItems = [
         image: "/Fotky/Services/natery-dveri/Fotka-3.webp"
     },
     {
-        heading: "Dveře natřené žlutým nástřikem",
+        heading: "Zárubní natřené žlutým nástřikem",
         desc: "Odolný a rovnoměrný nátěr dveří pro dlouhotrvající efekt a krásný vzhled.",
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
@@ -79,7 +79,7 @@ const galleryItems = [
         image: "/Fotky/Services/natery-dveri/Fotka-10.webp"
     },
     {
-        heading: "Precizní nátěr interiérových dveří",
+        heading: "Nátěr interiérových dveří",
         desc: "Hladký a rovnoměrný nátěr dveří s důrazem na detail, dlouhou životnost a perfektní vzhled.",
         image: "/Fotky/Services/natery-dveri/Fotka-13.webp"
     },
@@ -89,14 +89,14 @@ const galleryItems = [
         image: "/Fotky/Services/natery-dveri/Fotka-14.webp"
     },
     {
-        heading: "Obnovovací nátěr zábradlí",
+        heading: "Obnovovací nátěr zábradlí a dvěřených madel",
         // desc: "Kvalitní nátěr zábradlí zvyšující odolnost povrchu a celkový estetický dojem.",
         desc: "Renovace zábradlí s novým nátěrem a obnova dřevěného zábradlí.",
         image: "/Fotky/Services/natery-dveri/Fotka-11.webp"
     },
     {
         heading: "Detailní nátěr zábradlí",
-        desc: "Precizní nátěr zábradlí s důrazem na rovnoměrné krytí a dlouhodobou ochranu materiálu.",
+        desc: "Nátěr zábradlí s důrazem na rovnoměrné krytí a dlouhodobou ochranu materiálu.",
         image: "/Fotky/Services/natery-dveri/Fotka-12.webp"
     }
 ];

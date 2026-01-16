@@ -151,7 +151,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
                     </ul>
                     <Link
                     href="tel:+420608751721"
-                    className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1d4ed8] text-white font-semibold rounded-md">
+                    className="p-2 md:p-3 lg:p-4 flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1d4ed8] text-white font-semibold rounded-md">
                         <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 608 751 721
                     </Link>

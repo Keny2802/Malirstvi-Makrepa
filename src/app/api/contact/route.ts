@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { ContactFormSchema } from "@/app/lib/validation";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend("re_dwYMe95e_E8f1EVf7QAAME5XFzHDZeQ5A");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {

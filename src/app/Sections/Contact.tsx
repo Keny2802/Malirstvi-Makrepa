@@ -1,8 +1,12 @@
 "use client";
 
 import {
+    useState,
     Fragment
 } from "react";
+import {
+    useRouter
+} from "next/navigation";
 import {
     ArrowTurnDownRightIcon
 } from "@heroicons/react/24/solid";
@@ -30,6 +34,10 @@ import MainFixedBanner from "../Components/MainFixedBanner";
 import FixedCta from "../Components/FixedCta";
 
 const Contact = () => {
+    const router = useRouter();
+    const [loading, setLoading] = useState<boolean>(false);
+    const [error, setError] = useState<string | null>(null);
+
     const {
         register,
         handleSubmit,
@@ -50,7 +58,6 @@ const Contact = () => {
     });
 
     const handleContactForm = async (contactFormData: contactFormProps) => {
-        console.log(contactFormData);
         try {
             const res = await fetch("/api/contact", {
                 method: "POST",
@@ -64,6 +71,7 @@ const Contact = () => {
                 return;
             }
 
+            router.push("/thankyou");
             console.log("Formulář odeslán!");
             reset();
         } catch (error) {
@@ -71,6 +79,39 @@ const Contact = () => {
         }
     };
 
+    // const handleContactForm = async (evt: React.FormEvent<HTMLFormElement>) => {
+    //     evt.preventDefault();
+    //     setLoading(true);
+    //     setError(null);
+
+    //     const formData = new FormData(evt.currentTarget);
+
+    //     const body = {
+    //         name: formData.get("name"),
+    //         email: formData.get("email"),
+    //         phone: formData.get("phone"),
+    //         emailSubject: formData.get("emailSubject"),
+    //         emailMessage: formData.get("emailMessage")
+    //     };
+
+    //     try {
+    //         const res = await fetch("/api/contact", {
+    //             method: "POST",
+    //             headers: { "Content-Type": "application/json" },
+    //             body: JSON.stringify(body)
+    //         });
+
+    //         if (!res.ok) {
+    //             const errorData = await res.json();
+    //             console.error("Chyba při odesílání formuláře:", errorData);
+    //             return;
+    //         }
+
+    //         console.log("Formulář odeslán!");
+    //         reset();
+    //     } catch (error) {
+    //         console.error("Chyba při odesílání:", error);
+    //     };
     return (
         <Fragment>
             <Wrapper

@@ -71,7 +71,7 @@ const Contact = () => {
                 return;
             }
 
-            router.push("/thankyou");
+            router.push("/dekujeme");
             console.log("Formulář odeslán!");
             reset();
         } catch (error) {

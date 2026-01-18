@@ -47,7 +47,7 @@ const Services = () => {
                             {
                                 image: "/Fotky/Services/nastriky-umakartu/Fotka-1.webp",
                                 heading: "Nástřiky umakartu a stěn",
-                                desc: "Renovace umakartových jader bez bourání - rychle, čistě a precizně.",
+                                desc: "Renovace umakartových jader bez bourání - rychle, čistě.",
                                 href: "/sluzby/nastriky-umakartu-a-sten"
                             },
                             {

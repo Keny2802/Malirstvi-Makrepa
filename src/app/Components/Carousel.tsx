@@ -32,6 +32,7 @@ const Carousel = ({ ...props }: CarouselType) => {
     } = props;
 
     const [currentPhoto, setCurrentPhoto] = useState<number>(0);
+    const [isMobile, setMobile] = useState<boolean>(false);
     
     useEffect(() => {
         const handleKeyDown = (evt: KeyboardEvent) => {
@@ -51,6 +52,19 @@ const Carousel = ({ ...props }: CarouselType) => {
         };
     }, []);
 
+    useEffect(() => {
+        const checkScreen = () => {
+            setMobile(window.innerWidth < 768);
+        };
+
+        checkScreen();
+        window.addEventListener("resize", checkScreen);
+
+        return () => {
+            window.removeEventListener("resize", checkScreen);
+        };
+    }, []);
+
     const nextSlide = () => {
         setCurrentPhoto(prev => (prev + 1) % carouselSet.length);
     };
@@ -64,41 +78,44 @@ const Carousel = ({ ...props }: CarouselType) => {
             <FlexRow className="relative justify-center items-center">
                 <button
                 onClick={prevSlide}
-                className="absolute left-0 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
+                className="absolute left-0 translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
                     <Icon className="cursor-pointer">
                         <ChevronLeftIcon />
                     </Icon>
                 </button>
                 <button
                 onClick={(nextSlide)}
-                className="absolute right-0 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
+                className="absolute right-0 translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
                     <Icon className="cursor-pointer">
                         <ChevronRightIcon />
                     </Icon>
                 </button>
             </FlexRow>
-            <Wrapper className="overflow-hidden w-full max-w-5xl mx-auto">
+            <Wrapper className="overflow-hidden w-full md:w-150 h-max mx-auto">
                 <Wrapper
                 className="flex transition-transform duration ease-in-out"
                 style={{
-                    transform: `translateX(-${currentPhoto * 100}%)`
+                    transform: isMobile ?
+                    `translateX(-${currentPhoto * 100}%)`
+                    :
+                    `translateX(-${currentPhoto * 600}px)`
                 }}>
                     {
                         carouselSet.map((cardItem, index) => {
                             return (
                                 <Fragment
                                 key={index}>
-                                    <Wrapper className="min-w-full shrink-0 p-2 md:p-3 lg:p-4">
-                                        <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer w-full max-h-200">
+                                    <Wrapper className="w-full md:w-150 shrink-0 p-2 md:p-3 lg:p-4">
+                                        <Wrapper className="relative group overflow-hidden rounded-2xl w-full cursor-pointer">
                                             <Image
                                             width={600}
                                             height={600}
                                             src={cardItem.image}
-                                            alt={cardItem.heading || "Ukázka malířské a natěračské práce | Malířství Makrepa Josef Krejčiřík"}
+                                            alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky | Malířství Makrepa Josef Krejčiřík`}
                                             loading="lazy"
                                             decoding="async"
                                             draggable={false}
-                                            className="w-full max-h-200 object-cover"
+                                            className="w-full object-cover"
                                             />
                                             <FlexCol
                                             className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">

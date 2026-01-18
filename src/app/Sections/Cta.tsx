@@ -32,14 +32,6 @@ const Cta = () => {
                     </p>
                     <Wrapper className="p-2 md:p-2.5 lg:p-3 mt-2 md:mt-3 lg:mt-4 flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                         <Link
-                        href="#kalkulace"
-                        className="p-3 md:p-4 lg:p-4.5 bg-white text-black text-center w-full md:w-75 rounded-md"
-                        onClick={(e) => {
-                            setLinkWithoutHash(e, "kalkulace");
-                        }}>
-                            Nezávazná kalkulace
-                        </Link>
-                        <Link
                         href="#kontakt"
                         className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-wite text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {

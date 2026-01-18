@@ -162,8 +162,6 @@ const galleryItems = [
 ];
 
 const Gallery = () => {
-    const [currentPhoto, setCurrentPhoto] = useState<number>(0);
-
     return (
         <Fragment>
             <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-white shadow-md section">

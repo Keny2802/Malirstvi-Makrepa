@@ -69,7 +69,7 @@ const Content = () => {
                         Kvalitní malování bytů, domů i komerčních prostor s důrazem na čistotu, detail a dlouhou životnost.
                     </Subheading>
                 </FlexCol>
-                <Flex className="mt-4 md:mt-6 lg:mt-8 flex-wrap">
+                <Flex className="mt-4 md:mt-6 lg:mt-8 justify-center flex-wrap">
                     {
                         GalleryItems.map((item, index) => {
                             return (

@@ -126,6 +126,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                                                 loading="lazy"
                                                 decoding="async"
                                                 draggable={false}
+                                                quality={90}
                                                 className="w-full h-100 object-cover"
                                                 />
                                                 <FlexCol

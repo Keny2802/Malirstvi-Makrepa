@@ -67,7 +67,7 @@ const Content = () => {
                         Originální povrchové úpravy stěn, které dodají vašemu interiéru jedinečný vzhled a atmosféru.
                     </Subheading>
                 </FlexCol>
-                <Flex className="mt-4 md:mt-6 lg:mt-8 flex-wrap">
+                <Flex className="mt-4 md:mt-6 lg:mt-8 justify-center flex-wrap">
                     {
                         GalleryItems.map((item, index) => {
                             return (

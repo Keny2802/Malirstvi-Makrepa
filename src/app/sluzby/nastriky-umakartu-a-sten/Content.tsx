@@ -67,7 +67,7 @@ const Content = () => {
                         Rychlá a čistá obnova umakartových jader a stěn pomocí profesionálního nástřiku. Moderní vzhled, dlouhá životnost a minimum nepořádku.
                     </Subheading>
                 </FlexCol>
-                <Flex className="mt-4 md:mt-6 lg:mt-8 flex-wrap">
+                <Flex className="mt-4 md:mt-6 lg:mt-8 justify-center flex-wrap">
                     {
                         GalleryItems.map((item, index) => {
                             return (

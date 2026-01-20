@@ -4,12 +4,14 @@ import {
 import {
     DevicePhoneMobileIcon
 } from "@heroicons/react/24/solid";
+import {
+    motion
+} from "motion/react";
 import Image from "next/image";
 
 import Wrapper from "../Components/Wrapper";
 import PageLabel from "../Components/PageLabel";
 import Heading from "../Components/Heading";
-import SubHeading from "../Components/Subheading";
 import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
 import PhoneLink from "../Components/PhoneLink";

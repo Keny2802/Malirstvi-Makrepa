@@ -65,36 +65,36 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-13.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-14.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-15.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-16.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-14.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-15.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-16.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
     },
@@ -113,9 +113,9 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-29.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-31.webp"
     },
@@ -125,21 +125,21 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-33.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-34.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-34.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-35.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-36.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-37.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-38.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-36.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-37.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-38.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-39.webp"
     },

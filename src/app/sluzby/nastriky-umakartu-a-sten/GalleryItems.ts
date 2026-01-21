@@ -62,36 +62,36 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/nastriky-umakartu/Fotka-13.webp"
     },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-14.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-14.webp"
+    // },
     {
         image: "/Fotky/Services/nastriky-umakartu/Fotka-15.webp"
     },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-16.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-17.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-18.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-19.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-20.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-21.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-22.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-23.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-16.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-17.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-18.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-19.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-20.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-21.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-22.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-23.webp"
+    // },
     {
         image: "/Fotky/Services/nastriky-umakartu/Fotka-24.webp"
     },
@@ -104,13 +104,13 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/nastriky-umakartu/Fotka-27.webp"
     },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-28.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-29.webp"
-    },
-    {
-        image: "/Fotky/Services/nastriky-umakartu/Fotka-30.webp"
-    }
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-28.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-29.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/nastriky-umakartu/Fotka-30.webp"
+    // }
 ];

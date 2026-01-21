@@ -27,8 +27,6 @@ import Cta from "@/app/Sections/Cta";
 import Contact from "@/app/Sections/Contact";
 import Footer from "@/app/Sections/Footer";
 
-
-
 const Content = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const pathName = usePathname();

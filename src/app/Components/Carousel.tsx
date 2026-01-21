@@ -129,15 +129,21 @@ const Carousel = ({ ...props }: CarouselType) => {
                                                 quality={90}
                                                 className="w-full h-100 object-cover"
                                                 />
-                                                <FlexCol
-                                                className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                    <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
-                                                        {cardItem.heading}
-                                                    </h3>
-                                                    <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
-                                                        {cardItem.desc}
-                                                    </p>
+                                                {cardItem.heading || cardItem.desc && (
+                                                    <FlexCol
+                                                    className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
+                                                    {cardItem.heading && (
+                                                        <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                            {cardItem.heading}
+                                                        </h3>
+                                                    )}
+                                                    {cardItem.desc && (
+                                                        <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                            {cardItem.desc}
+                                                        </p>
+                                                    )}
                                                 </FlexCol>
+                                                )}
                                             </Wrapper>
                                         </Wrapper>
                                     </Fragment>

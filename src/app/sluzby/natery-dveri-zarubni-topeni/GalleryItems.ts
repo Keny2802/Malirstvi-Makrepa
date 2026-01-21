@@ -74,69 +74,69 @@ export const GalleryItems = [
         desc: "Nátěr zábradlí s důrazem na rovnoměrné krytí a dlouhodobou ochranu materiálu.",
         image: "/Fotky/Services/natery-dveri/Fotka-12.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-15.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-16.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-15.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-16.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-17.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-18.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-19.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-20.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-21.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-22.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-23.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-24.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-18.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-19.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-20.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-21.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-22.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-23.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-24.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-25.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-26.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-27.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-28.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-29.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-30.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-31.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-32.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-33.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-34.webp"
-    },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-35.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-26.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-27.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-28.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-29.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-30.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-31.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-32.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-33.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-34.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-35.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-36.webp"
     },

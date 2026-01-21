@@ -1,22 +1,22 @@
 export const GalleryItems = [
-    {
-        heading: "Vymalovaná restaurace",
-        desc: "Elegantní a čisté malby restaurace pro příjemnou atmosféru.",
-        type: "Restaurace",
-        image: "/Fotky/Gallery/Fotka-1.webp"
-    },
-    {
-        heading: "Vymalovaný obývací pokoj",
-        desc: "Pohodlný a svěží interiér díky preciznímu malování.",
-        type: "Byt",
-        image: "/Fotky/Gallery/Fotka-2.webp"
-    },
-    {
-        heading: "Obývací pokoj pro domácí mazlíčky",
-        desc: "Praktické a krásné malby, které vydrží i při domácích mazlíčcích.",
-        type: "Dům",
-        image: "/Fotky/Gallery/Fotka-3.webp"
-    },
+    // {
+    //     heading: "Vymalovaná restaurace",
+    //     desc: "Elegantní a čisté malby restaurace pro příjemnou atmosféru.",
+    //     type: "Restaurace",
+    //     image: "/Fotky/Gallery/Fotka-1.webp"
+    // },
+    // {
+    //     heading: "Vymalovaný obývací pokoj",
+    //     desc: "Pohodlný a svěží interiér díky preciznímu malování.",
+    //     type: "Byt",
+    //     image: "/Fotky/Gallery/Fotka-2.webp"
+    // },
+    // {
+    //     heading: "Obývací pokoj pro domácí mazlíčky",
+    //     desc: "Praktické a krásné malby, které vydrží i při domácích mazlíčcích.",
+    //     type: "Dům",
+    //     image: "/Fotky/Gallery/Fotka-3.webp"
+    // },
     {
         heading: "Vymalované jídelní studio",
         desc: "Jídelní prostor s čistými stěnami a moderním designem.",
@@ -125,24 +125,24 @@ export const GalleryItems = [
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-21.webp"
     },
-    {
-        // heading: "Pokoj vymalovaný hnědou",
-        desc: "Teplé a uklidňující tóny pro pohodlný interiér.",
-        type: "Pokoj",
-        image: "/Fotky/Gallery/Fotka-22.webp"
-    },
+    // {
+    //     // heading: "Pokoj vymalovaný hnědou",
+    //     desc: "Teplé a uklidňující tóny pro pohodlný interiér.",
+    //     type: "Pokoj",
+    //     image: "/Fotky/Gallery/Fotka-22.webp"
+    // },
     {
         // heading: "Pokoj vymalovaný fialovou",
         desc: "Elegantní a stylové barevné řešení pro pokoj.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-23.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
     },
@@ -197,12 +197,12 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
     },
@@ -212,22 +212,23 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-26.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-27.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-28.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-29.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-27.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-28.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-29.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-31.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-32.webp"
-    }
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-32.webp"
+    // },
+    { image: "/Fotky/About/Fotka-1.webp" }
 ];

@@ -1,22 +1,22 @@
 export const GalleryItems = [
-    {
-        // heading: "Pokoj v tmavě modrých tónech",
-        desc: "Elegantní malba v teplé tmavě modré barvě, která dodává místnosti klid a moderní vzhled.",
-        type: "Pokoj",
-        image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
-    },
-    {
-        // heading: "Pokoj v přírodní zelené barvě",
-        desc: "Jemná zelená malba vytváří harmonické a uklidňující prostředí pro každodenní bydlení.",
-        type: "Pokoj",
-        image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
-    },
-    {
-        heading: "Útulný obývací pokoj po malování",
-        desc: "Precizně vymalovaný obývací pokoj s důrazem na čisté linie a rovnoměrné krytí.",
-        type: "Obývací pokoj",
-        image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
-    },
+    // {
+    //     // heading: "Pokoj v tmavě modrých tónech",
+    //     desc: "Elegantní malba v teplé tmavě modré barvě, která dodává místnosti klid a moderní vzhled.",
+    //     type: "Pokoj",
+    //     image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
+    // },
+    // {
+    //     // heading: "Pokoj v přírodní zelené barvě",
+    //     desc: "Jemná zelená malba vytváří harmonické a uklidňující prostředí pro každodenní bydlení.",
+    //     type: "Pokoj",
+    //     image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
+    // },
+    // {
+    //     heading: "Útulný obývací pokoj po malování",
+    //     desc: "Precizně vymalovaný obývací pokoj s důrazem na čisté linie a rovnoměrné krytí.",
+    //     type: "Obývací pokoj",
+    //     image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
+    // },
     {
         heading: "Chodba v bytovém domě",
         desc: "Čisté a poctivě provedené malířské práce v chodbě bytového domu bez zbytečného nepořádku.",
@@ -41,12 +41,12 @@ export const GalleryItems = [
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-7.webp"
     },
-    {
-        // heading: "Obývací pokoj v jemné růžové barvě",
-        desc: "Útulné a světlé řešení obývacího pokoje s jemným barevným laděním.",
-        type: "Obývací pokoj",
-        image: "/Fotky/Services/malirske-prace/Fotka-8.webp"
-    },
+    // {
+    //     // heading: "Obývací pokoj v jemné růžové barvě",
+    //     desc: "Útulné a světlé řešení obývacího pokoje s jemným barevným laděním.",
+    //     type: "Obývací pokoj",
+    //     image: "/Fotky/Services/malirske-prace/Fotka-8.webp"
+    // },
     {
         heading: "Chodba po vymalování",
         desc: "Důkladně připravené stěny a kvalitní malba s dlouhou životností.",
@@ -155,9 +155,9 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-43.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-44.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-44.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-45.webp"
     },
@@ -173,10 +173,10 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-49.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-50.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-51.webp"
-    }
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-50.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-51.webp"
+    // }
 ];

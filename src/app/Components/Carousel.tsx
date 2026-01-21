@@ -116,11 +116,11 @@ const Carousel = ({ ...props }: CarouselType) => {
                                 return (
                                     <Fragment
                                     key={index}>
-                                        <Wrapper className="w-full md:w-150 shrink-0 p-2 md:p-3 lg:p-4">
-                                            <Wrapper className="relative group overflow-hidden rounded-2xl w-full cursor-pointer">
+                                        <Wrapper className="w-full md:w-150 h-100 shrink-0 p-2 md:p-3 lg:p-4">
+                                            <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer">
                                                 <Image
-                                                width={800}
-                                                height={800}
+                                                width={600}
+                                                height={600}
                                                 src={cardItem.image}
                                                 alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky | Malířství Makrepa Josef Krejčiřík`}
                                                 loading="lazy"

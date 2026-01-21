@@ -16,10 +16,7 @@ import PageLabel from "../Components/PageLabel";
 import Heading from "../Components/Heading";
 import SubHeading from "../Components/Subheading";
 import FlexCol from "../Components/FlexCol";
-import FlexRow from "../Components/FlexRow";
 import Flex from "../Components/Flex";
-import Icon from "../Components/Icon";
-import Carousel from "../Components/Carousel";
 import CarouselOverlayWrapper from "../Components/CarouselOverlayWrapper";
 
 const Gallery = () => {
@@ -53,7 +50,7 @@ const Gallery = () => {
                     {/* <Carousel
                     carouselSet={galleryItems}
                     /> */}
-                    <Flex className="mt-4 md:mt-6 lg:mt-8 flex-wrap">
+                    <Flex className="mt-4 md:mt-6 lg:mt-8 justify-center flex-wrap">
                         {
                             GalleryItems.map((item, index) => {
                                 return (

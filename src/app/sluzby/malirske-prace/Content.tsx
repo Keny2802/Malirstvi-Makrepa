@@ -62,7 +62,7 @@ const Content = () => {
                 <FlexCol className="justify-center items-center text-center">
                      <Heading>
                         {/* Kvalitní malířské práce */}
-                        Malířské práce na klíč
+                        Malířské práce
                     </Heading>
                     <Subheading>
                         {/* Podívejte se na naše již realizované kvalitní a zodpovědné malířské práce. */}

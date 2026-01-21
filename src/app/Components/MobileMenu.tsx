@@ -68,7 +68,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
             <Activity mode={isMobileMenuClicked ? "visible" : "hidden"}>
                 <Fragment>
                     <Wrapper
-                    className="fixed lg:hidden inset-0 z-50 bg-black/40"
+                    className="fixed lg:hidden inset-0 z-40 bg-black/40"
                     onClick={(e) => {
                         setMobileMenuClicked(false);
                     }}></Wrapper>

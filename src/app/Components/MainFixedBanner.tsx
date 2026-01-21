@@ -54,7 +54,7 @@ const MainFixedBanner = ({ ...props }: MainFixedBannerType) => {
                     <Fragment>
                         <Wrapper className={clsx(
                         "z-100 fixed bottom-6 left-5 p-2 md:p-3 lg:p-4 border border-gray-200 bg-white shadow-md rounded-md",
-                        isBannerDisplayed ? "opacity-100" : "opacity-0",
+                        isBannerDisplayed ? "block" : "hidden",
                         className)}>
                         <Wrapper className="flex justify-end">
                             <Icon className="cursor-pointer">

@@ -17,12 +17,12 @@ export const GalleryItems = [
         type: "Dveře",
         image: "/Fotky/Services/natery-dveri/Fotka-4.webp"
     },
-    {
-        heading: "Příprava zábradlí před nátěrem",
-        desc: "Kvalitní nátěr zábradlí, který chrání kov a dodává interiéru moderní vzhled.",
-        type: "Zábradlí",
-        image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
-    },
+    // {
+    //     heading: "Příprava zábradlí před nátěrem",
+    //     desc: "Kvalitní nátěr zábradlí, který chrání kov a dodává interiéru moderní vzhled.",
+    //     type: "Zábradlí",
+    //     image: "/Fotky/Services/natery-dveri/Fotka-5.webp"
+    // },
     {
         heading: "Nátěr zárubní",
         desc: "Kombinace barev pro harmonický a stylový interiér s odolným nátěrem dveří.",

@@ -17,32 +17,32 @@ export const GalleryItems = [
     //     type: "Dům",
     //     image: "/Fotky/Gallery/Fotka-3.webp"
     // },
+    // {
+    //     heading: "Vymalované jídelní studio",
+    //     desc: "Jídelní prostor s čistými stěnami a moderním designem.",
+    //     type: "Prostor",
+    //     image: "/Fotky/Gallery/Fotka-4.webp"
+    // },
+    // {
+    //     heading: "Útulný obývací pokoj",
+    //     desc: "Teplé a příjemné tóny pro dokonalou atmosféru domova.",
+    //     type: "Byt",
+    //     image: "/Fotky/Gallery/Fotka-5.webp"
+    // },
+    // {
+    //     heading: "Prostory plastické chirurgie",
+    //     desc: "Moderní a sterilní vzhled s hladkými nástřiky stěn.",
+    //     type: "Prostor",
+    //     image: "/Fotky/Gallery/Fotka-6.webp"
+    // },
+    // {
+    //     heading: "Vymalovaná kuchyně",
+    //     desc: "Barevné a praktické řešení stěn v kuchyni.",
+    //     type: "Kuchyně",
+    //     image: "/Fotky/Gallery/Fotka-7.webp"
+    // },
     {
         heading: "Vymalované jídelní studio",
-        desc: "Jídelní prostor s čistými stěnami a moderním designem.",
-        type: "Prostor",
-        image: "/Fotky/Gallery/Fotka-4.webp"
-    },
-    {
-        heading: "Útulný obývací pokoj",
-        desc: "Teplé a příjemné tóny pro dokonalou atmosféru domova.",
-        type: "Byt",
-        image: "/Fotky/Gallery/Fotka-5.webp"
-    },
-    {
-        heading: "Prostory plastické chirurgie",
-        desc: "Moderní a sterilní vzhled s hladkými nástřiky stěn.",
-        type: "Prostor",
-        image: "/Fotky/Gallery/Fotka-6.webp"
-    },
-    {
-        heading: "Vymalovaná kuchyně",
-        desc: "Barevné a praktické řešení stěn v kuchyni.",
-        type: "Kuchyně",
-        image: "/Fotky/Gallery/Fotka-7.webp"
-    },
-    {
-        heading: "Vymalovaná jídelna",
         desc: "Příjemné tóny pro pohodové stolování a rodinnou pohodu.",
         type: "Jídelna",
         image: "/Fotky/Gallery/Fotka-8.webp"
@@ -182,30 +182,30 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/malirske-prace/Fotka-16.webp"
     },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
+    // },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
+    // },
     // {
     //     image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
     // },
     // {
     //     image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
     // },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
+    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-25.webp"
     },

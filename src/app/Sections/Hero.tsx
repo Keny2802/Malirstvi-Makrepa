@@ -1,26 +1,20 @@
 "use client";
 
 import {
-    useEffect,
-    useState,
     Fragment
 } from "react";
-import {
-    CalculatorIcon,
-} from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
 import Wrapper from "../Components/Wrapper";
+import Img from "../Components/Img";
 import HeroHeading from "../Components/HeroHeading";
 import SubHeading from "../Components/Subheading";
 import OverlayWrapper from "../Components/OverlayWrapper";
 import FlexCol from "../Components/FlexCol";
 import FlexRow from "../Components/FlexRow";
-import Flex from "../Components/Flex";
 import setLinkWithoutHash from "../Functions/setLinkWithoutHash";
 import FixedCta from "../Components/FixedCta";
-import Icon from "../Components/Icon";
 
 const Hero = () => {
     return (
@@ -34,7 +28,6 @@ const Hero = () => {
                 src="/Fotky/Hero/Hero.webp"
                 alt="Profesionální malířské práce bez starostí"
                 loading="eager"
-                decoding="async"
                 draggable={false}
                 className="w-full h-screen object-cover"
                 />
@@ -54,20 +47,6 @@ const Hero = () => {
                             </SubHeading>
                         </Wrapper>
                         <FlexRow>
-                            {/* p-3 md:p-4 lg:p-4.5 */}
-                            {/* <Link
-                            href="#kalkulace"
-                            className="bg-white text-black text-center w-full md:w-75 rounded-md"
-                            onClick={(e) => {
-                                setLinkWithoutHash(e, "kalkulace");
-                            }}>
-                                <Flex className="p-3 md:p-4 lg:p-4.5 justify-center">
-                                    <Icon className="cursor-pointer">
-                                        <CalculatorIcon />
-                                    </Icon>
-                                    Nezávazná kalkulace
-                                </Flex>
-                            </Link> */}
                             <Link
                             href="#reference"
                             className="p-3 md:p-4 lg:p-4.5 bg-[#1d4ed8] text-white text-center w-full md:w-75 rounded-md"

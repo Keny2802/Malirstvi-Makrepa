@@ -146,27 +146,27 @@ export const GalleryItems = [
     {
         image: "/Fotky/Services/natery-dveri/Fotka-38.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-39.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-39.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-40.webp"
     },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-41.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-42.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-42.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-43.webp"
     },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-44.webp"
     },
-    {
-        image: "/Fotky/Services/natery-dveri/Fotka-45.webp"
-    },
+    // {
+    //     image: "/Fotky/Services/natery-dveri/Fotka-45.webp"
+    // },
     {
         image: "/Fotky/Services/natery-dveri/Fotka-46.webp"
     }

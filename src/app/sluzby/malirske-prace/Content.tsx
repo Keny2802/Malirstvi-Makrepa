@@ -73,8 +73,8 @@ const Content = () => {
                             return (
                                 <Fragment key={index}>
                                     <Image
-                                    width={165}
-                                    height={150}
+                                    width={900  }
+                                    height={900}
                                     src={item.image}
                                     alt={`Malířské a natěračské práce | Malířství Makrepa Josef Krejčiřík ukázka práce ${index + 1}. Fotka`}
                                     loading="lazy"

@@ -1,51 +1,39 @@
 import {
-    Fragment
+    Fragment,
+    Suspense
 } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
-import Wrapper from "./Wrapper";
-
-interface ImgType {
+type ImageType = {
     className?: string;
     width: number;
     height: number;
     src: string;
     alt: string;
-    effect: boolean;
-    onClick?: (e: React.MouseEvent<HTMLImageElement>) => void;
+    loading: any;
 };
 
-const Img = ({ ...props }: ImgType) => {
+const Img = ({ ...props }: ImageType) => {
     const {
         className,
         width,
         height,
         src,
         alt,
-        effect,
-        onClick
+        loading
     } = props;
-
-    return (
-        <Fragment>
-            <Wrapper className={clsx("overflow-hidden rounded-md")}>
-                <Image
-                width={width}
-                height={height}
-                src={src}
-                alt={alt}
-                loading="lazy"
-                decoding="async"
-                draggable={false}
-                className={clsx(
-                effect ? "w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-110" : null,
-                className)}
-                onClick={onClick}
-                />
-            </Wrapper>
-        </Fragment>
-    );
+    <Fragment>
+        <Image
+        width={width}
+        height={height}
+        src={src}
+        alt={alt}
+        loading={!loading ? "lazy" : loading}
+        draggable={false}
+        className={clsx(className)}
+        />
+    </Fragment>
 };
 
 export default Img;

@@ -12,7 +12,6 @@ import {
 import Image from "next/image";
 
 import Wrapper from "./Wrapper";
-import FlexCol from "../Components/FlexCol";
 import Subheading from "./Subheading";
 import Icon from "../Components/Icon";
 
@@ -88,7 +87,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                 <Subheading className="absolute top-4 md:top-6 left-4 md:left-6 text-white">
                     {currentPhoto + 1} / {carouselSet.length}
                 </Subheading>
-                <Wrapper className="relative overflow-hidden w-full md:w-150 h-100 mx-auto">
+                <Wrapper className="relative overflow-hidden w-full max-w-5xl mx-auto">
                     <button
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
@@ -106,30 +105,26 @@ const Carousel = ({ ...props }: CarouselType) => {
                     <Wrapper
                     className="flex transition-transform duration ease-in-out"
                     style={{
-                        transform: isMobile ?
-                        `translateX(-${currentPhoto * 100}%)`
-                        :
-                        `translateX(-${currentPhoto * 600}px)`
+                        transform: `translateX(-${currentPhoto * 100}%)`
                     }}>
                         {
                             carouselSet.map((cardItem, index) => {
                                 return (
                                     <Fragment
                                     key={index}>
-                                        <Wrapper className="w-full md:w-150 h-100 shrink-0 p-2 md:p-3 lg:p-4">
-                                            <Wrapper className="relative group overflow-hidden rounded-2xl cursor-pointer">
+                                        <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
+                                            <Wrapper className="relative group overflow-hidden aspect-[16/9] cursor-pointer">
                                                 <Image
-                                                width={600}
-                                                height={600}
+                                                fill
                                                 src={cardItem.image}
                                                 alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky | Malířství Makrepa Josef Krejčiřík`}
                                                 loading="lazy"
                                                 decoding="async"
                                                 draggable={false}
                                                 quality={90}
-                                                className="w-full h-100 object-cover"
+                                                className="object-contain"
                                                 />
-                                                {cardItem.heading || cardItem.desc && (
+                                                {/* {(cardItem.heading || cardItem.desc) && (
                                                     <FlexCol
                                                     className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
                                                     {cardItem.heading && (
@@ -143,7 +138,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                                                         </p>
                                                     )}
                                                 </FlexCol>
-                                                )}
+                                                )} */}
                                             </Wrapper>
                                         </Wrapper>
                                     </Fragment>

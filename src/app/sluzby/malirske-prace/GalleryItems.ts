@@ -1,22 +1,4 @@
 export const GalleryItems = [
-    // {
-    //     // heading: "Pokoj v tmavě modrých tónech",
-    //     desc: "Elegantní malba v teplé tmavě modré barvě, která dodává místnosti klid a moderní vzhled.",
-    //     type: "Pokoj",
-    //     image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
-    // },
-    // {
-    //     // heading: "Pokoj v přírodní zelené barvě",
-    //     desc: "Jemná zelená malba vytváří harmonické a uklidňující prostředí pro každodenní bydlení.",
-    //     type: "Pokoj",
-    //     image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
-    // },
-    // {
-    //     heading: "Útulný obývací pokoj po malování",
-    //     desc: "Precizně vymalovaný obývací pokoj s důrazem na čisté linie a rovnoměrné krytí.",
-    //     type: "Obývací pokoj",
-    //     image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
-    // },
     {
         heading: "Chodba v bytovém domě",
         desc: "Čisté a poctivě provedené malířské práce v chodbě bytového domu bez zbytečného nepořádku.",
@@ -41,12 +23,6 @@ export const GalleryItems = [
         type: "Obývací pokoj",
         image: "/Fotky/Services/malirske-prace/Fotka-7.webp"
     },
-    // {
-    //     // heading: "Obývací pokoj v jemné růžové barvě",
-    //     desc: "Útulné a světlé řešení obývacího pokoje s jemným barevným laděním.",
-    //     type: "Obývací pokoj",
-    //     image: "/Fotky/Services/malirske-prace/Fotka-8.webp"
-    // },
     {
         heading: "Chodba po vymalování",
         desc: "Důkladně připravené stěny a kvalitní malba s dlouhou životností.",
@@ -63,120 +39,49 @@ export const GalleryItems = [
         image: "/Fotky/Services/malirske-prace/Fotka-12.webp"
     },
     {
-        image: "/Fotky/Services/malirske-prace/Fotka-13.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-14.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-15.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-16.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
-    // },
-    {
         image: "/Fotky/Services/malirske-prace/Fotka-25.webp"
     },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-26.webp"
     },
     {
-        image: "/Fotky/Services/malirske-prace/Fotka-27.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-28.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-29.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
-    // },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-31.webp"
-    },
-    {
         image: "/Fotky/Services/malirske-prace/Fotka-32.webp"
     },
     {
-        image: "/Fotky/Services/malirske-prace/Fotka-33.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-34.webp"
-    // },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-35.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-36.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-37.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-38.webp"
-    // },
-    {
         image: "/Fotky/Services/malirske-prace/Fotka-39.webp"
-    },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-40.webp"
     },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-41.webp"
     },
     {
-        image: "/Fotky/Services/malirske-prace/Fotka-42.webp"
-    },
-    {
         image: "/Fotky/Services/malirske-prace/Fotka-43.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-44.webp"
-    // },
-    {
-        image: "/Fotky/Services/malirske-prace/Fotka-45.webp"
     },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-46.webp"
     },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-47.webp"
-    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-48.webp"
     },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-49.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-50.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-51.webp"
-    // }
+    { image: "/Fotky/Gallery/Fotka-24.avif" },
+    { image: "/Fotky/Gallery/Fotka-25.avif" },
+    { image: "/Fotky/Gallery/Fotka-26.avif" },
+    { image: "/Fotky/Gallery/Fotka-27.avif" },
+    { image: "/Fotky/Gallery/Fotka-28.avif" },
+    { image: "/Fotky/Gallery/Fotka-29.avif" },
+    { image: "/Fotky/Gallery/Fotka-30.avif" },
+    { image: "/Fotky/Gallery/Fotka-31.avif" },
+    { image: "/Fotky/Gallery/Fotka-32.avif" },
+    { image: "/Fotky/Gallery/Fotka-33.avif" },
+    { image: "/Fotky/Gallery/Fotka-34.avif" },
+    { image: "/Fotky/Gallery/Fotka-35.avif" },
+    { image: "/Fotky/Gallery/Fotka-36.avif" },
+    { image: "/Fotky/Gallery/Fotka-37.avif" },
+    { image: "/Fotky/Gallery/Fotka-38.avif" },
+    { image: "/Fotky/Gallery/Fotka-39.avif" },
+    { image: "/Fotky/Gallery/Fotka-40.avif" },
+    { image: "/Fotky/Gallery/Fotka-41.avif" },
+    { image: "/Fotky/Gallery/Fotka-42.avif" },
+    { image: "/Fotky/Gallery/Fotka-43.avif" },
+    { image: "/Fotky/Gallery/Fotka-44.avif" },
+    { image: "/Fotky/Gallery/Fotka-45.avif" },
 ];

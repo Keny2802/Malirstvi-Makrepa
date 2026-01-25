@@ -1,46 +1,4 @@
 export const GalleryItems = [
-    // {
-    //     heading: "Vymalovaná restaurace",
-    //     desc: "Elegantní a čisté malby restaurace pro příjemnou atmosféru.",
-    //     type: "Restaurace",
-    //     image: "/Fotky/Gallery/Fotka-1.webp"
-    // },
-    // {
-    //     heading: "Vymalovaný obývací pokoj",
-    //     desc: "Pohodlný a svěží interiér díky preciznímu malování.",
-    //     type: "Byt",
-    //     image: "/Fotky/Gallery/Fotka-2.webp"
-    // },
-    // {
-    //     heading: "Obývací pokoj pro domácí mazlíčky",
-    //     desc: "Praktické a krásné malby, které vydrží i při domácích mazlíčcích.",
-    //     type: "Dům",
-    //     image: "/Fotky/Gallery/Fotka-3.webp"
-    // },
-    // {
-    //     heading: "Vymalované jídelní studio",
-    //     desc: "Jídelní prostor s čistými stěnami a moderním designem.",
-    //     type: "Prostor",
-    //     image: "/Fotky/Gallery/Fotka-4.webp"
-    // },
-    // {
-    //     heading: "Útulný obývací pokoj",
-    //     desc: "Teplé a příjemné tóny pro dokonalou atmosféru domova.",
-    //     type: "Byt",
-    //     image: "/Fotky/Gallery/Fotka-5.webp"
-    // },
-    // {
-    //     heading: "Prostory plastické chirurgie",
-    //     desc: "Moderní a sterilní vzhled s hladkými nástřiky stěn.",
-    //     type: "Prostor",
-    //     image: "/Fotky/Gallery/Fotka-6.webp"
-    // },
-    // {
-    //     heading: "Vymalovaná kuchyně",
-    //     desc: "Barevné a praktické řešení stěn v kuchyni.",
-    //     type: "Kuchyně",
-    //     image: "/Fotky/Gallery/Fotka-7.webp"
-    // },
     {
         heading: "Vymalované jídelní studio",
         desc: "Příjemné tóny pro pohodové stolování a rodinnou pohodu.",
@@ -125,24 +83,12 @@ export const GalleryItems = [
         type: "Prostor",
         image: "/Fotky/Gallery/Fotka-21.webp"
     },
-    // {
-    //     // heading: "Pokoj vymalovaný hnědou",
-    //     desc: "Teplé a uklidňující tóny pro pohodlný interiér.",
-    //     type: "Pokoj",
-    //     image: "/Fotky/Gallery/Fotka-22.webp"
-    // },
     {
         // heading: "Pokoj vymalovaný fialovou",
         desc: "Elegantní a stylové barevné řešení pro pokoj.",
         type: "Pokoj",
         image: "/Fotky/Gallery/Fotka-23.webp"
     },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-1.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-2.webp"
-    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-3.webp"
     },
@@ -180,55 +126,51 @@ export const GalleryItems = [
         image: "/Fotky/Services/malirske-prace/Fotka-15.webp"
     },
     {
-        image: "/Fotky/Services/malirske-prace/Fotka-16.webp"
-    },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-17.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-18.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-19.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-20.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-21.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-22.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-23.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-24.webp"
-    // },
-    {
         image: "/Fotky/Services/malirske-prace/Fotka-25.webp"
     },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-26.webp"
     },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-27.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-28.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-29.webp"
-    // },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-30.webp"
-    // },
     {
         image: "/Fotky/Services/malirske-prace/Fotka-31.webp"
     },
-    // {
-    //     image: "/Fotky/Services/malirske-prace/Fotka-32.webp"
-    // },
-    { image: "/Fotky/About/Fotka-1.webp" }
+    { image: "/Fotky/About/Fotka-1.webp" },
+    { image: "/Fotky/Gallery/Fotka-24.avif" },
+    { image: "/Fotky/Gallery/Fotka-25.avif" },
+    { image: "/Fotky/Gallery/Fotka-26.avif" },
+    { image: "/Fotky/Gallery/Fotka-27.avif" },
+    { image: "/Fotky/Gallery/Fotka-28.avif" },
+    { image: "/Fotky/Gallery/Fotka-29.avif" },
+    { image: "/Fotky/Gallery/Fotka-30.avif" },
+    { image: "/Fotky/Gallery/Fotka-31.avif" },
+    { image: "/Fotky/Gallery/Fotka-32.avif" },
+    { image: "/Fotky/Gallery/Fotka-33.avif" },
+    { image: "/Fotky/Gallery/Fotka-34.avif" },
+    { image: "/Fotky/Gallery/Fotka-35.avif" },
+    { image: "/Fotky/Gallery/Fotka-36.avif" },
+    { image: "/Fotky/Gallery/Fotka-37.avif" },
+    { image: "/Fotky/Gallery/Fotka-38.avif" },
+    { image: "/Fotky/Gallery/Fotka-39.avif" },
+    { image: "/Fotky/Gallery/Fotka-40.avif" },
+    { image: "/Fotky/Gallery/Fotka-41.avif" },
+    { image: "/Fotky/Gallery/Fotka-42.avif" },
+    { image: "/Fotky/Gallery/Fotka-43.avif" },
+    { image: "/Fotky/Gallery/Fotka-44.avif" },
+    { image: "/Fotky/Gallery/Fotka-45.avif" },
+    { image: "/Fotky/Gallery/Fotka-46.avif" },
+    { image: "/Fotky/Gallery/Fotka-47.avif" },
+    { image: "/Fotky/Gallery/Fotka-48.avif" },
+    { image: "/Fotky/Gallery/Fotka-49.avif" },
+    { image: "/Fotky/Gallery/Fotka-50.avif" },
+    { image: "/Fotky/Gallery/Fotka-51.avif" },
+    { image: "/Fotky/Gallery/Fotka-52.avif" },
+    { image: "/Fotky/Gallery/Fotka-53.avif" },
+    { image: "/Fotky/Gallery/Fotka-54.avif" },
+    { image: "/Fotky/Gallery/Fotka-55.avif" },
+    { image: "/Fotky/Gallery/Fotka-56.avif" },
+    { image: "/Fotky/Gallery/Fotka-57.avif" },
+    { image: "/Fotky/Gallery/Fotka-58.avif" },
+    { image: "/Fotky/Gallery/Fotka-59.avif" },
+    { image: "/Fotky/Gallery/Fotka-60.avif" },
+    { image: "/Fotky/Gallery/Fotka-61.avif" }
 ];

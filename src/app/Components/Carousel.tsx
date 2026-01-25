@@ -90,14 +90,14 @@ const Carousel = ({ ...props }: CarouselType) => {
                 <Wrapper className="relative overflow-hidden w-full max-w-5xl mx-auto">
                     <button
                     onClick={prevSlide}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full focus:outline-none">
                         <Icon className="cursor-pointer">
                             <ChevronLeftIcon />
                         </Icon>
                     </button>
                     <button
                     onClick={(nextSlide)}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full focus:outline-none">
                         <Icon className="cursor-pointer">
                             <ChevronRightIcon />
                         </Icon>

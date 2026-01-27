@@ -47,9 +47,6 @@ const Gallery = () => {
                             Inspirujte se našimi realizacemi a objevte možnosti, jak oživit svůj domov.
                         </SubHeading>
                     </FlexCol>
-                    {/* <Carousel
-                    carouselSet={galleryItems}
-                    /> */}
                     <Flex className="mt-4 md:mt-6 lg:mt-8 justify-center flex-wrap">
                         {
                             GalleryItems.map((item, index) => {

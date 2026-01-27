@@ -96,7 +96,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                         </Icon>
                     </button>
                     <button
-                    onClick={(nextSlide)}
+                    onClick={nextSlide}
                     className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full focus:outline-none">
                         <Icon className="cursor-pointer">
                             <ChevronRightIcon />

@@ -167,10 +167,7 @@ export const GalleryItems = [
     { image: "/Fotky/Gallery/Fotka-53.avif" },
     { image: "/Fotky/Gallery/Fotka-54.avif" },
     { image: "/Fotky/Gallery/Fotka-55.avif" },
-    { image: "/Fotky/Gallery/Fotka-56.avif" },
     { image: "/Fotky/Gallery/Fotka-57.avif" },
     { image: "/Fotky/Gallery/Fotka-58.avif" },
-    { image: "/Fotky/Gallery/Fotka-59.avif" },
-    { image: "/Fotky/Gallery/Fotka-60.avif" },
-    { image: "/Fotky/Gallery/Fotka-61.avif" }
+    { image: "/Fotky/Gallery/Fotka-59.avif" }
 ];

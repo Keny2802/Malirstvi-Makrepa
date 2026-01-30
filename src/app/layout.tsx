@@ -5,7 +5,7 @@ import "./globals.css";
 
 import Loading from "./Components/Loading";
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
   title: "Malířské práce - Profesionální malování bytů a domů | Malířství Makrepa",
   // description: "Profesionální malířské práce - malování bytů, domů i komerčních prostor. Precizní provedení, čistá práce, férové ceny. Působíme v Ostravě a 50 km okolí",
   description: "Malířské práce v Ostravě a okolí. Malování bytů, domů i firemních prostor. Čistá a precizní práce, férové ceny. Malířství Makrepa.",
@@ -35,8 +35,8 @@ export const metadata:Metadata = {
     images: [
       {
         url: "/Fotky/Gallery/Fotka-22.webp",
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 1000,
         alt: "Malířské práce Ostrava - Malířství Makrepa"
       }
     ],

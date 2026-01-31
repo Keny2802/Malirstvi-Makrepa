@@ -53,5 +53,12 @@ export const GalleryItems = [
         heading: "Luxusní dekorativní malba",
         desc: "Luxusní dekorativní malba pro náročné klienty, kteří hledají originální řešení.",
         image: "/Fotky/Services/dekorativni-malby/Fotka-12.webp"
-    }
+    },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-13.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-14.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-15.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-16.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-17.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-18.webp" },
+    { image: "/Fotky/Services/dekorativni-malby/Fotka-20.webp" }
 ];

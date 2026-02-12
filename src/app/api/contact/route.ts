@@ -1,6 +1,12 @@
-import { Resend } from "resend";
-import { NextResponse } from "next/server";
-import { ContactFormSchema } from "@/app/lib/validation";
+import {
+  Resend
+} from "resend";
+import {
+  NextResponse
+} from "next/server";
+import {
+  ContactFormSchema
+} from "@/app/lib/validation";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 const resend = new Resend(process.env.RESEND_API_KEY);

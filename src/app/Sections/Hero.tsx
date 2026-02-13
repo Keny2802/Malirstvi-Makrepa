@@ -32,7 +32,7 @@ const Hero = () => {
                 className="w-full h-screen object-cover"
                 />
                 <OverlayWrapper>
-                    <FlexCol className="justify-center items-center text-white text-center">
+                    <FlexCol className="p-2 md:p-3 lg:p-4 justify-center items-center text-white text-center">
                         <HeroHeading>
                             Malířské a natěračské práce s osobním přístupem
                             {/* Čisté stěny za 2 dny */}

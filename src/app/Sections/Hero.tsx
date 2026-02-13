@@ -26,7 +26,7 @@ const Hero = () => {
                 width={1000}
                 height={1000}
                 src="/Fotky/Hero/Hero.webp"
-                alt="Profesionální malířské práce bez starostí"
+                alt="Malířské a natěračské práce s osobním přístupem"
                 loading="eager"
                 draggable={false}
                 className="w-full h-screen object-cover"
@@ -34,7 +34,7 @@ const Hero = () => {
                 <OverlayWrapper>
                     <FlexCol className="justify-center items-center text-white text-center">
                         <HeroHeading>
-                            Malířské a natěračské práce bez starostí
+                            Malířské a natěračské práce s osobním přístupem
                             {/* Čisté stěny za 2 dny */}
                             {/* Malíř, který po sobě uklidí */}
                         </HeroHeading>

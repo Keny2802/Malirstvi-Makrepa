@@ -37,7 +37,7 @@ const Logo = ({ ...props }: LogoProps) => {
                     <Image
                     height={250}
                     width={250}
-                    src="/Fotky/Logo/Logo.png"
+                    src="/Fotky/Logo/Logo.avif"
                     alt="Malířství Makrepa | Josef Krejčiřík Logo"
                     loading="lazy"
                     decoding="async"

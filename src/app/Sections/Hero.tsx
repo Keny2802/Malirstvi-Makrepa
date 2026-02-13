@@ -34,13 +34,13 @@ const Hero = () => {
                 <OverlayWrapper>
                     <FlexCol className="justify-center items-center text-white text-center">
                         <HeroHeading>
-                            Profesionální malířské práce bez starostí
+                            Malířské a natěračské práce bez starostí
                             {/* Čisté stěny za 2 dny */}
                             {/* Malíř, který po sobě uklidí */}
                         </HeroHeading>
                         <Wrapper className="mt-2 md:mt-4 lg:mt-6">
                             <SubHeading>
-                                Pečlivé malování bytů, domů i komerčních prostor s důrazem na čistotu, kvalitu a dlouhou životnost nátěrů.
+                                Malování bytů, domů i komerčních prostor s důrazem na čistotu, kvalitu a dlouhou životnost nátěrů.
                             </SubHeading>
                             <SubHeading>
                                 Malujeme rychle, spolehlivě a vždy s individuálním přístupem. Postaráme se o vše - od přípravy prostoru až po úklid po dokončení, abyste se mohli těšit z nového interiéru bez stresu.

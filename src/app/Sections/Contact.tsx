@@ -126,7 +126,7 @@ const Contact = () => {
                                         name="name"
                                         placeholder="Josef Novák"
                                         spellCheck={false}
-                                        autoComplete="full-name"
+                                        autoComplete="name"
                                         aria-label="Jméno"
                                         aria-required={true}
                                         aria-invalid={errors.name ? true : false}

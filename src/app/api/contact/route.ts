@@ -9,7 +9,8 @@ import {
 } from "@/app/lib/validation";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(`re_ZEYYRuHy_5NVCPXtMeuN5Vhko1NkKX92b`);
 
 export async function POST(req: Request) {
   try {

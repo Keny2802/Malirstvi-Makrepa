@@ -174,7 +174,7 @@ const Contact = () => {
                                     </FlexCol>
                                     <FlexCol className="w-full form-group">
                                         <label
-                                        htmlFor="tel"
+                                        htmlFor="phone"
                                         className="text-white cursor-pointer">
                                             Vaše telefonní číslo
                                         </label>

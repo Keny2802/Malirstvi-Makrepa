@@ -10,7 +10,7 @@ import {
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 // const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend(`re_ALnd53LT_HHdxNQXzHXVoTdKAMXXRtXmq`);
+const resend = new Resend(`re_bywrbmi3_GVnR9yvfEn4tG8tCjwkFUjw1`);
 
 export async function POST(req: Request) {
   try {

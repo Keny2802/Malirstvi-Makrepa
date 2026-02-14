@@ -10,7 +10,7 @@ import {
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 // const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend(`re_bPyz21Gf_J6rNEnsXRvy9JCfqrNKH8avo`);
+const resend = new Resend(`re_gunSJPEx_GZuHbmkFG5qriWNB5QQZQbU1`);
 
 export async function POST(req: Request) {
   try {
@@ -25,8 +25,8 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: `${process.env.MY_EMAIL}`,
-      // to: "info@malirstvi-ostrava.cz",
+      // to: `${process.env.MY_EMAIL}`,
+      to: "joskre@centrum.cz",
       // to: "info.modernizujme@gmail.com",
       subject: emailSubject || "Nová zpráva z webu malirstvi-ostrava.cz",
       html: `

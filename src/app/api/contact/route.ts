@@ -25,9 +25,8 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      // to: `${process.env.MY_EMAIL}`,
+      to: `${process.env.MY_EMAIL}`,
       // to: "info@malirstvi-ostrava.cz",
-      to: "vojta.oliva@post.cz",
       // to: "info.modernizujme@gmail.com",
       subject: emailSubject || "Nová zpráva z webu malirstvi-ostrava.cz",
       html: `

@@ -29,7 +29,7 @@ const Hero = () => {
                 alt="Malířské a natěračské práce s osobním přístupem"
                 loading="eager"
                 draggable={false}
-                className="w-full h-screen object-cover"
+                className="w-full min-h-screen object-cover"
                 />
                 <OverlayWrapper>
                     <FlexCol className="p-2 md:p-3 lg:p-4 justify-center items-center text-white text-center">

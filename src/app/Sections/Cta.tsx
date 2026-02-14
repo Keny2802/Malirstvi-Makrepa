@@ -30,7 +30,7 @@ const Cta = () => {
                             Potřebujete vymalovat?
                         </h2>
                         <p className="text-base md:text-[17px] lg:text-lg text-center max-w-3xl">
-                            Vymalujeme vám byt, dům či komerční prostor. Napiště nebo zavolejte nám a zjistětepřesnou cenu.
+                            Vymalujeme vám byt, dům či komerční prostor. Napiště nebo zavolejte nám a zjistěte přesnou cenu.
                         </p>
                         <Wrapper className="p-2 md:p-2.5 lg:p-3 mt-2 md:mt-3 lg:mt-4 flex justify-center items-center flex-col md:flex-row gap-3 w-full max-w-xl">
                             <Link
